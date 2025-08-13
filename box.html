@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Box</title>
+  </head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <div id="box" style="background-color: blue; width: 100px; height: 100px; margin: auto"></div>
+    <script>
+	function updateBoxSize() {
+		var box = document.getElementById("box")
+		var w = document.documentElement.clientWidth;
+		var h = document.documentElement.clientHeight-4;
+		if (w > 1280 && h > 1080) {
+			box.style.width = "1280px";
+			box.style.height = "1080px";
+		} else if (w/h > 1280/1080) {
+			box.style.height = h+"px";
+			box.style.width = parseInt((1280 / 1080) * h)+"px";
+		} else {
+			box.style.width = w+"px";
+			box.style.height = parseInt((1080 / 1280) * w)+"px";
+		}
+	}
+	window.addEventListener("resize",  updateBoxSize)
+	updateBoxSize();
+    </script>
+  </body>
+</html>
