@@ -42,7 +42,7 @@
 			let x = await fetch("options.json");
 			let y = await x.json();
 			options = y;
-			selectOptions("");
+			selectOption("");
 		}
 		function selectOption(num) {
 			gameState = gameState+num;
