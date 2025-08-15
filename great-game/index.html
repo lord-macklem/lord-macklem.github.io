@@ -19,7 +19,7 @@
 			</div>
 			<div class="endgame">
 				<div>Ending:</div>
-				<div class="ending-name">The Goblin Ending!</div>
+				<div class="endingname">The Goblin Ending!</div>
 				<button type="button" onclick="restart()" class="restart-button">Restart</button>
 			</div>
 		</div>
@@ -29,10 +29,10 @@
 		const image = option.children[0];
 		const description = option.children[1];
 		const buttons = option.children[2]
-		const button1 = buttons[0];
-		const button2 = buttons[1];
+		const button1 = buttons.children[0];
+		const button2 = buttons.children[1];
 		const endgame = option.children[3];
-		const ending-name = endgame[1];
+		const endingname = endgame.children[1];
 		
 		let gameState = "S";
 		let options = {};
@@ -51,7 +51,7 @@
 			if (options[gameState]["option1"] == undefined) {
 				buttons.display = "none";
 				endgame.display = "block";
-				ending-name.innerHTML = options[gameState]["ending"];
+				endingname.innerHTML = options[gameState]["ending"];
 			} else {
 				buttons.display = "block";
 				endgame.display = "none";
