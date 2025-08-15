@@ -1,0 +1,20 @@
+{
+	"S": {
+		"image": "Path",
+		"description": "You are on a path, in a forest.",
+		"option1": "Turn left",
+		"option2": "Turn right",
+	},
+	"S1": {
+		"image": "Goblins",
+		"description": "You encounter a gang of goblins.",
+		"option1": "Fight goblins",
+		"option2": "Ask goblins for help",
+	},
+	"S2": {
+		"image": "Trolls",
+		"description": "You find a gang of angry, hungry trolls.",
+		"option1": "Talk to trolls",
+		"option2": "Run away",
+	},
+}

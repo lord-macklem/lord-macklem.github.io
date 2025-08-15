@@ -1,0 +1,50 @@
+body {
+	background-color: #000000;
+	color: #ffffff;
+}
+.header {
+	width: 100%;
+	margin: 20pt 0 20pt 0;
+	font-size: 28pt;
+	text-align: center;
+}
+.header .title {
+	font-size: 32pt;
+	font-variant: small-caps;
+	margin-bottom: 10pt;
+}
+.header .subtitle {
+	font-size: 14pt;
+	font-style: italic;
+}
+.content {
+	text-align: center;
+}
+.content .option {
+	width: 500px;
+	margin: auto;
+}
+.content .option img {
+	width: 300px;
+	margin-bottom: 10px;
+}
+.content .option .description {
+	font-size: 16pt;
+	margin-bottom: 30px;
+}
+.content .option .buttons button {
+	width: 200px;
+	font-family: "Times New Roman";
+	font-size: 14pt;
+	color: #ffffff;
+	vertical-align: middle;
+	padding: 5px;
+}
+.content .option .buttons .left {
+	margin-right: 40px;
+	background-color: #FF9C56;
+}
+.content .option .buttons .right {
+	margin-left: 40px;
+	background-color: #A58EFF;
+}
