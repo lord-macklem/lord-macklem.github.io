@@ -6,6 +6,19 @@
 	<link rel="icon" type="image/x-icon" href="icon.png">
 </head>
 <body>
+	<div class="header">
+		<div class="title">The Great Game</div>
+	</div>
+	<div class="content">
+		<div class="option" id="option">
+			<img src="images/Path.png"></img>
+			<div class="description">You are on a path, in a forest.</div>
+			<div class="buttons">
+				<button type="button" onclick="selectOption(this, '1')" class="left">Turn Left</button>
+				<button type="button" onclick="selectOption(this, '2')" class="right">Turn Right</button>
+			</div>
+		</div>
+	</div>
 	<script>
 		const options = getOptions();
 		async function getOptions() {
@@ -22,18 +35,5 @@
 		}
 		selectOption("");
 	</script>
-	<div class="header">
-		<div class="title">The Great Game</div>
-	</div>
-	<div class="content">
-		<div class="option" id="option">
-			<img src="images/Path.png"></img>
-			<div class="description">You are on a path, in a forest.</div>
-			<div class="buttons">
-				<button type="button" onclick="selectOption(this, '1')" class="left">Turn Left</button>
-				<button type="button" onclick="selectOption(this, '2')" class="right">Turn Right</button>
-			</div>
-		</div>
-	</div>
 </body>
 </html>
