@@ -20,6 +20,11 @@
 		</div>
 	</div>
 	<script>
+		const words = getWords();
+		async function getWords() {
+			let w = await fetch("words.txt");
+			return w.text();
+		}
 		const options = getOptions();
 		async function getOptions() {
 			let x = await fetch("options.json");
@@ -31,7 +36,7 @@
 		var gameState = "S";
 		function selectOption(num) {
 			gameState = gameState+num;
-			description.innerHTML = gameState+": "+options[gameState]["description"];
+			description.innerHTML = gameState+": "+words;
 		}
 		selectOption("");
 	</script>
