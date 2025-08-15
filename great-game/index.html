@@ -47,14 +47,16 @@
 		function selectOption(num) {
 			gameState = gameState+num;
 			description.innerHTML = options[gameState]["description"];
+			image.style.display = "none";
 			image.src = "images/"+options[gameState]["image"]+".png";
+			image.style.display = "inline";
 			if (options[gameState]["option1"] == undefined) {
-				buttons.display = "none";
-				endgame.display = "block";
+				buttons.style.display = "none";
+				endgame.style.display = "block";
 				endingname.innerHTML = options[gameState]["ending"];
 			} else {
-				buttons.display = "block";
-				endgame.display = "none";
+				buttons.style.display = "block";
+				endgame.style.display = "none";
 				button1.innerHTML = options[gameState]["option1"];
 				button2.innerHTML = options[gameState]["option2"];
 			}
