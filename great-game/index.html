@@ -28,8 +28,8 @@
 		getWords();
 		async function getWords() {
 			let x = await fetch("words.txt");
-			let y = await w.text();
-			description.innerHTML = words;
+			let y = await x.text();
+			description.innerHTML = y;
 		}
 		//const options = getOptions();
 		//async function getOptions() {
