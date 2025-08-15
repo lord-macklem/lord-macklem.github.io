@@ -14,7 +14,7 @@
    "S11": {
        "image": "Goblins",
        "description": "The goblins outnumber you 10,000 - 1 and you die!",
-       "ending": "Ending: THE GOBLIN ENDING"
+       "ending": "The Goblin Ending"
    },
    "S12": {
        "image": "Path",
@@ -49,7 +49,7 @@
    "S1211111": {
        "image": "Yeti",
        "description": "Svoðbjärd Björnvinsson fights you to death and you die!",
-       "ending": "Ending: THE YETI NAMED SVOÐBJÄRD BJÖRNVINSSON ENDING"
+       "ending": "The Yeti Named Svoðbjärd Björnvinsson Ending"
    },
    "S1211112": {
        "image": "Yeti",
@@ -66,12 +66,12 @@
    "S121111211": {
        "image": "Funeral",
        "description": "You cry about Svoðbjärd.",
-       "ending": "Ending: THE YETI FUNERAL ENDING"
+       "ending": "The Yeti Funeral Ending"
    },
    "S121111212": {
        "image": "Onion",
        "description": "A policeman eats you.",
-       "ending": "Ending: THE ONION ENDING"
+       "ending": "The Onion Ending"
    },
    "S12111122": {
        "image": "Yeti",
@@ -82,7 +82,7 @@
    "S121111221": {
        "image": "Yeti",
        "description": "Svoðbjärd Björnvinsson fights you to death and you die!",
-       "ending": "Ending: THE JEALOUSY ENDING"
+       "ending": "The Jealousy Ending"
    },
    "S121111222": {
        "image": "Fame",
@@ -93,17 +93,17 @@
    "S1211112221": {
        "image": "Fame",
        "description": "You do so, and lose your fame",
-       "ending": "Ending: THE FAME ENDING"
+       "ending": "The Fame Ending"
    },
    "S1211112222": {
        "image": "TowerOfLondon",
        "description": "The Queen explodes and you are arrested for killing the Queen.",
-       "ending": "Ending: THE TREASON ENDING"
+       "ending": "The Treason Ending"
    },
    "S121112": {
        "image": "GooseKnife",
        "description": "You approach another duck with a knife but it jumps out of the pond and kills you.",
-       "ending": "Ending: THE 'DEATH BY DUCK' ENDING"
+       "ending": "The 'Death by Duck' Ending"
    },
    "S12112": {
        "image": "SecretBase",
@@ -150,22 +150,22 @@
    "S121121111111": {
        "image": "Trump",
        "description": "You go to kill Donald Trump, but he has learnt from your last encounter and beats you in a fight.",
-       "ending": "Ending: THE BEATEN BY TRUMP ENDING"
+       "ending": "The Beaten by Trump Ending"
    },
    "S121121111112": {
        "image": "Baguette",
        "description": "The baguette is very delicious and you forget all your troubles.",
-       "ending": "Ending: THE BAGUETTE ENDING"
+       "ending": "The Baguette Ending"
    },
    "S12112111112": {
        "image": "TheEvilSteve",
        "description": "You get a new mate named Steve but eventually he kills you.",
-       "ending": "Ending: THE 'DEATH BY STEVE' ENDING"
+       "ending": "The 'Death by Steve' Ending"
    },
    "S1211211112": {
        "image": "Explosion",
        "description": "You do not make it to Dave's house in the 10 seconds and everyone survives except you and Dave.",
-       "ending": "Ending: THE APOCALYPSE ENDING"
+       "ending": "The Apocalypse Ending"
    },
    "S121121112": {
        "image": "Bunker2",
@@ -176,27 +176,27 @@
    "S1211211121": {
        "image": "Explosion",
        "description": "As you enter the bunker, Dave shoves you out the way and enters the bunker alone.",
-       "ending": "Ending: THE BETRAYAL ENDING"
+       "ending": "The Betrayal Ending"
    },
    "S1211211122": {
        "image": "Explosion",
        "description": "You are the only human to survive the apocalypse and die after being stranded in a wasteland.",
-       "ending": "Ending: THE STRANDED ENDING"
+       "ending": "The Stranded Ending"
    },
    "S12112112": {
        "image": "Explosion",
        "description": "The base explodes and you die.",
-       "ending": "Ending: THE EXPLOSIVE ENDING"
+       "ending": "The Explosive Ending"
    },
    "S1211212": {
        "image": "Trump",
        "description": "You look around, but there are no phones; Trump slithers up behind you and eats your soul.",
-       "ending": "Ending: THE DEATH BY TRUMP ENDING"
+       "ending": "The Death by Trump Ending"
    },
    "S121122": {
        "image": "SecretBase",
        "description": "You don't enter the base. You are a coward.",
-       "ending": "Ending: THE COWARD ENDING"
+       "ending": "The Coward Ending"
    },
    "S1212": {
        "image": "DuckPresident",
@@ -231,12 +231,12 @@
    "S121211111": {
        "image": "PlanetEarth",
        "description": "You die on board a spaceship.",
-       "ending": "Ending: THE WORLD CONQUEST ENDING"
+       "ending": "The World Conquest Ending"
    },
    "S121211112": {
        "image": "DuckPresident",
        "description": "As President, the duck overrules you and steals your power.",
-       "ending": "Ending: THE DUCK ENDING"
+       "ending": "The Duck Ending"
    },
    "S12121112": {
        "image": "Money",
@@ -253,32 +253,32 @@
    "S1212111211": {
        "image": "Car",
        "description": "You stay alive.",
-       "ending": "Ending: THE SAFE DRIVE, STAY ALIVE ENDING"
+       "ending": "The Safe Drive, Stay Alive Ending"
    },
    "S1212111212": {
        "image": "CarCrash",
        "description": "You crash and die.",
-       "ending": "Ending: THE CAR CRASH ENDING"
+       "ending": "The Car Crash Ending"
    },
    "S121211122": {
        "image": "EthiopiaEmperor",
        "description": "The Emperor of Ethiopia assassinates you.",
-       "ending": "Ending: THE ETHIOPIA ENDING"
+       "ending": "The Ethiopia Ending"
    },
    "S1212112": {
        "image": "PlaneCrash",
        "description": "Your plane crashes and you die!",
-       "ending": "Ending: THE ZIMBABWE ENDING"
+       "ending": "The Zimbabwe Ending"
    },
    "S121212": {
        "image": "BoJo",
        "description": "An unjust leader overthrows you.",
-       "ending": "Ending: THE UNJUST ENDING"
+       "ending": "The Unjust Ending"
    },
    "S12122": {
        "image": "Chips",
        "description": "Someone pours vinegar on you and you get eaten like chips.",
-       "ending": "Ending: THE SALT 'N' VINEGAR ENDING"
+       "ending": "The Salt 'n' Vinegar Ending"
    },
    "S122": {
        "image": "Shrek",
@@ -289,12 +289,12 @@
    "S1221": {
        "image": "Shrek",
        "description": "Shrek fights you to death and you die!",
-       "ending": "Ending: THE SHREK ENDING"
+       "ending": "The Shrek Ending"
    },
    "S1222": {
        "image": "Lava",
        "description": "You run away but you trip up and fall into a pit of lava.",
-       "ending": "Ending: THE PIT OF LAVA ENDING"
+       "ending": "The Pit of Lava Ending"
    },
    "S2": {
        "image": "Trolls",
@@ -335,12 +335,12 @@
    "S2111111": {
        "image": "Potter",
        "description": "Harry Potter tells you he was actually thinking of blue, and he explodes you with his wand.",
-       "ending": "Ending: THE HARRY POTTER ENDING"
+       "ending": "The Harry Potter Ending"
    },
    "S2111112": {
        "image": "Potter",
        "description": "Harry Potter tells you he was actually thinking of red, and he explodes you with his wand.",
-       "ending": "Ending: THE HARRY POTTER ENDING"
+       "ending": "The Harry Potter Ending"
    },
    "S211112": {
        "image": "Voldemort",
@@ -351,7 +351,7 @@
    "S2111121": {
        "image": "Voldemort",
        "description": "Voldemort kills you with a spell and you die!",
-       "ending": "Ending: THE LORD VOLDEMORT ENDING"
+       "ending": "The Lord Voldemort Ending"
    },
    "S2111122": {
        "image": "Voldemort",
@@ -362,22 +362,22 @@
    "S21111221": {
        "image": "Voldemort",
        "description": "Voldemort is unimpressed and kills you.",
-       "ending": "Ending: THE MIND-READER ENDING"
+       "ending": "The Mind-Reader Ending"
    },
    "S21111222": {
        "image": "Potter",
        "description": "You return to Harry, but since you did not defeat Voldemort, he rejects you from the castle.",
-       "ending": "Ending: THE REJECTED ENDING"
+       "ending": "The Rejected Ending"
    },
    "S21112": {
        "image": "Potter",
        "description": "You grab a stick, but it does nothing, and Harry Potter stabs you.",
-       "ending": "Ending: THE STABBED ENDING"
+       "ending": "The Stabbed Ending"
    },
    "S2112": {
        "image": "Potter",
        "description": "You sneak into Hogwarts but Harry catches you with his magic map and assassinates you.",
-       "ending": "Ending: THE SNEAKY ENDING"
+       "ending": "The Sneaky Ending"
    },
    "S212": {
        "image": "Cave",
@@ -388,7 +388,7 @@
    "S2121": {
        "image": "Cave",
        "description": "You trip up and fall down the sheer drop anyway.",
-       "ending": "Ending: THE CLUMSY ENDING"
+       "ending": "The Clumsy Ending"
    },
    "S2122": {
        "image": "Portal",
@@ -399,7 +399,7 @@
    "S21221": {
        "image": "Beetles",
        "description": "You eat the beetles but they devour you from the inside out.",
-       "ending": "Ending: THE BEETLE ENDING"
+       "ending": "The Beetle Ending"
    },
    "S21222": {
        "image": "Monster",
@@ -410,12 +410,12 @@
    "S212221": {
        "image": "Monster1",
        "description": "The MONSTER fights you to death and you die!",
-       "ending": "Ending: THE MONSTER ENDING"
+       "ending": "The Monster Ending"
    },
    "S212222": {
        "image": "Monster2",
        "description": "You just killed a helpless MONSTER!",
-       "ending": "Ending: THE ANIMAL CRUELTY ENDING"
+       "ending": "The Animal Cruelty Ending"
    },
    "S22": {
        "image": "ElderTroll",
@@ -426,7 +426,7 @@
    "S221": {
        "image": "ElderTroll",
        "description": "The GRAND HIGH LORD LEGENDARY ELDER TROLL fights you to death and you die!",
-       "ending": "Ending: THE TROLL ENDING"
+       "ending": "The Troll Ending"
    },
    "S222": {
        "image": "Trolls",
@@ -449,7 +449,7 @@
    "S222111": {
        "image": "Trolls",
        "description": "The trolls manage to catch you. Then they cook you and eat you.",
-       "ending": "Ending: THE DELICIOUS ENDING"
+       "ending": "The Delicious Ending"
    },
    "S222112": {
        "image": "Fortnite",
@@ -460,7 +460,7 @@
    "S2221121": {
        "image": "Arrested",
        "description": "You and the trolls get arrested for murder.",
-       "ending": "Ending: THE TRUMP ENDING"
+       "ending": "The Trump Ending"
    },
    "S2221122": {
        "image": "Soup",
@@ -471,7 +471,7 @@
    "S22211221": {
        "image": "Trolls",
        "description": "The trolls fight you for the soup and you die!",
-       "ending": "Ending: THE SOUP FIGHT ENDING"
+       "ending": "The Soup Fight Ending"
    },
    "S22211222": {
        "image": "Bowls",
@@ -482,7 +482,7 @@
    "S222112221": {
        "image": "DeadTrolls",
        "description": "The trolls are too tired to make any more soup and they die of hunger.",
-       "ending": "Ending: THE DEAD TROLLS ENDING"
+       "ending": "The Dead Trolls Ending"
    },
    "S222112222": {
        "image": "Path",
@@ -499,7 +499,7 @@
    "S22211222201": {
        "image": "Pit",
        "description": "The trolls form a tower halfway up the pit, but then topple over and land on you.",
-       "ending": "Ending: THE CRUSHED ENDING"
+       "ending": "The Crushed Ending"
    },
    "S22211222202": {
        "image": "Vegetables",
@@ -510,12 +510,12 @@
    "S222112222021": {
        "image": "Spade",
        "description": "You pick up a spade but this is the trolls' sign of hostility and they kill you!",
-       "ending": "Ending: THE SPADE ENDING"
+       "ending": "The Spade Ending"
    },
    "S222112222022": {
        "image": "Fork",
        "description": "You pick up a fork but this is the trolls' sign of hostility and they kill you!",
-       "ending": "Ending: THE FORK ENDING"
+       "ending": "The Fork Ending"
    },
    "S22212": {
        "image": "Tree",
@@ -544,7 +544,7 @@
    "S222121111": {
        "image": "Explosion",
        "description": "Attempting to speak causes you to explode into a flash of flabby flesh!",
-       "ending": "Ending: THE FLESH-FLAB-FLASH ENDING"
+       "ending": "The Flesh-Flab-Flash Ending"
    },
    "S222121112": {
        "image": "MegaGalab",
@@ -555,12 +555,12 @@
    "S2221211121": {
        "image": "MegaGalab",
        "description": "You accidently choke on a thorned bush and you die!",
-       "ending": "Ending: THE MEGA-GALAB ENDING"
+       "ending": "The Mega-Galab Ending"
    },
    "S2221211122": {
        "image": "Universe",
        "description": "You expand exponentially until you transcend space and time.",
-       "ending": "Ending: THE TRANSCENDENCE ENDING"
+       "ending": "The Transcendence Ending"
    },
    "S22212112": {
        "image": "Underworld",
@@ -571,12 +571,12 @@
    "S222121121": {
        "image": "Hitler",
        "description": "You find Hitler, but he kills you.",
-       "ending": "Ending: THE HITLER ENDING"
+       "ending": "The Hitler Ending"
    },
    "S222121122": {
        "image": "Lava",
        "description": "You died from trying to swim in lava.",
-       "ending": "Ending: THE MINECRAFT ENDING"
+       "ending": "The Minecraft Ending"
    },
    "S2221212": {
        "image": "Clouds",
@@ -599,22 +599,22 @@
    "S2221212111": {
        "image": "AppleBite",
        "description": "The apple is poisonous and you die!",
-       "ending": "Ending: THE APPLE ENDING"
+       "ending": "The Apple Ending"
    },
    "S2221212112": {
        "image": "WitheredShrub",
        "description": "The berries cause you to shrivel into a withered shrub.",
-       "ending": "Ending: THE WITHERED SHRUB ENDING"
+       "ending": "The Withered Shrub Ending"
    },
    "S222121212": {
        "image": "Clouds",
        "description": "You find no food and eventually starve.",
-       "ending": "Ending: THE CLOUD ENDING"
+       "ending": "The Cloud Ending"
    },
    "S22212122": {
        "image": "Body",
        "description": "You fall through the clouds and land with a splat on the ground.",
-       "ending": "Ending: THE SPLAT ENDING"
+       "ending": "The Splat Ending"
    },
    "S222122": {
        "image": "Portal2",
@@ -673,12 +673,12 @@
    "S222122111111111": {
        "image": "SkeletonRoom",
        "description": "The skeleton sneaks up and kills you during the night.",
-       "ending": "Ending: THE MURDER ENDING"
+       "ending": "The Murder Ending"
    },
    "S222122111111112": {
        "image": "SkeletonRoomDay",
        "description": "The skeleton comes to life and kills you!",
-       "ending": "Ending: THE HEADLESS SKELETON ENDING"
+       "ending": "The Headless Skeleton Ending"
    },
    "S22212211111112": {
        "image": "Leprechaun",
@@ -689,12 +689,12 @@
    "S222122111111121": {
        "image": "LeprechaunSong",
        "description": "The leprechaun fights you to death and you die!",
-       "ending": "Ending: THE LEPRECHAUN ENDING"
+       "ending": "The Leprechaun Ending"
    },
    "S222122111111122": {
        "image": "LeprechaunSong",
        "description": "The leprechaun starts singing an annoying song about his house which never ends",
-       "ending": "Ending: THE LEPRECHAUN SONG ENDING"
+       "ending": "The Leprechaun Song Ending"
    },
    "S2221221111112": {
        "image": "Corridor",
@@ -711,7 +711,7 @@
    "S222122111111211": {
        "image": "GlobglogabgalabDelicious",
        "description": "You slash at the Globglogabgalab but it absorbs you into its flesh with a cry of 'Simply delicious!'",
-       "ending": "Ending: THE SIMPLY DELICIOUS ENDING"
+       "ending": "The Simply Delicious Ending"
    },
    "S222122111111212": {
        "image": "Globglogabgalab",
@@ -722,12 +722,12 @@
    "S2221221111112121": {
        "image": "GlobglogabgalabDelicious",
        "description": "You get absorbed into the books and turn into a globglogabgalab.",
-       "ending": "Ending: THE GLOBGLOGABGALAB ENDING"
+       "ending": "The Globglogabgalab Ending"
    },
    "S2221221111112122": {
        "image": "RatKing",
        "description": "You find the Rat King, and he kills you.",
-       "ending": "Ending: THE RAT KING ENDING"
+       "ending": "The Rat King Ending"
    },
    "S22212211111122": {
        "image": "LivingRoom",
@@ -738,7 +738,7 @@
    "S222122111111221": {
        "image": "Floorboards",
        "description": "You find nothing but some disappointing floorboards.",
-       "ending": "Ending: THE DISAPPOINTING ENDING"
+       "ending": "The Disappointing Ending"
    },
    "S222122111111222": {
        "image": "Safe",
@@ -749,22 +749,22 @@
    "S2221221111112221": {
        "image": "Money",
        "description": "The safe opens and you become extremely wealthy.",
-       "ending": "Ending: THE WEALTHY ENDING"
+       "ending": "The Wealthy Ending"
    },
    "S2221221111112222": {
        "image": "Safe",
        "description": "The safe doesn't open, because that's a stupid password.",
-       "ending": "Ending: THE STUPID PASSWORD ENDING"
+       "ending": "The Stupid Password Ending"
    },
    "S222122111112": {
        "image": "Key",
        "description": "You choke to death on the key.",
-       "ending": "Ending: THE KEY CONSUMPTION ENDING"
+       "ending": "The Key Consumption Ending"
    },
    "S22212211112": {
        "image": "SkeletonCave",
        "description": "Befouling the tomb causes the skeleton to awaken and kill you.",
-       "ending": "Ending: THE SPOOKY SCARY SKELETON ENDING"
+       "ending": "The Spooky Scary Skeleton Ending"
    },
    "S2221221112": {
        "image": "Gate",
@@ -775,12 +775,12 @@
    "S22212211121": {
        "image": "Gate",
        "description": "You jump all the way over the gate but fracture your legs on the way down.",
-       "ending": "Ending: THE FRACTURED ENDING"
+       "ending": "The Fractured Ending"
    },
    "S22212211122": {
        "image": "Cave",
        "description": "The way back is too long and you die of starvation.",
-       "ending": "Ending: THE STARVATION ENDING"
+       "ending": "The Starvation Ending"
    },
    "S222122112": {
        "image": "ForestPath",
@@ -803,22 +803,22 @@
    "S222122112111": {
        "image": "ForestFire",
        "description": "The orange potion causes you to spontaneously combust and you die!",
-       "ending": "Ending: THE COMBUSTION ENDING"
+       "ending": "The Combustion Ending"
    },
    "S222122112112": {
        "image": "DeadPlant",
        "description": "The purple potion turns you into a plant, whereupon you die due to a lack of water.",
-       "ending": "Ending: THE PLANT ENDING"
+       "ending": "The Plant Ending"
    },
    "S222122112113": {
        "image": "Underworld",
        "description": "YOU HAVE DEFILED THIS GAME'S VERY PURPOSE. DIE, BLASPHEMER.",
-       "ending": "Ending: THE BLASPHEMY ENDING"
+       "ending": "The Blasphemy Ending"
    },
    "S22212211212": {
        "image": "Soup",
        "description": "The house's owner comes along and turns you into soup.",
-       "ending": "Ending: THE SOUP ENDING"
+       "ending": "The Soup Ending"
    },
    "S2221221122": {
        "image": "Forest",
@@ -829,7 +829,7 @@
    "S22212211221": {
        "image": "Forest",
        "description": "The trees fight you to death and you die!",
-       "ending": "Ending: THE TREE FIGHT ENDING"
+       "ending": "The Tree Fight Ending"
    },
    "S22212211222": {
        "image": "ApplesAndBerries",
@@ -840,12 +840,12 @@
    "S222122112221": {
        "image": "AppleBite",
        "description": "You get food poisoning from the fruit and you die!",
-       "ending": "Ending: THE FOOD POISONING ENDING"
+       "ending": "The Food Poisoning Ending"
    },
    "S222122112222": {
        "image": "Forest",
        "description": "You try to run but the trees grab you and kill you.",
-       "ending": "Ending: THE EVIL TREES ENDING"
+       "ending": "The Evil Trees Ending"
    },
    "S22212212": {
        "image": "CastleCorridor",
@@ -862,7 +862,7 @@
    "S2221221211": {
        "image": "CavernDoor",
        "description": "The door is locked and you starve in the cave.",
-       "ending": "Ending: THE SPOOKY CAVE ENDING"
+       "ending": "The Spooky Cave Ending"
    },
    "S2221221212": {
        "image": "Dragon",
@@ -873,12 +873,12 @@
    "S22212212121": {
        "image": "Dragon",
        "description": "The dragon defeats you with ease.",
-       "ending": "Ending: THE DRAGON ENDING"
+       "ending": "The Dragon Ending"
    },
    "S22212212122": {
        "image": "Dragon",
        "description": "The dragon kills you while you are distracted!",
-       "ending": "Ending: THE SANDWICH ENDING"
+       "ending": "The Sandwich Ending"
    },
    "S222122122": {
        "image": "Armour",
@@ -895,7 +895,7 @@
    "S22212212211": {
        "image": "CastleCorridor",
        "description": "You die banging your head against a wall.",
-       "ending": "Ending: THE CRUSHED SKULL ENDING"
+       "ending": "The Crushed Skull Ending"
    },
    "S22212212212": {
        "image": "CavernDoor",
@@ -906,7 +906,7 @@
    "S222122122121": {
        "image": "CavernDoor",
        "description": "You waste all of your energy trying to break down the door and die of hunger.",
-       "ending": "Ending: THE IGNORED APPLE FROM EARLIER ENDING"
+       "ending": "The Ignored Apple From Earlier Ending"
    },
    "S222122122122": {
        "image": "Dragon",
@@ -929,7 +929,7 @@
    "S222122122122111": {
        "image": "PortalLizardStatues",
        "description": "The statues all come to life when you touch one and they kill you!",
-       "ending": "Ending: THE LIZARD ENDING"
+       "ending": "The Lizard Ending"
    },
    "S222122122122112": {
        "image": "LizardSkeleton",
@@ -946,7 +946,7 @@
    "S22212212212211211": {
        "image": "LizardSkeleton",
        "description": "You beat the lizard skeleton, but since it was your only ticket out of the tomb you starve and die.",
-       "ending": "Ending: THE SKELETON ENDING"
+       "ending": "The Skeleton Ending"
    },
    "S22212212212211212": {
        "image": "Path",
@@ -957,7 +957,7 @@
    "S222122122122112121": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S222122122122112122": {
        "image": "Trolls",
@@ -968,7 +968,7 @@
    "S2221221221221121221": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S2221221221221121222": {
        "image": "ElderTroll",
@@ -979,7 +979,7 @@
    "S22212212212211212221": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S22212212212211212222": {
        "image": "Trolls",
@@ -996,7 +996,7 @@
    "S2221221221221121222211": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S2221221221221121222212": {
        "image": "Tree",
@@ -1007,7 +1007,7 @@
    "S22212212212211212222121": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S22212212212211212222122": {
        "image": "Portal2",
@@ -1024,7 +1024,7 @@
    "S2221221221221121222212211": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S2221221221221121222212212": {
        "image": "CastleCorridor",
@@ -1035,7 +1035,7 @@
    "S22212212212211212222122121": {
        "image": "CastleCorridor",
        "description": "No, remember you have to get the armour and sword first, and THEN go down the left corridor, I mean, the lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE FOURTH WALL ENDING"
+       "ending": "The Fourth Wall Ending"
    },
    "S22212212212211212222122122": {
        "image": "Armour",
@@ -1052,7 +1052,7 @@
    "S2221221221221121222212212211": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S2221221221221121222212212212": {
        "image": "CavernDoor",
@@ -1063,7 +1063,7 @@
    "S22212212212211212222122122121": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S22212212212211212222122122122": {
        "image": "Dragon",
@@ -1086,7 +1086,7 @@
    "S22212212212211212222122122122111": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S22212212212211212222122122122112": {
        "image": "LizardSkeleton",
@@ -1103,42 +1103,42 @@
    "S2221221221221121222212212212211211": {
        "image": "LizardSkeletonEvil",
        "description": "The skeleton sees through this fakery and kills you.",
-       "ending": "Ending: THE ANNOYING LONG AND USELESS ENDING"
+       "ending": "The Annoying, Long, and Useless Ending"
    },
    "S2221221221221121222212212212211212": {
        "image": "Escape",
        "description": "Your reward is to be teleported out of the forest. You are free!",
-       "ending": "Ending: THE ESCAPE ENDING!"
+       "ending": "The Escape Ending!"
    },
    "S222122122122112122221221221221122": {
        "image": "LizardSkeletonEvil",
        "description": "The lizard skeleton is so disappointed in you it kills you.",
-       "ending": "Ending: THE DISAPPOINTED SKELETON ENDING"
+       "ending": "The Disappointed Skeleton Ending"
    },
    "S2221221221221121222212212212212": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S222122122122112122221221221222": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S222122122122112122221221222": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S222122122122112122221222": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S222122122122112122222": {
        "image": "Illusion",
        "description": "The lizard skeleton's illusion shatters and you die!",
-       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+       "ending": "The Mysterious Dream Ending"
    },
    "S2221221221221122": {
        "image": "LizardTemple",
@@ -1149,7 +1149,7 @@
    "S22212212212211221": {
        "image": "LizardTemple",
        "description": "The lizard statues, surrounding you, fight you to death and you die!",
-       "ending": "Ending: THE LIZARD STATUE BATTLE ENDING"
+       "ending": "The Lizard Statue Battle Ending"
    },
    "S22212212212211222": {
        "image": "DesertTemple",
@@ -1160,36 +1160,36 @@
    "S222122122122112221": {
        "image": "Desert",
        "description": "You starve to death in the desert.",
-       "ending": "Ending: THE DESERT STARVATION ENDING"
+       "ending": "The Desert Starvation Ending"
    },
    "S222122122122112222": {
        "image": "Kraken",
        "description": "The Kraken inside the well kills you.",
-       "ending": "Ending: THE KRAKEN ENDING"
+       "ending": "The Kraken Ending"
    },
    "S22212212212212": {
        "image": "DeadDragon",
        "description": "The dragon flesh is poisonous and you die!",
-       "ending": "Ending: THE DRAGON FLESH ENDING"
+       "ending": "The Dragon Flesh Ending"
    },
    "S2221221221222": {
        "image": "Dragon",
        "description": "The dragon breathes fire and roasts you alive.",
-       "ending": "Ending: ST. GEORGE'S ENDING"
+       "ending": "St. George's Ending"
    },
    "S2221221222": {
        "image": "AppleBite",
        "description": "The apple is poisonous and you die!",
-       "ending": "Ending: THE POISONED APPLE ENDING"
+       "ending": "The Poisoned Apple Ending"
    },
    "S2221222": {
        "image": "Grub",
        "description": "The grubs overpower you from the inside and turn you into a giant grub.",
-       "ending": "Ending: THE GRUB ENDING"
+       "ending": "The Grub Ending"
    },
    "S2222": {
        "image": "Tree",
        "description": "You run, trip up, bang your head against a tree, and die.",
-       "ending": "Ending: THE TREE ENDING"
+       "ending": "The Tree Ending"
    }
 }
