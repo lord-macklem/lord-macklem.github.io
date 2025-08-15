@@ -19,7 +19,7 @@
 			const option = button.parentNode.parentNode;
 			const image = option.children[0];
 			const description = option.children[1];
-			description.innerHTML = "Game state now "+options[gameState]+".";
+			description.innerHTML = options[gameState]["description"];
 		}
 	</script>
 	<div class="header">
