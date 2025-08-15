@@ -48,6 +48,26 @@ body {
 	margin-left: 40px;
 	background-color: #A58EFF;
 }
+.content .option .threebuttons {
+	display: none;
+}
+.content .option .threebuttons button {
+	width: 150px;
+}
+.content .option .threebuttons .left {
+	background-color: #FF9C56;
+}
+.content .option .threebuttons .middle {
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: #A58EFF;
+}
+.content .option .threebuttons .right {
+	background-color: #A00000;
+}
+.content .option .endgame {
+	display: none;
+}
 .content .option .endgame .endingname {
 	font-variant: small-caps;
 	font-size: 20pt;

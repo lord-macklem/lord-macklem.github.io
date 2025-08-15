@@ -17,6 +17,11 @@
 				<button type="button" onclick="selectOption('1')" class="left">Option 1</button>
 				<button type="button" onclick="selectOption('2')" class="right">Option 2</button>
 			</div>
+			<div class="threebuttons">
+				<button type="button" onclick="selectOption('1')" class="left">Drink the orange potion</button>
+				<button type="button" onclick="selectOption('2')" class="middle">Drink the purple potion</button>
+				<button type="button" onclick="selectOption('3')" class="right">Drink the red potion</button>
+			</div>
 			<div class="endgame">
 				<div>Ending:</div>
 				<div class="endingname">The Goblin Ending!</div>
@@ -31,7 +36,8 @@
 		const buttons = option.children[2]
 		const button1 = buttons.children[0];
 		const button2 = buttons.children[1];
-		const endgame = option.children[3];
+		const threebuttons = option.children[3];
+		const endgame = option.children[4];
 		const endingname = endgame.children[1];
 		
 		let gameState = "S";
@@ -52,10 +58,16 @@
 			image.style.display = "inline";
 			if (options[gameState]["option1"] == undefined) {
 				buttons.style.display = "none";
+				threebuttons.style.display = "none";
 				endgame.style.display = "block";
 				endingname.innerHTML = options[gameState]["ending"];
+			} else if (options[gameState]["option3"] != undefined) {
+				buttons.style.display = "none";
+				threebuttons.style.display = "block";
+				endgame.style.display = "none";
 			} else {
 				buttons.style.display = "block";
+				threebuttons.style.display = "none";
 				endgame.style.display = "none";
 				button1.innerHTML = options[gameState]["option1"];
 				button2.innerHTML = options[gameState]["option2"];
