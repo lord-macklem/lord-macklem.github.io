@@ -25,7 +25,7 @@
 		const description = option.children[1];
 		var gameState = "S";
 		
-		const words = getWords();
+		getWords();
 		async function getWords() {
 			let x = await fetch("words.txt");
 			let y = await w.text();
