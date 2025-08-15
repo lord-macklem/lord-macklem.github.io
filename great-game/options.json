@@ -1,20 +1,1195 @@
 {
-	"S": {
-		"image": "Path",
-		"description": "You are on a path, in a forest.",
-		"option1": "Turn left",
-		"option2": "Turn right"
-	},
-	"S1": {
-		"image": "Goblins",
-		"description": "You encounter a gang of goblins.",
-		"option1": "Fight goblins",
-		"option2": "Ask goblins for help"
-	},
-	"S2": {
-		"image": "Trolls",
-		"description": "You find a gang of angry, hungry trolls.",
-		"option1": "Talk to trolls",
-		"option2": "Run away"
-	}
+   "S": {
+       "image": "Path",
+       "description": "You are on a path, in a forest.",
+       "option1": "Turn left",
+       "option2": "Turn right"
+   },
+   "S1": {
+       "image": "Goblins",
+       "description": "You encounter a gang of goblins.",
+       "option1": "Fight goblins",
+       "option2": "Ask goblins for help"
+   },
+   "S11": {
+       "image": "Goblins",
+       "description": "The goblins outnumber you 10,000 - 1 and you die!",
+       "ending": "Ending: THE GOBLIN ENDING"
+   },
+   "S12": {
+       "image": "Path",
+       "description": "The goblins tell you to turn left at the next fork in the path.",
+       "option1": "Follow advice and turn left",
+       "option2": "Be a rebel and turn right"
+   },
+   "S121": {
+       "image": "DuckPond",
+       "description": "You find a pond, with a duck.",
+       "option1": "Feed the duck",
+       "option2": "Vote for the duck"
+   },
+   "S1211": {
+       "image": "DuckPond",
+       "description": "The duck's hunger is satisfied, but you are out of food.",
+       "option1": "Eat the duck",
+       "option2": "Jump in the pond"
+   },
+   "S12111": {
+       "image": "DuckPancake",
+       "description": "You eat the duck. It tastes delicious.",
+       "option1": "Continue down the path",
+       "option2": "Eat more ducks"
+   },
+   "S121111": {
+       "image": "Yeti",
+       "description": "You find a yeti named Svoðbjärd Björnvinsson.",
+       "option1": "Fight Svoðbjärd",
+       "option2": "Report Svoðbjärd to local authorities"
+   },
+   "S1211111": {
+       "image": "Yeti",
+       "description": "Svoðbjärd Björnvinsson fights you to death and you die!",
+       "ending": "Ending: THE YETI NAMED SVOÐBJÄRD BJÖRNVINSSON ENDING"
+   },
+   "S1211112": {
+       "image": "Yeti",
+       "description": "You look around for a while and find a police station.",
+       "option1": "Report Svoðbjärd to police",
+       "option2": "Report Svoðbjärd to the press"
+   },
+   "S12111121": {
+       "image": "Yeti",
+       "description": "The police murder Svoðbjärd.",
+       "option1": "Attend Svoðbjärd's funeral",
+       "option2": "Metamorph into an onion"
+   },
+   "S121111211": {
+       "image": "Funeral",
+       "description": "You cry about Svoðbjärd.",
+       "ending": "Ending: THE YETI FUNERAL ENDING"
+   },
+   "S121111212": {
+       "image": "Onion",
+       "description": "A policeman eats you.",
+       "ending": "Ending: THE ONION ENDING"
+   },
+   "S12111122": {
+       "image": "Yeti",
+       "description": "Svoðbjärd gets into the newspaper and becomes famous.",
+       "option1": "Get jealous and stab Svoðbjärd",
+       "option2": "Leech off Svoðbjärd's fame"
+   },
+   "S121111221": {
+       "image": "Yeti",
+       "description": "Svoðbjärd Björnvinsson fights you to death and you die!",
+       "ending": "Ending: THE JEALOUSY ENDING"
+   },
+   "S121111222": {
+       "image": "Fame",
+       "description": "You become famous.",
+       "option1": "Exploit your fame",
+       "option2": "Eat dinner with the Queen"
+   },
+   "S1211112221": {
+       "image": "Fame",
+       "description": "You do so, and lose your fame",
+       "ending": "Ending: THE FAME ENDING"
+   },
+   "S1211112222": {
+       "image": "TowerOfLondon",
+       "description": "The Queen explodes and you are arrested for killing the Queen.",
+       "ending": "Ending: THE TREASON ENDING"
+   },
+   "S121112": {
+       "image": "GooseKnife",
+       "description": "You approach another duck with a knife but it jumps out of the pond and kills you.",
+       "ending": "Ending: THE 'DEATH BY DUCK' ENDING"
+   },
+   "S12112": {
+       "image": "SecretBase",
+       "description": "You find a secret underground military base underwater.",
+       "option1": "Enter the base",
+       "option2": "Don't enter the base"
+   },
+   "S121121": {
+       "image": "Trump",
+       "description": "Inside the base you find Donald Trump.",
+       "option1": "Fight Donald Trump",
+       "option2": "Call the police"
+   },
+   "S1211211": {
+       "image": "RedButton",
+       "description": "You easily knock Donald Trump out.",
+       "option1": "Explore the base further",
+       "option2": "Press the big red button"
+   },
+   "S12112111": {
+       "image": "SecretDocuments",
+       "description": "You uncover Trump's secret plans to destroy the world...",
+       "option1": "Warn the government",
+       "option2": "Warn your mate Dave"
+   },
+   "S121121111": {
+       "image": "Bunker",
+       "description": "The government builds underground bunkers to save everyone except your mate Dave. The bombs will come in 10 seconds.",
+       "option1": "Use this time to get into a bunker",
+       "option2": "Use this time to warn your mate Dave"
+   },
+   "S1211211111": {
+       "image": "Bunker",
+       "description": "You get into a bunker and save yourself. DAVE DIES.",
+       "option1": "Hold a funeral for Dave",
+       "option2": "Forget Dave and get a new mate"
+   },
+   "S12112111111": {
+       "image": "Funeral",
+       "description": "You feel very sad about your mate Dave's death.",
+       "option1": "Avenge Dave by killing Donald Trump",
+       "option2": "Eat a delicious baguette"
+   },
+   "S121121111111": {
+       "image": "Trump",
+       "description": "You go to kill Donald Trump, but he has learnt from your last encounter and beats you in a fight.",
+       "ending": "Ending: THE BEATEN BY TRUMP ENDING"
+   },
+   "S121121111112": {
+       "image": "Baguette",
+       "description": "The baguette is very delicious and you forget all your troubles.",
+       "ending": "Ending: THE BAGUETTE ENDING"
+   },
+   "S12112111112": {
+       "image": "TheEvilSteve",
+       "description": "You get a new mate named Steve but eventually he kills you.",
+       "ending": "Ending: THE 'DEATH BY STEVE' ENDING"
+   },
+   "S1211211112": {
+       "image": "Explosion",
+       "description": "You do not make it to Dave's house in the 10 seconds and everyone survives except you and Dave.",
+       "ending": "Ending: THE APOCALYPSE ENDING"
+   },
+   "S121121112": {
+       "image": "Bunker2",
+       "description": "Dave invites you into his personal underground bunker.",
+       "option1": "Go down to Dave's bunker with Dave",
+       "option2": "Shove Dave out the way and enter the bunker alone"
+   },
+   "S1211211121": {
+       "image": "Explosion",
+       "description": "As you enter the bunker, Dave shoves you out the way and enters the bunker alone.",
+       "ending": "Ending: THE BETRAYAL ENDING"
+   },
+   "S1211211122": {
+       "image": "Explosion",
+       "description": "You are the only human to survive the apocalypse and die after being stranded in a wasteland.",
+       "ending": "Ending: THE STRANDED ENDING"
+   },
+   "S12112112": {
+       "image": "Explosion",
+       "description": "The base explodes and you die.",
+       "ending": "Ending: THE EXPLOSIVE ENDING"
+   },
+   "S1211212": {
+       "image": "Trump",
+       "description": "You look around, but there are no phones; Trump slithers up behind you and eats your soul.",
+       "ending": "Ending: THE DEATH BY TRUMP ENDING"
+   },
+   "S121122": {
+       "image": "SecretBase",
+       "description": "You don't enter the base. You are a coward.",
+       "ending": "Ending: THE COWARD ENDING"
+   },
+   "S1212": {
+       "image": "DuckPresident",
+       "description": "The duck becomes President.",
+       "option1": "Run for Vice-President",
+       "option2": "Get salty"
+   },
+   "S12121": {
+       "image": "DuckPresident",
+       "description": "The duck votes for you and you become Vice-President.",
+       "option1": "Abuse power",
+       "option2": "Rule justly"
+   },
+   "S121211": {
+       "image": "Plot",
+       "description": "Your subjects plot to murder you for mistreating them.",
+       "option1": "Bribe subjects",
+       "option2": "Escape to Zimbabwe"
+   },
+   "S1212111": {
+       "image": "Plot",
+       "description": "Your subjects start working for your conspiracy of power abuse.",
+       "option1": "Get power by assassinating foreign head of state",
+       "option2": "Get money by rigging your country's economy"
+   },
+   "S12121111": {
+       "image": "PlanetEarth",
+       "description": "Your empire grows until you control the entire planet.",
+       "option1": "Conquer the Solar System",
+       "option2": "Ask the duck if he's impressed"
+   },
+   "S121211111": {
+       "image": "PlanetEarth",
+       "description": "You die on board a spaceship.",
+       "ending": "Ending: THE WORLD CONQUEST ENDING"
+   },
+   "S121211112": {
+       "image": "DuckPresident",
+       "description": "As President, the duck overrules you and steals your power.",
+       "ending": "Ending: THE DUCK ENDING"
+   },
+   "S12121112": {
+       "image": "Money",
+       "description": "You get extremely rich.",
+       "option1": "Buy a new car",
+       "option2": "Buy Ethiopia"
+   },
+   "S121211121": {
+       "image": "Car",
+       "description": "You drive around in your new car.",
+       "option1": "Safe drive",
+       "option2": "Drunk drive"
+   },
+   "S1212111211": {
+       "image": "Car",
+       "description": "You stay alive.",
+       "ending": "Ending: THE SAFE DRIVE, STAY ALIVE ENDING"
+   },
+   "S1212111212": {
+       "image": "CarCrash",
+       "description": "You crash and die.",
+       "ending": "Ending: THE CAR CRASH ENDING"
+   },
+   "S121211122": {
+       "image": "EthiopiaEmperor",
+       "description": "The Emperor of Ethiopia assassinates you.",
+       "ending": "Ending: THE ETHIOPIA ENDING"
+   },
+   "S1212112": {
+       "image": "PlaneCrash",
+       "description": "Your plane crashes and you die!",
+       "ending": "Ending: THE ZIMBABWE ENDING"
+   },
+   "S121212": {
+       "image": "BoJo",
+       "description": "An unjust leader overthrows you.",
+       "ending": "Ending: THE UNJUST ENDING"
+   },
+   "S12122": {
+       "image": "Chips",
+       "description": "Someone pours vinegar on you and you get eaten like chips.",
+       "ending": "Ending: THE SALT 'N' VINEGAR ENDING"
+   },
+   "S122": {
+       "image": "Shrek",
+       "description": "You find Shrek.",
+       "option1": "Fight Shrek",
+       "option2": "Get out of his swamp"
+   },
+   "S1221": {
+       "image": "Shrek",
+       "description": "Shrek fights you to death and you die!",
+       "ending": "Ending: THE SHREK ENDING"
+   },
+   "S1222": {
+       "image": "Lava",
+       "description": "You run away but you trip up and fall into a pit of lava.",
+       "ending": "Ending: THE PIT OF LAVA ENDING"
+   },
+   "S2": {
+       "image": "Trolls",
+       "description": "You find a gang of angry, hungry trolls.",
+       "option1": "Talk to trolls",
+       "option2": "Run away"
+   },
+   "S21": {
+       "image": "Path",
+       "description": "The trolls tell you to turn right at the next fork in the path.",
+       "option1": "Ignore trolls and turn left",
+       "option2": "Follow advice and turn right"
+   },
+   "S211": {
+       "image": "Hogwarts",
+       "description": "You find Hogwarts castle.",
+       "option1": "Enter by main entrance",
+       "option2": "Sneak in"
+   },
+   "S2111": {
+       "image": "Potter",
+       "description": "You find Harry Potter. He is armed with a wand.",
+       "option1": "Talk to Harry",
+       "option2": "Grab a stick and yell 'Expelliarmus'"
+   },
+   "S21111": {
+       "image": "Potter",
+       "description": "Harry asks you to prove that you are a wizard before he lets you into the castle.",
+       "option1": "Read Harry's mind",
+       "option2": "Defeat Lord Voldemort"
+   },
+   "S211111": {
+       "image": "Potter",
+       "description": "Harry is thinking of a colour, and wants you to tell him what it is.",
+       "option1": "Say 'red'",
+       "option2": "Say 'blue'"
+   },
+   "S2111111": {
+       "image": "Potter",
+       "description": "Harry Potter tells you he was actually thinking of blue, and he explodes you with his wand.",
+       "ending": "Ending: THE HARRY POTTER ENDING"
+   },
+   "S2111112": {
+       "image": "Potter",
+       "description": "Harry Potter tells you he was actually thinking of red, and he explodes you with his wand.",
+       "ending": "Ending: THE HARRY POTTER ENDING"
+   },
+   "S211112": {
+       "image": "Voldemort",
+       "description": "You find Lord Voldemort.",
+       "option1": "Fight Voldemort",
+       "option2": "Become a death eater"
+   },
+   "S2111121": {
+       "image": "Voldemort",
+       "description": "Voldemort kills you with a spell and you die!",
+       "ending": "Ending: THE LORD VOLDEMORT ENDING"
+   },
+   "S2111122": {
+       "image": "Voldemort",
+       "description": "Voldemort asks you to prove you are loyal to him before he lets you become a death eater.",
+       "option1": "Read Voldemort's mind",
+       "option2": "Defeat Harry Potter"
+   },
+   "S21111221": {
+       "image": "Voldemort",
+       "description": "Voldemort is unimpressed and kills you.",
+       "ending": "Ending: THE MIND-READER ENDING"
+   },
+   "S21111222": {
+       "image": "Potter",
+       "description": "You return to Harry, but since you did not defeat Voldemort, he rejects you from the castle.",
+       "ending": "Ending: THE REJECTED ENDING"
+   },
+   "S21112": {
+       "image": "Potter",
+       "description": "You grab a stick, but it does nothing, and Harry Potter stabs you.",
+       "ending": "Ending: THE STABBED ENDING"
+   },
+   "S2112": {
+       "image": "Potter",
+       "description": "You sneak into Hogwarts but Harry catches you with his magic map and assassinates you.",
+       "ending": "Ending: THE SNEAKY ENDING"
+   },
+   "S212": {
+       "image": "Cave",
+       "description": "You find yourself in a cave. To your left is a sheer drop.",
+       "option1": "Follow along the cave",
+       "option2": "Jump down the sheer drop"
+   },
+   "S2121": {
+       "image": "Cave",
+       "description": "You trip up and fall down the sheer drop anyway.",
+       "ending": "Ending: THE CLUMSY ENDING"
+   },
+   "S2122": {
+       "image": "Portal",
+       "description": "You land in a pile of beetles, next to a magic portal.",
+       "option1": "Eat the beetles",
+       "option2": "Go through the portal"
+   },
+   "S21221": {
+       "image": "Beetles",
+       "description": "You eat the beetles but they devour you from the inside out.",
+       "ending": "Ending: THE BEETLE ENDING"
+   },
+   "S21222": {
+       "image": "Monster",
+       "description": "You find yourself in a cage with a MONSTER.",
+       "option1": "Fight the MONSTER",
+       "option2": "Kill the MONSTER"
+   },
+   "S212221": {
+       "image": "Monster1",
+       "description": "The MONSTER fights you to death and you die!",
+       "ending": "Ending: THE MONSTER ENDING"
+   },
+   "S212222": {
+       "image": "Monster2",
+       "description": "You just killed a helpless MONSTER!",
+       "ending": "Ending: THE ANIMAL CRUELTY ENDING"
+   },
+   "S22": {
+       "image": "ElderTroll",
+       "description": "You try to run away but bump into the GRAND HIGH LORD LEGENDARY ELDER TROLL.",
+       "option1": "Fight the GRAND HIGH LORD LEGENDARY ELDER TROLL",
+       "option2": "Quickly escape"
+   },
+   "S221": {
+       "image": "ElderTroll",
+       "description": "The GRAND HIGH LORD LEGENDARY ELDER TROLL fights you to death and you die!",
+       "ending": "Ending: THE TROLL ENDING"
+   },
+   "S222": {
+       "image": "Trolls",
+       "description": "You try to run but trip up and fall into the trolls' cooking pot.",
+       "option1": "Try and persuade the trolls you're not delicious",
+       "option2": "Keep running"
+   },
+   "S2221": {
+       "image": "Trolls",
+       "description": "The trolls are convinced by your argument and set you free.",
+       "option1": "Begin to walk away sensibly, turn around, yell 'Suckers! I'm delicious!' and dash",
+       "option2": "Walk away sensibly"
+   },
+   "S22211": {
+       "image": "Trolls",
+       "description": "The trolls chase after you with knives and forks",
+       "option1": "Run away",
+       "option2": "Do the default Fortnite dance"
+   },
+   "S222111": {
+       "image": "Trolls",
+       "description": "The trolls manage to catch you. Then they cook you and eat you.",
+       "ending": "Ending: THE DELICIOUS ENDING"
+   },
+   "S222112": {
+       "image": "Fortnite",
+       "description": "The trolls recognise this as the dance of their god and they worship you.",
+       "option1": "Tell the trolls to kill Donald Trump",
+       "option2": "Tell the trolls to make you some soup"
+   },
+   "S2221121": {
+       "image": "Arrested",
+       "description": "You and the trolls get arrested for murder.",
+       "ending": "Ending: THE TRUMP ENDING"
+   },
+   "S2221122": {
+       "image": "Soup",
+       "description": "The trolls make you lots of soup, but they want a share of it.",
+       "option1": "Greedily take all of the soup",
+       "option2": "Feed the trolls some soup"
+   },
+   "S22211221": {
+       "image": "Trolls",
+       "description": "The trolls fight you for the soup and you die!",
+       "ending": "Ending: THE SOUP FIGHT ENDING"
+   },
+   "S22211222": {
+       "image": "Bowls",
+       "description": "The trolls enjoy the soup, and they want you to make them more.",
+       "option1": "Tell the trolls to make their own soup",
+       "option2": "Make more yourself"
+   },
+   "S222112221": {
+       "image": "DeadTrolls",
+       "description": "The trolls are too tired to make any more soup and they die of hunger.",
+       "ending": "Ending: THE DEAD TROLLS ENDING"
+   },
+   "S222112222": {
+       "image": "Path",
+       "description": "You have run out of vegetables, and have to go out searching for more.",
+       "option1": "Turn left at the next fork in the road",
+       "option2": "Turn right at the next fork in the road"
+   },
+   "S2221122220": {
+       "image": "Pit",
+       "description": "You fall into a pit.",
+       "option1": "Ask trolls for help",
+       "option2": "Climb out yourself"
+   },
+   "S22211222201": {
+       "image": "Pit",
+       "description": "The trolls form a tower halfway up the pit, but then topple over and land on you.",
+       "ending": "Ending: THE CRUSHED ENDING"
+   },
+   "S22211222202": {
+       "image": "Vegetables",
+       "description": "You climb out the pit, and the trolls follow. After some walking, you come across a vegetable patch.",
+       "option1": "Pick up a spade",
+       "option2": "Pick up a fork"
+   },
+   "S222112222021": {
+       "image": "Spade",
+       "description": "You pick up a spade but this is the trolls' sign of hostility and they kill you!",
+       "ending": "Ending: THE SPADE ENDING"
+   },
+   "S222112222022": {
+       "image": "Fork",
+       "description": "You pick up a fork but this is the trolls' sign of hostility and they kill you!",
+       "ending": "Ending: THE FORK ENDING"
+   },
+   "S22212": {
+       "image": "Tree",
+       "description": "You encounter a tall tree. There is a tunnel next to it.",
+       "option1": "Climb the tree",
+       "option2": "Go down the tunnel"
+   },
+   "S222121": {
+       "image": "TreeDoor",
+       "description": "You find a door built into the side of the tree.",
+       "option1": "Enter the door",
+       "option2": "Climb further"
+   },
+   "S2221211": {
+       "image": "TreeRoom",
+       "description": "Inside is a room, furnished with a bookshelf.",
+       "option1": "Read books",
+       "option2": "Climb down the hole in the centre of the room"
+   },
+   "S22212111": {
+       "image": "Globglogabgalab",
+       "description": "You are transformed into a Globglogabgalab.",
+       "option1": "Say 'simply delicious'",
+       "option2": "Read more books"
+   },
+   "S222121111": {
+       "image": "Explosion",
+       "description": "Attempting to speak causes you to explode into a flash of flabby flesh!",
+       "ending": "Ending: THE FLESH-FLAB-FLASH ENDING"
+   },
+   "S222121112": {
+       "image": "MegaGalab",
+       "description": "Reading more books turns you into a MEGA-GALAB",
+       "option1": "Devour forest",
+       "option2": "Eat more books"
+   },
+   "S2221211121": {
+       "image": "MegaGalab",
+       "description": "You accidently choke on a thorned bush and you die!",
+       "ending": "Ending: THE MEGA-GALAB ENDING"
+   },
+   "S2221211122": {
+       "image": "Universe",
+       "description": "You expand exponentially until you transcend space and time.",
+       "ending": "Ending: THE TRANSCENDENCE ENDING"
+   },
+   "S22212112": {
+       "image": "Underworld",
+       "description": "You descend into the underworld.",
+       "option1": "Find Hitler",
+       "option2": "Try to swim in lava"
+   },
+   "S222121121": {
+       "image": "Hitler",
+       "description": "You find Hitler, but he kills you.",
+       "ending": "Ending: THE HITLER ENDING"
+   },
+   "S222121122": {
+       "image": "Lava",
+       "description": "You died from trying to swim in lava.",
+       "ending": "Ending: THE MINECRAFT ENDING"
+   },
+   "S2221212": {
+       "image": "Clouds",
+       "description": "You find your way into the clouds above",
+       "option1": "Eat clouds",
+       "option2": "Explore further"
+   },
+   "S22212121": {
+       "image": "Clouds",
+       "description": "Clouds are made of water vapour; your hunger is unsatisfied.",
+       "option1": "Return to tree and search for food",
+       "option2": "Stay in clouds and search for food"
+   },
+   "S222121211": {
+       "image": "ApplesAndBerries",
+       "description": "You find some apples and some suspicious red berries",
+       "option1": "Eat apples",
+       "option2": "Eat berries"
+   },
+   "S2221212111": {
+       "image": "AppleBite",
+       "description": "The apple is poisonous and you die!",
+       "ending": "Ending: THE APPLE ENDING"
+   },
+   "S2221212112": {
+       "image": "WitheredShrub",
+       "description": "The berries cause you to shrivel into a withered shrub.",
+       "ending": "Ending: THE WITHERED SHRUB ENDING"
+   },
+   "S222121212": {
+       "image": "Clouds",
+       "description": "You find no food and eventually starve.",
+       "ending": "Ending: THE CLOUD ENDING"
+   },
+   "S22212122": {
+       "image": "Body",
+       "description": "You fall through the clouds and land with a splat on the ground.",
+       "ending": "Ending: THE SPLAT ENDING"
+   },
+   "S222122": {
+       "image": "Portal2",
+       "description": "You encounter a mysterious portal down the tunnel.",
+       "option1": "Enter the portal",
+       "option2": "Eat suspicious nearby grubs"
+   },
+   "S2221221": {
+       "image": "CastleTower",
+       "description": "The portal takes you to a castle tower. You can see a window and a rug.",
+       "option1": "Climb oot the windeh",
+       "option2": "Check under the rug"
+   },
+   "S22212211": {
+       "image": "FieldRock",
+       "description": "You find yourself in a field. To your right is a rock.",
+       "option1": "Inspect rock",
+       "option2": "Explore field"
+   },
+   "S222122111": {
+       "image": "Tomb",
+       "description": "You find a hidden tomb, containing a sarcophagus.",
+       "option1": "Open sarcophagus",
+       "option2": "Continue down cave"
+   },
+   "S2221221111": {
+       "image": "SkeletonAmulet",
+       "description": "You find the skeleton of Sir Gerald. Around his neck is a golden amulet.",
+       "option1": "Nick amulet",
+       "option2": "Befoul tomb"
+   },
+   "S22212211111": {
+       "image": "Gate",
+       "description": "The amulet contains a golden key. You make your way down the cave and find a vast locked gate.",
+       "option1": "Open gate with key",
+       "option2": "Eat key"
+   },
+   "S222122111111": {
+       "image": "Staircase",
+       "description": "You find your way into a vast underground mansion.",
+       "option1": "Go upstairs",
+       "option2": "Go downstairs"
+   },
+   "S2221221111111": {
+       "image": "Corridor",
+       "description": "You find yourself in a corridor.",
+       "option1": "Turn left",
+       "option2": "Turn right"
+   },
+   "S22212211111111": {
+       "image": "Bedroom",
+       "description": "You find a mysterious bedroom. There is a headless skeleton in the room.",
+       "option1": "Sleep in the bed",
+       "option2": "Inspect skeleton"
+   },
+   "S222122111111111": {
+       "image": "SkeletonRoom",
+       "description": "The skeleton sneaks up and kills you during the night.",
+       "ending": "Ending: THE MURDER ENDING"
+   },
+   "S222122111111112": {
+       "image": "SkeletonRoomDay",
+       "description": "The skeleton comes to life and kills you!",
+       "ending": "Ending: THE HEADLESS SKELETON ENDING"
+   },
+   "S22212211111112": {
+       "image": "Leprechaun",
+       "description": "You find an angry old leprechaun.",
+       "option1": "Fight leprechaun",
+       "option2": "Ask leprechaun for help"
+   },
+   "S222122111111121": {
+       "image": "LeprechaunSong",
+       "description": "The leprechaun fights you to death and you die!",
+       "ending": "Ending: THE LEPRECHAUN ENDING"
+   },
+   "S222122111111122": {
+       "image": "LeprechaunSong",
+       "description": "The leprechaun starts singing an annoying song about his house which never ends",
+       "ending": "Ending: THE LEPRECHAUN SONG ENDING"
+   },
+   "S2221221111112": {
+       "image": "Corridor",
+       "description": "There are doors to your left and right.",
+       "option1": "Turn left",
+       "option2": "Turn right"
+   },
+   "S22212211111121": {
+       "image": "GlobglogabgalabBasement",
+       "description": "You head down a spiral staircase to a basement library with a flabby, fleshy pink creature.",
+       "option1": "Fight creature",
+       "option2": "Confabulate with creature"
+   },
+   "S222122111111211": {
+       "image": "GlobglogabgalabDelicious",
+       "description": "You slash at the Globglogabgalab but it absorbs you into its flesh with a cry of 'Simply delicious!'",
+       "ending": "Ending: THE SIMPLY DELICIOUS ENDING"
+   },
+   "S222122111111212": {
+       "image": "Globglogabgalab",
+       "description": "The creature begins to sing, 'I am the Globglogabgalab, the schwabble-dabble...'",
+       "option1": "Read books",
+       "option2": "Inspect nearby cabinet"
+   },
+   "S2221221111112121": {
+       "image": "GlobglogabgalabDelicious",
+       "description": "You get absorbed into the books and turn into a globglogabgalab.",
+       "ending": "Ending: THE GLOBGLOGABGALAB ENDING"
+   },
+   "S2221221111112122": {
+       "image": "RatKing",
+       "description": "You find the Rat King, and he kills you.",
+       "ending": "Ending: THE RAT KING ENDING"
+   },
+   "S22212211111122": {
+       "image": "LivingRoom",
+       "description": "You find a living room.",
+       "option1": "Snoop under carpet",
+       "option2": "Snoop behind painting"
+   },
+   "S222122111111221": {
+       "image": "Floorboards",
+       "description": "You find nothing but some disappointing floorboards.",
+       "ending": "Ending: THE DISAPPOINTING ENDING"
+   },
+   "S222122111111222": {
+       "image": "Safe",
+       "description": "You find a secret safe, which requires a secret password.",
+       "option1": "Say 'Yorick'",
+       "option2": "Say '123456'"
+   },
+   "S2221221111112221": {
+       "image": "Money",
+       "description": "The safe opens and you become extremely wealthy.",
+       "ending": "Ending: THE WEALTHY ENDING"
+   },
+   "S2221221111112222": {
+       "image": "Safe",
+       "description": "The safe doesn't open, because that's a stupid password.",
+       "ending": "Ending: THE STUPID PASSWORD ENDING"
+   },
+   "S222122111112": {
+       "image": "Key",
+       "description": "You choke to death on the key.",
+       "ending": "Ending: THE KEY CONSUMPTION ENDING"
+   },
+   "S22212211112": {
+       "image": "SkeletonCave",
+       "description": "Befouling the tomb causes the skeleton to awaken and kill you.",
+       "ending": "Ending: THE SPOOKY SCARY SKELETON ENDING"
+   },
+   "S2221221112": {
+       "image": "Gate",
+       "description": "You eventually come across a vast locked gate.",
+       "option1": "Jump over gate",
+       "option2": "Head back"
+   },
+   "S22212211121": {
+       "image": "Gate",
+       "description": "You jump all the way over the gate but fracture your legs on the way down.",
+       "ending": "Ending: THE FRACTURED ENDING"
+   },
+   "S22212211122": {
+       "image": "Cave",
+       "description": "The way back is too long and you die of starvation.",
+       "ending": "Ending: THE STARVATION ENDING"
+   },
+   "S222122112": {
+       "image": "ForestPath",
+       "description": "You find a forest, with a winding path.",
+       "option1": "Follow the path",
+       "option2": "Diverge from the path"
+   },
+   "S2221221121": {
+       "image": "TumbledownCottage",
+       "description": "You find a tumbledown cottage. Inside is a chest and a cauldron.",
+       "option1": "Open chest",
+       "option2": "Climb into cauldron"
+   },
+   "S22212211211": {
+       "image": "ThreePotions",
+       "description": "You find three potions inside the chest.",
+       "option1": "3",
+       "option2": "3"
+   },
+   "S222122112111": {
+       "image": "ForestFire",
+       "description": "The orange potion causes you to spontaneously combust and you die!",
+       "ending": "Ending: THE COMBUSTION ENDING"
+   },
+   "S222122112112": {
+       "image": "DeadPlant",
+       "description": "The purple potion turns you into a plant, whereupon you die due to a lack of water.",
+       "ending": "Ending: THE PLANT ENDING"
+   },
+   "S222122112113": {
+       "image": "Underworld",
+       "description": "YOU HAVE DEFILED THIS GAME'S VERY PURPOSE. DIE, BLASPHEMER.",
+       "ending": "Ending: THE BLASPHEMY ENDING"
+   },
+   "S22212211212": {
+       "image": "Soup",
+       "description": "The house's owner comes along and turns you into soup.",
+       "ending": "Ending: THE SOUP ENDING"
+   },
+   "S2221221122": {
+       "image": "Forest",
+       "description": "You get lost. The trees now look evil and mysterious.",
+       "option1": "Fight trees",
+       "option2": "Talk to trees"
+   },
+   "S22212211221": {
+       "image": "Forest",
+       "description": "The trees fight you to death and you die!",
+       "ending": "Ending: THE TREE FIGHT ENDING"
+   },
+   "S22212211222": {
+       "image": "ApplesAndBerries",
+       "description": "The trees ominously tell you to eat their fruit.",
+       "option1": "Eat fruit",
+       "option2": "Run away from spooky trees"
+   },
+   "S222122112221": {
+       "image": "AppleBite",
+       "description": "You get food poisoning from the fruit and you die!",
+       "ending": "Ending: THE FOOD POISONING ENDING"
+   },
+   "S222122112222": {
+       "image": "Forest",
+       "description": "You try to run but the trees grab you and kill you.",
+       "ending": "Ending: THE EVIL TREES ENDING"
+   },
+   "S22212212": {
+       "image": "CastleCorridor",
+       "description": "A hidden trapdoor leads you down into a corridor.",
+       "option1": "Turn left",
+       "option2": "Turn right"
+   },
+   "S222122121": {
+       "image": "CavernDoor",
+       "description": "You find yourself in a deep cavern. There is a large wooden door in front of you.",
+       "option1": "Open the door",
+       "option2": "Obliterate the door"
+   },
+   "S2221221211": {
+       "image": "CavernDoor",
+       "description": "The door is locked and you starve in the cave.",
+       "ending": "Ending: THE SPOOKY CAVE ENDING"
+   },
+   "S2221221212": {
+       "image": "Dragon",
+       "description": "The rotten old door collapses. Behind is a dragon!",
+       "option1": "Fight dragon",
+       "option2": "Eat sandwich"
+   },
+   "S22212212121": {
+       "image": "Dragon",
+       "description": "The dragon defeats you with ease.",
+       "ending": "Ending: THE DRAGON ENDING"
+   },
+   "S22212212122": {
+       "image": "Dragon",
+       "description": "The dragon kills you while you are distracted!",
+       "ending": "Ending: THE SANDWICH ENDING"
+   },
+   "S222122122": {
+       "image": "Armour",
+       "description": "You find a room with a suit of armour and a sword. Beside it is an apple.",
+       "option1": "Don armour and take sword",
+       "option2": "Eat apple"
+   },
+   "S2221221221": {
+       "image": "CastleCorridor",
+       "description": "You take the armour and sword, and inside the gauntlet is a key. This corridor is a dead end.",
+       "option1": "Break down the wall",
+       "option2": "Go down the other corridor from earlier"
+   },
+   "S22212212211": {
+       "image": "CastleCorridor",
+       "description": "You die banging your head against a wall.",
+       "ending": "Ending: THE CRUSHED SKULL ENDING"
+   },
+   "S22212212212": {
+       "image": "CavernDoor",
+       "description": "You find a vast cavern. Ahead of you is a wooden door.",
+       "option1": "Obliterate door",
+       "option2": "Unlock it with key"
+   },
+   "S222122122121": {
+       "image": "CavernDoor",
+       "description": "You waste all of your energy trying to break down the door and die of hunger.",
+       "ending": "Ending: THE IGNORED APPLE FROM EARLIER ENDING"
+   },
+   "S222122122122": {
+       "image": "Dragon",
+       "description": "The door unlocks with your key. Behind it is a dragon!",
+       "option1": "Distract dragon tactically",
+       "option2": "Kill dragon heroically"
+   },
+   "S2221221221221": {
+       "image": "DeadDragon",
+       "description": "You throw your sword to distract the dragon but it lands in the dragon's eye and kills it.",
+       "option1": "Continue down the cave",
+       "option2": "Eat dragon"
+   },
+   "S22212212212211": {
+       "image": "PortalLizardStatues",
+       "description": "You find yourself surrounded by golden lizard statues. In front of you is a portal.",
+       "option1": "Inspect statues",
+       "option2": "Enter portal"
+   },
+   "S222122122122111": {
+       "image": "PortalLizardStatues",
+       "description": "The statues all come to life when you touch one and they kill you!",
+       "ending": "Ending: THE LIZARD ENDING"
+   },
+   "S222122122122112": {
+       "image": "LizardSkeleton",
+       "description": "You find yourself in a dark enclosed space with a skeleton.",
+       "option1": "Inspect skeleton",
+       "option2": "Escape tomb"
+   },
+   "S2221221221221121": {
+       "image": "LizardSkeletonEyes",
+       "description": "The skeleton's eyes light up dramatically. It is the skeleton of a large lizard.",
+       "option1": "Fight lizard skeleton",
+       "option2": "Ask lizard skeleton for help"
+   },
+   "S22212212212211211": {
+       "image": "LizardSkeleton",
+       "description": "You beat the lizard skeleton, but since it was your only ticket out of the tomb you starve and die.",
+       "ending": "Ending: THE SKELETON ENDING"
+   },
+   "S22212212212211212": {
+       "image": "Path",
+       "description": "The lizard skeleton teleports you to a forest. You stand at a fork in the path.",
+       "option1": "Turn left",
+       "option2": "Turn right"
+   },
+   "S222122122122112121": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S222122122122112122": {
+       "image": "Trolls",
+       "description": "You find a gang of angry, hungry trolls.",
+       "option1": "Talk to trolls",
+       "option2": "Run away"
+   },
+   "S2221221221221121221": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S2221221221221121222": {
+       "image": "ElderTroll",
+       "description": "You try to run away but bump into the GRAND HIGH LORD LEGENDARY ELDER TROLL",
+       "option1": "Fight the GRAND HIGH LORD LEGENDARY ELDER TROLL",
+       "option2": "Quickly escape"
+   },
+   "S22212212212211212221": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S22212212212211212222": {
+       "image": "Trolls",
+       "description": "You try to run but trip up and fall into the trolls' cooking pot.",
+       "option1": "Try and persuade the trolls you're not delicious",
+       "option2": "Keep running"
+   },
+   "S222122122122112122221": {
+       "image": "Trolls",
+       "description": "The trolls are convinced by your argument and set you free.",
+       "option1": "Begin to walk away sensibly, turn around, yell 'Suckers! I'm delicious!' and dash",
+       "option2": "Walk away sensibly"
+   },
+   "S2221221221221121222211": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S2221221221221121222212": {
+       "image": "Tree",
+       "description": "You encounter a tall tree. There is a tunnel next to it.",
+       "option1": "Climb the tree",
+       "option2": "Go down the tunnel"
+   },
+   "S22212212212211212222121": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S22212212212211212222122": {
+       "image": "Portal2",
+       "description": "You encounter a mysterious portal down the tunnel",
+       "option1": "Enter the portal",
+       "option2": "Eat suspicious nearby grubs"
+   },
+   "S222122122122112122221221": {
+       "image": "CastleTower",
+       "description": "The portal takes you to a castle tower. You can see a window and a rug.",
+       "option1": "Climb oot the windeh",
+       "option2": "Check under the rug"
+   },
+   "S2221221221221121222212211": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S2221221221221121222212212": {
+       "image": "CastleCorridor",
+       "description": "A hidden trapdoor leads you down into a corridor.",
+       "option1": "Turn left",
+       "option2": "Turn right"
+   },
+   "S22212212212211212222122121": {
+       "image": "CastleCorridor",
+       "description": "No, remember you have to get the armour and sword first, and THEN go down the left corridor, I mean, the lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE FOURTH WALL ENDING"
+   },
+   "S22212212212211212222122122": {
+       "image": "Armour",
+       "description": "You find a room with a suit of armour and a sword. Beside it is an apple.",
+       "option1": "Don armour and take sword",
+       "option2": "Eat apple"
+   },
+   "S222122122122112122221221221": {
+       "image": "CastleCorridor",
+       "description": "You take the armour and sword, and inside the gauntlet is a key. This corridor is a dead end.",
+       "option1": "Break down the wall",
+       "option2": "Go down the other corridor from earlier"
+   },
+   "S2221221221221121222212212211": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S2221221221221121222212212212": {
+       "image": "CavernDoor",
+       "description": "You find a vast cavern. Ahead of you is a wooden door.",
+       "option1": "Obliterate door",
+       "option2": "Unlock it with key"
+   },
+   "S22212212212211212222122122121": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S22212212212211212222122122122": {
+       "image": "Dragon",
+       "description": "The door unlocks with your key. Behind it is a dragon!",
+       "option1": "Distract dragon tactically",
+       "option2": "Kill dragon heroically"
+   },
+   "S222122122122112122221221221221": {
+       "image": "DeadDragon",
+       "description": "You throw your sword to distract the dragon but it lands in the dragon's eye and kills it.",
+       "option1": "Continue down the cave",
+       "option2": "Eat dragon"
+   },
+   "S2221221221221121222212212212211": {
+       "image": "PortalLizardStatues",
+       "description": "You find yourself surrounded by golden lizard statues. In front of you is a portal.",
+       "option1": "Inspect statues",
+       "option2": "Enter portal"
+   },
+   "S22212212212211212222122122122111": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S22212212212211212222122122122112": {
+       "image": "LizardSkeleton",
+       "description": "You find yourself in a dark enclosed space with a skeleton.",
+       "option1": "Inspect skeleton",
+       "option2": "Escape tomb"
+   },
+   "S222122122122112122221221221221121": {
+       "image": "LizardSkeletonEyes",
+       "description": "The skeleton congratulates you for solving this mysterious riddle.",
+       "option1": "Act impressed",
+       "option2": "Ask for reward"
+   },
+   "S2221221221221121222212212212211211": {
+       "image": "LizardSkeletonEvil",
+       "description": "The skeleton sees through this fakery and kills you.",
+       "ending": "Ending: THE ANNOYING LONG AND USELESS ENDING"
+   },
+   "S2221221221221121222212212212211212": {
+       "image": "Escape",
+       "description": "Your reward is to be teleported out of the forest. You are free!",
+       "ending": "Ending: THE ESCAPE ENDING!"
+   },
+   "S222122122122112122221221221221122": {
+       "image": "LizardSkeletonEvil",
+       "description": "The lizard skeleton is so disappointed in you it kills you.",
+       "ending": "Ending: THE DISAPPOINTED SKELETON ENDING"
+   },
+   "S2221221221221121222212212212212": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S222122122122112122221221221222": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S222122122122112122221221222": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S222122122122112122221222": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S222122122122112122222": {
+       "image": "Illusion",
+       "description": "The lizard skeleton's illusion shatters and you die!",
+       "ending": "Ending: THE MYSTERIOUS DREAM ENDING"
+   },
+   "S2221221221221122": {
+       "image": "LizardTemple",
+       "description": "You find yourself in a temple surrounded by more lizard statues.",
+       "option1": "Fight lizard statues",
+       "option2": "Exit temple"
+   },
+   "S22212212212211221": {
+       "image": "LizardTemple",
+       "description": "The lizard statues, surrounding you, fight you to death and you die!",
+       "ending": "Ending: THE LIZARD STATUE BATTLE ENDING"
+   },
+   "S22212212212211222": {
+       "image": "DesertTemple",
+       "description": "You exit the temple and find yourself in a vast desert.",
+       "option1": "Explore desert",
+       "option2": "Jump into nearby well"
+   },
+   "S222122122122112221": {
+       "image": "Desert",
+       "description": "You starve to death in the desert.",
+       "ending": "Ending: THE DESERT STARVATION ENDING"
+   },
+   "S222122122122112222": {
+       "image": "Kraken",
+       "description": "The Kraken inside the well kills you.",
+       "ending": "Ending: THE KRAKEN ENDING"
+   },
+   "S22212212212212": {
+       "image": "DeadDragon",
+       "description": "The dragon flesh is poisonous and you die!",
+       "ending": "Ending: THE DRAGON FLESH ENDING"
+   },
+   "S2221221221222": {
+       "image": "Dragon",
+       "description": "The dragon breathes fire and roasts you alive.",
+       "ending": "Ending: ST. GEORGE'S ENDING"
+   },
+   "S2221221222": {
+       "image": "AppleBite",
+       "description": "The apple is poisonous and you die!",
+       "ending": "Ending: THE POISONED APPLE ENDING"
+   },
+   "S2221222": {
+       "image": "Grub",
+       "description": "The grubs overpower you from the inside and turn you into a giant grub.",
+       "ending": "Ending: THE GRUB ENDING"
+   },
+   "S2222": {
+       "image": "Tree",
+       "description": "You run, trip up, bang your head against a tree, and die.",
+       "ending": "Ending: THE TREE ENDING"
+   }
 }
