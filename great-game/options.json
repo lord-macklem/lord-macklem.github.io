@@ -797,8 +797,9 @@
    "S22212211211": {
        "image": "ThreePotions",
        "description": "You find three potions inside the chest.",
-       "option1": "3",
-       "option2": "3"
+       "option1": "Drink the orange potion",
+       "option2": "Drink the purple potion",
+       "option3": "Drink the red potion"
    },
    "S222122112111": {
        "image": "ForestFire",
