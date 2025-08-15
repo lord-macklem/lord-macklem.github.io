@@ -23,12 +23,12 @@
 		const words = getWords();
 		async function getWords() {
 			let w = await fetch("words.txt");
-			return w.text();
+			return await w.text();
 		}
 		const options = getOptions();
 		async function getOptions() {
 			let x = await fetch("options.json");
-			return x.json();
+			return await x.json();
 		}
 		const option = document.getElementById("option");
 		const image = option.children[0];
