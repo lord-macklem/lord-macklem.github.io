@@ -12,10 +12,10 @@
 	<div class="content">
 		<div class="option" id="option">
 			<img src="images/Path.png"></img>
-			<div class="description">You are on a path, in a forest.</div>
+			<div class="description">Loading...</div>
 			<div class="buttons">
-				<button type="button" onclick="selectOption('1')" class="left">Turn Left</button>
-				<button type="button" onclick="selectOption('2')" class="right">Turn Right</button>
+				<button type="button" onclick="selectOption('1')" class="left">Option 1</button>
+				<button type="button" onclick="selectOption('2')" class="right">Option 2</button>
 			</div>
 		</div>
 	</div>
@@ -23,19 +23,16 @@
 		const option = document.getElementById("option");
 		const image = option.children[0];
 		const description = option.children[1];
-		var gameState = "S";
+		let gameState = "S";
 		
-		getWords();
-		async function getWords() {
-			let x = await fetch("words.txt");
-			let y = await x.text();
-			description.innerHTML = y;
+		let options = {};
+		getOptions();
+		async function getOptions() {
+			let x = await fetch("options.json");
+			let y = await x.json();
+			description.innerHTML = y["S"]["description"];
+			options = y;
 		}
-		//const options = getOptions();
-		//async function getOptions() {
-		//	let x = await fetch("options.json");
-		//	return await x.json();
-		//}
 		function selectOption(num) {
 			gameState = gameState+num;
 			description.innerHTML = gameState;
