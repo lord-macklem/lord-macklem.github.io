@@ -51,21 +51,29 @@
 			selectOption("");
 		}
 		function selectOption(num) {
-			gameState = gameState+num;
+			if (gameState == "S222112222") {
+				//Fake fork
+				gameState = gameState+"0";				
+			} else {
+				gameState = gameState+num;
+			}
 			description.innerHTML = options[gameState]["description"];
 			image.style.display = "none";
 			image.src = "images/"+options[gameState]["image"]+".png";
 			image.style.display = "inline";
 			if (options[gameState]["option1"] == undefined) {
+				//Ending
 				buttons.style.display = "none";
 				threebuttons.style.display = "none";
 				endgame.style.display = "block";
 				endingname.innerHTML = options[gameState]["ending"];
-			} else if (options[gameState]["option3"] != undefined) {
+			} else if (options[gameState]["option3"] != undefined) { 
+				//Three potions
 				buttons.style.display = "none";
 				threebuttons.style.display = "block";
 				endgame.style.display = "none";
 			} else {
+				//Two options
 				buttons.style.display = "block";
 				threebuttons.style.display = "none";
 				endgame.style.display = "none";
