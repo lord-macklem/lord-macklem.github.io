@@ -1,0 +1,103 @@
+@font-face{
+    font-family: "Arial Rounded MT Bold";
+    src: url("ARLRDBD.TTF");
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Arial Rounded MT Bold";
+    color: white;
+    text-shadow: 2px 2px #275317;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bg-green {
+    background-image: radial-gradient(circle, #3DCC55, #267F35);
+    height: 100%;
+    padding: 0px;
+}
+
+.bg-checkers {
+    background-image: url("checkers_angled.png");
+    height: 100%;
+    padding: 0px;
+}
+
+.container {
+    padding: 10px;
+    height: calc(100% - 20px);
+}
+
+.game-window {
+    height: 100%;
+}
+
+.menu {
+    height: 100%;
+    position:relative;
+    text-align: center;
+}
+.menu p {
+    font-size: 12pt;
+    margin: 8px 0 8px 0;
+}
+.menu h1 {
+    font-size:32pt;
+    margin: 12px 0 12px 0;
+}
+.menu h2 {
+    font-size: 16pt;
+    margin: 8px 0 8px 0;
+}
+.menu header {
+    position:absolute;
+    top:0px;
+    text-align: center;
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.menu main {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: calc(100% - 20px);
+    padding:10px;
+    font-size: 16pt;
+}
+.menu .logo {
+    width: 300px;
+}
+.menu footer {
+    position:absolute;
+    bottom: 0px;
+    text-align: center;
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.menu button {
+    font-family: inherit;
+    font-size: 16pt;
+    color: inherit;
+    text-shadow: inherit;
+    cursor: pointer;
+    margin: 10px;
+    padding: 8px;
+    min-width: 170px;
+    background-color: #3DCC55;
+    border: 3px solid #267F35;
+    border-radius: 10px;
+    box-shadow: 3px 3px #275317;
+}
+.menu button:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
