@@ -12,6 +12,7 @@ body {
 }
 .header .title {
 	font-size: 28pt;
+	letter-spacing: 8px;
 }
 .header .subtitle {
 	font-size: 20pt;
