@@ -2,61 +2,86 @@
     font-family: "Arial Rounded MT Bold";
     src: url("ARLRDBD.TTF");
 }
+@font-face {
+    font-family: "Arial Black";
+    src: url("ariblk.ttf");
+}
 
 body {
     margin: 0;
-    height: 100vh;
     font-family: "Arial Rounded MT Bold";
     color: white;
-    text-shadow: 2px 2px #275317;
+    text-shadow: 1px 1px #275317, 2px 2px #275317;
+    line-height: 1.5;
 }
-
-a {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .bg-green {
+    position:fixed;
     background-image: radial-gradient(circle, #3DCC55, #267F35);
-    height: 100%;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
     padding: 0px;
 }
 
 .bg-checkers {
     background-image: url("checkers_angled.png");
     height: 100%;
+    min-height: 100vh;
     padding: 0px;
 }
-
 .container {
     padding: 10px;
-    height: calc(100% - 20px);
-}
-
-.game-window {
-    height: 100%;
-}
-
-.menu {
-    height: 100%;
-    position:relative;
+    min-height: calc(100vh - 20px);
     text-align: center;
 }
-.menu p {
-    font-size: 12pt;
-    margin: 8px 0 8px 0;
+
+
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
-.menu h1 {
+a:hover {
+    text-decoration: underline;
+}
+h1 {
     font-size:32pt;
     margin: 12px 0 12px 0;
 }
-.menu h2 {
+h2 {
     font-size: 16pt;
     margin: 8px 0 8px 0;
+}
+p {
+    font-size: 12pt;
+    margin: 8px 0 8px 0;
+}
+
+
+button {
+    font-family: inherit;
+    font-size: 16pt;
+    color: inherit;
+    text-shadow: inherit;
+    cursor: pointer;
+    margin: 10px;
+    padding: 8px;
+    min-width: 170px;
+    background-color: #3DCC55;
+    border: 3px solid #267F35;
+    border-radius: 10px;
+    box-shadow: 3px 3px #275317;
+}
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
+
+.menu {
+    min-height: calc(100vh - 20px);
+    position:relative;
+    text-align: center;
 }
 .menu header {
     position:absolute;
@@ -74,7 +99,7 @@ a:hover {
     font-size: 16pt;
 }
 .menu .logo {
-    width: 300px;
+    width: 250px;
 }
 .menu footer {
     position:absolute;
@@ -83,21 +108,152 @@ a:hover {
     width: calc(100% - 20px);
     padding: 10px;
 }
-.menu button {
-    font-family: inherit;
+
+
+.how-it-works main {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+.how-it-works .img-center {
+    text-align: center;
+}
+.how-it-works .examples-table {
+    table-layout: fixed;
+    width: 100%;
+}
+.how-it-works .examples-table .blackletter {
+    font-size: 24pt;
+    font-family: "Arial Black";
+}
+.how-it-works .examples-table img {
+    width: 50%;
+}
+.how-it-works .cat-similarity-table {
+    float: right;
+    font-size: 13pt;
+    margin: 40px 0px 10px 10px;
+}
+.how-it-works .cat-similarity-table th {
+    padding: 2px 10px 2px 10px;
+}
+.how-it-works .cat-similarity-table td {
+    padding: 2px 10px 2px 10px;
+}
+.how-it-works h1 {
+    margin: 16px 0 0 0;
+    font-size: 40pt;
+}
+.how-it-works .subtitle {
+    margin: 0 0 20px 0;
     font-size: 16pt;
+    text-align: center;
+}
+.how-it-works h2 {
+    margin: 40px 0 20px 0;
+    font-size: 28pt;
+    text-align: left;
+}
+.how-it-works p {
+    margin: 16px 0 16px 0;
+    font-size: 14pt;
+    text-align: left;
+}
+
+
+.game {
+    position:relative;
+    min-height: calc(100vh - 20px);
+}
+.game p {
+    font-size: 16pt;
+}
+.game main {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: calc(100% - 20px);
+    padding:10px;
+}
+.game .intro-countdown {
+    font-family: "Arial Black";
+    font-size: 72pt;
+}
+.game .rule .rule-display {
+    font-family: "Arial Black";
+    font-size: 28pt;
+}
+.game .guess {
+    margin: 50px 0 50px 0;
+}
+.game .guess-input {
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+    font-family: "Arial Black";
+    font-size: 48pt;
     color: inherit;
     text-shadow: inherit;
-    cursor: pointer;
-    margin: 10px;
-    padding: 8px;
-    min-width: 170px;
-    background-color: #3DCC55;
-    border: 3px solid #267F35;
-    border-radius: 10px;
-    box-shadow: 3px 3px #275317;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
 }
-.menu button:active {
-    transform: translate(3px, 3px);
-    box-shadow: none;
+.game .guess-input:focus {
+    outline: none;
 }
+.game .countdown p {
+    font-size: 20pt;
+}
+
+.game-round-summary img {
+    width: 200px;
+}
+.round-score {
+    color: #FFFF4C;
+}
+.round-score h1 {
+    margin: 0;
+    font-family: "Arial Black";
+    font-size: 28pt;
+}
+.round-score p {
+    margin: 0;
+    font-size: 12pt;
+}
+.encouragement {
+    margin: 20px 0 20px 0;
+}
+.encouragement p {
+    font-size: 18pt;
+}
+.next-round-countdown p {
+    font-size: 12pt;
+}
+
+
+.game-summary img {
+    width: 200px;
+}
+.game-summary p {
+    margin: 0;
+}
+.game-summary .score h1 {
+    margin: 0;
+    font-family: "Arial Black";
+    font-size: 52pt;
+}
+.game-summary .congratulations {
+    margin-bottom: 8px;
+}
+.game-summary .highscore {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+

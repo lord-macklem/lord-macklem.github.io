@@ -6,25 +6,143 @@
 	<link rel="icon" type="image/x-icon" href="icon.png">
 </head>
 <body>
-	<div class="bg-green">
-		<div class="bg-checkers" id="bgcheckers">
-	        <div class="container">
-				<div class="menu" id="menu">
-					<header>
-						<p>From the creators of <a href="../scrabble-cats">Scrabble Cats</a></p>
-					</header>
-					<footer>
-						<p><a href="https://devpost.com/software/scrabble-cats-banter">Scrabble Cats Banter</a> originally developed for <a href="https://bh25.devpost.com/">Bath Hack 2025</a>.</p>
-						<p>Scrabble® and Scrabble Banter® belong to Mattel, Inc.</p>
-					</footer>
-					<main>
-						<h1>Scrabble Cats Banter</h1>
-						<img src="Logo.png" class="logo">
-						<h2>A word game of spellings and semantics (and cats)</h2>
-						<button>Play Game</button>
-						<button>How it Works</button>
-					</main>
-				</div>
+	<div class="bg-green"></div>
+	<div class="bg-checkers" id="bgcheckers">
+		<div class="container">
+			<div class="menu" id="menu" style="display:block">
+				<header>
+					<p>From the creators of <a href="../scrabble-cats">Scrabble Cats</a></p>
+				</header>
+				<footer>
+					<p><a href="https://devpost.com/software/scrabble-cats-banter">Scrabble Cats Banter</a> originally developed for <a href="https://bh25.devpost.com/">Bath Hack 2025</a>.</p>
+					<p>Scrabble® and Scrabble Banter® belong to Mattel, Inc.</p>
+				</footer>
+				<main>
+					<img src="logo.png" class="logo">
+					<h1>Scrabble Cats Banter</h1>
+					<h2>A word game of spellings and semantics (and cats)</h2>
+					<button onclick="openGame()">Play Game</button>
+					<button onclick="openHowItWorks()">How it Works</button>
+				</main>
+			</div>
+			<div class="how-it-works" id="how-it-works" style="display:none">
+				<main>
+					<div class="img-center"><img src="logo.png" style="width:350px"></div>
+					<h1>Scrabble Cats Banter</h1>
+					<p class="subtitle"><i>The even cooler sequel to <a href="../scrabble-cats/">Scrabble Cats</a></i></p>
+					<h2>GAMEPLAY</h2>
+					<p>Scrabble Cats Banter is an extremely cool game in which you have to think of a word matching some linguistic constraints, like <i>Scrabble Banter</i>.</p>
+					<p>Unlike <i>Scrabble Banter</i>, you get bonus points depending on how relevant your word is to CATS!</p>
+					<h2>EXAMPLES</h2>
+					<table class="examples-table"><tbody>
+						<tr>
+							<td colspan=3 style="padding-bottom: 15px;">Rule:<br/><span class="blackletter">STARTS WITH "CA", ENDS WITH "T"</span></td>
+						</tr><tr>
+							<td>PLAYER 1 GUESSES:<br/><span class="blackletter">CAST</span></td>
+							<td>PLAYER 2 GUESSES:<br/><span class="blackletter">CABABBALAT</span></td>
+							<td>PLAYER 3 GUESSES:<br/><span class="blackletter">CAT</span></td>
+						</tr><tr>
+							<td><img src="thumbs_up_cat.png"></td>
+							<td><img src="sad_cat.png"></td>
+							<td><img src="happy_cat.png"></td>
+						</tr><tr>
+							<td style="color: #FFFF4C"><span class="blackletter">SCORE: 15</span></td>
+							<td style="color: #FF7F7F"><span class="blackletter">SCORE: 0</span></td>
+							<td style="color: #84E291"><span class="blackletter">SCORE: 110</span></td>
+						</tr><tr>
+							<td style="color: #FFFF4C">Correct word: +10<br/>Cat similarity: +5</td>
+							<td style="color: #FF7F7F">Not a valid word</td>
+							<td style="color: #84E291">Correct word: +10<br/>Cat similarity: +100</td>
+						</tr>
+					</tbody></table>
+					<table class="cat-similarity-table"><tbody>
+						<tr>
+							<th colspan=2>Cat Similarity Tierlist</th>
+						</tr><tr>
+							<td>Cat</td><td>100%</td>
+						</tr><tr>
+							<td>Cats</td><td>81%</td>
+						</tr><tr>
+							<td>Kitten</td><td>75%</td>
+						</tr><tr>
+							<td>Pet</td><td>69%</td>
+						</tr><tr>
+							<td>Meow</td><td>45%</td>
+						</tr><tr>
+							<td>Purr</td><td>35%</td>
+						</tr><tr>
+							<td>Tail</td><td>31%</td>
+						</tr><tr>
+							<td>Triangle</td><td>9%</td>
+						</tr><tr>
+							<td>Risotto</td><td>9%</td>
+						</tr><tr>
+							<td>Programming</td><td>0%</td>
+						</tr>
+					</tbody></table>
+					<h2>CAT SIMILARITY???</h2>
+					<p><i>CAT SIMILARITY</i> awards BONUS POINTS to words which are related to cats.</p>
+					<p>But how do you quantify <i>CAT SIMILARITY</i>?</p>
+					<p>We use a word vectorisation algorithm called Word2Vec, developed by <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> in 2013.</p>
+					<p>Words are converted to 300-dimensional vectors and you can use cosine similarity to compare how similar they are.</p>
+					<h2>BATH HACK 2025</h2>
+					<p><a href="https://devpost.com/software/scrabble-cats-banter">This project</a> was originally designed for <a href="https://bh25.devpost.com/">BathHack 2025</a> and submitted for <i>BEST DESIGN</i> (due to our amazing hand-drawn art), <i>BEST USE OF AI</i> (for our innovative use of Word2Vec), <i>TECH FOR GOOD</i> (for teaching language and spelling skills), <i>BEST PROOF OF CONCEPT</i>, and <i>MOST TECHNICALLY IMPRESSIVE</i> (because obviously).</p>
+					<p>Unfortunately we failed to win any of these tracks, nevertheless we sincerely hope you enjoy playing <i>SCRABBLE CATS BANTER</i>!</p>
+					<div class="img-center"><img src="team.png" style="width: 300px"></div>
+					<p style="text-align: right"><i>- Peter Meiklem, Elizabeth Rigby, David Tomlinson & Mailaau Mumthaz Hussain<br/>Creators of Scrabble Cats Banter</i></p>
+					<button onclick="openGame()">Play Game</button>
+					<button onclick="openMenu()">Return to Menu</button>
+				</main>
+			</div>
+			<div class="game", id="game" style="display: none;">
+				<main class="game-intro" id="game-intro" style="display:none;">
+					<h2>Game begins in:</h2>
+					<p class="intro-countdown" id="intro-countdown-display">5</p>
+				</main>
+				<main class="game-round" id="game-round" style="display:none;">
+					<div class="rule">
+						<p class="heading">Rule <span id="round-number-display">1</span>:</p>
+						<p class="rule-display" id="rule-display">STARTS WITH "CA", ENDS WITH "T"</p>
+					</div>
+					<div class="guess">
+						<input type="text" class="guess-input" id="guess-input">
+					</div>
+					<div class="countdown">
+						<p><span id="guess-countdown-display">15</span> seconds left</p>
+					</div>
+				</main>
+				<main class="game-round-summary" id="game-round-summary" style="display:none;">
+					<div id="rs-happy-cat" style="display:none"><img src="happy_cat.png"></div>
+					<div id="rs-sad-cat" style="display:none"><img src="sad_cat.png"></div>
+					<div id="rs-thumbs-up-cat" style="display:block"><img src="thumbs_up_cat.png"></div>
+					<div class="round-score">
+						<h1>SCORE: <span id="round-score-display">79</span></h1>
+						<p id="round-score-breakdown-display">Valid word: +10, Cat similarity: +69</p>
+					</div>
+					<div class="encouragement">
+						<p id="encouragement-text">Not bad! Keep going, paws-itively awesome!</p>
+					</div>
+					<div class="next-round-countdown">
+						<p><span id="next-round-or-results-text">Next round</span> in <span id="next-round-countdown-display">5</span></p>
+					</div>
+				</main>
+				<main class="game-summary" id="game-summary" style="display:none;">
+					<div id="gs-happy-cat" style="display:none"><img src="happy_cat.png"></div>
+					<div id="gs-sad-cat" style="display:none"><img src="sad_cat.png"></div>
+					<div id="gs-thumbs-up-cat" style="display:block"><img src="thumbs_up_cat.png"></div>
+					<div class="score">
+						<p>You scored:</p>
+						<h1><span id="score-display">300</span></h1>
+					</div>
+					<div class="congratulations">
+						<p id="congratulations-text">That's a new highscore!!!</p>
+					</div>
+					<div class="highscore" id="highscore-div">
+						<p>Your <span id="highscore-previous-display" style="display:none">previous </span>highscore, <span id="highscore-display">350</span>, was set on <span id="highscore-date-display">Friday 3 October 2025</span>.</p>
+					</div>
+					<button onclick="openGame()">Play Again</button>
+					<button onclick="openMenu()">Return to Menu</button>
+				</main>
 			</div>
 		</div>
 	</div>
