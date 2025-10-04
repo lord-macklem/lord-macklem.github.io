@@ -102,10 +102,10 @@
 				<main class="game-round" id="game-round" style="display:none;">
 					<div class="rule">
 						<p class="heading">Rule <span id="round-number-display">1</span>:</p>
-						<p class="rule-display" id="rule-display">STARTS WITH "CA", ENDS WITH "T"</p>
+						<p class="rule-display"><span id="rule-1-display">STARTS WITH "CA", </span><span id="rule-2-display">ENDS WITH "T"</span></p>
 					</div>
 					<div class="guess">
-						<input type="text" class="guess-input" id="guess-input">
+						<input type="text" class="guess-input" id="guess-input" oninput="checkGuess()">
 					</div>
 					<div class="countdown">
 						<p><span id="guess-countdown-display">15</span> seconds left</p>
@@ -115,7 +115,7 @@
 					<div id="rs-happy-cat" style="display:none"><img src="happy_cat.png"></div>
 					<div id="rs-sad-cat" style="display:none"><img src="sad_cat.png"></div>
 					<div id="rs-thumbs-up-cat" style="display:block"><img src="thumbs_up_cat.png"></div>
-					<div class="round-score">
+					<div class="round-score" id="round-score-div">
 						<h1>SCORE: <span id="round-score-display">79</span></h1>
 						<p id="round-score-breakdown-display">Valid word: +10, Cat similarity: +69</p>
 					</div>
