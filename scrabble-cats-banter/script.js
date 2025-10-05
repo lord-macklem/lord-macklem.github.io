@@ -266,7 +266,7 @@ function displayRoundSummary() {
     roundSummaryThumbsUpCat.style.display = (catTier == 1)? "block" : "none";
     roundSummarySadCat.style.display = (catTier == 0)? "block" : "none";
     if (roundID < 10) {
-        nextRoundOrResultsText.innerHTML = "Next round";
+        nextRoundOrResultsText.innerHTML = "Next round ("+(roundID+1)+"/10)";
     } else {
         nextRoundOrResultsText.innerHTML = "Results";
     }
