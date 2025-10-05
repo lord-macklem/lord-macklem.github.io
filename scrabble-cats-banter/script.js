@@ -71,7 +71,7 @@ const highscorePreviousDisplay = document.getElementById("highscore-previous-dis
 const highscoreDisplay = document.getElementById("highscore-display");
 const highscoreDateDisplay = document.getElementById("highscore-date-display");
 
-const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 var introCountdown = 0;
