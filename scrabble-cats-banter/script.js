@@ -149,7 +149,7 @@ function decrementIntroCountdown() {
 //Begin a round
 function beginNextRound() {
     roundID ++;
-    ruleID = Math.floor(Math.random()*50)+(roundID-1)*10; //50 rules per round, 10 rounds
+    ruleID = Math.floor(Math.random()*50)+(roundID-1)*50; //50 rules per round
     rule1Type = rules["rule1Type"][ruleID];
     rule2Type = rules["rule2Type"][ruleID];
     rule1Letters = rules["rule1Letters"][ruleID];
