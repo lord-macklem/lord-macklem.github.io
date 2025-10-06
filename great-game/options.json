@@ -42,30 +42,30 @@
    },
    "S121111": {
        "image": "Yeti",
-       "description": "You find a yeti named Svoðbjärd Björnvinsson.",
-       "option1": "Fight Svoðbjärd",
-       "option2": "Report Svoðbjärd to local authorities"
+       "description": "You find a yeti named SvoÃ°bjÃ¤rd BjÃ¶rnvinsson.",
+       "option1": "Fight SvoÃ°bjÃ¤rd",
+       "option2": "Report SvoÃ°bjÃ¤rd to local authorities"
    },
    "S1211111": {
        "image": "Yeti",
-       "description": "Svoðbjärd Björnvinsson fights you to death and you die!",
-       "ending": "The Yeti Named Svoðbjärd Björnvinsson Ending"
+       "description": "SvoÃ°bjÃ¤rd BjÃ¶rnvinsson fights you to death and you die!",
+       "ending": "The Yeti Named SvoÃ°bjÃ¤rd BjÃ¶rnvinsson Ending"
    },
    "S1211112": {
        "image": "Yeti",
        "description": "You look around for a while and find a police station.",
-       "option1": "Report Svoðbjärd to police",
-       "option2": "Report Svoðbjärd to the press"
+       "option1": "Report SvoÃ°bjÃ¤rd to police",
+       "option2": "Report SvoÃ°bjÃ¤rd to the press"
    },
    "S12111121": {
        "image": "Yeti",
-       "description": "The police murder Svoðbjärd.",
-       "option1": "Attend Svoðbjärd's funeral",
+       "description": "The police murder SvoÃ°bjÃ¤rd.",
+       "option1": "Attend SvoÃ°bjÃ¤rd's funeral",
        "option2": "Metamorph into an onion"
    },
    "S121111211": {
        "image": "Funeral",
-       "description": "You cry about Svoðbjärd.",
+       "description": "You cry about SvoÃ°bjÃ¤rd.",
        "ending": "The Yeti Funeral Ending"
    },
    "S121111212": {
@@ -75,13 +75,13 @@
    },
    "S12111122": {
        "image": "Yeti",
-       "description": "Svoðbjärd gets into the newspaper and becomes famous.",
-       "option1": "Get jealous and stab Svoðbjärd",
-       "option2": "Leech off Svoðbjärd's fame"
+       "description": "SvoÃ°bjÃ¤rd gets into the newspaper and becomes famous.",
+       "option1": "Get jealous and stab SvoÃ°bjÃ¤rd",
+       "option2": "Leech off SvoÃ°bjÃ¤rd's fame"
    },
    "S121111221": {
        "image": "Yeti",
-       "description": "Svoðbjärd Björnvinsson fights you to death and you die!",
+       "description": "SvoÃ°bjÃ¤rd BjÃ¶rnvinsson fights you to death and you die!",
        "ending": "The Jealousy Ending"
    },
    "S121111222": {
