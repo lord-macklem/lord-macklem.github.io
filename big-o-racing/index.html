@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Big O Racing</title>
-	<link rel="icon" type="image/x-icon" href="icon.png">
-</head>
-<body>
-<p>This is just a placeholder, I haven't added this to the website yet</p>
-</body>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Big O Racing</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <div id="box" style="width: 1920px; height: 1080px; margin: auto">
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1" style="width: 100%; height: 100%; background: #303030"></canvas>
+    </div>
+    <script src="Build/Build.loader.js"></script>
+    <script>
+      //if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        //var meta = document.createElement('meta');
+        //meta.name = 'viewport';
+        //meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        //document.getElementsByTagName('head')[0].appendChild(meta);
+
+        //var canvas = document.querySelector("#unity-canvas");
+        //canvas.style.width = "100%";
+        //canvas.style.height = "100%";
+        //canvas.style.position = "fixed";
+
+        //document.body.style.textAlign = "left";
+      //}
+
+      function updateBoxSize() {
+        var box = document.getElementById("box")
+        var w = document.documentElement.clientWidth;
+        var h = document.documentElement.clientHeight-8;
+        if (w > 1920 && h > 1080) {
+          box.style.width = "1920px";
+          box.style.height = "1080px";
+        } else if (w/h > 1920/1080) {
+          box.style.height = h+"px";
+          box.style.width = parseInt((1920 / 1080) * h)+"px";
+        } else {
+          box.style.width = w+"px";
+          box.style.height = parseInt((1080 / 1920) * w)+"px";
+        }
+      }
+      window.addEventListener("resize",  updateBoxSize);
+      updateBoxSize();
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        arguments: [],
+        dataUrl: "Build/Build.data.unityweb",
+        workerUrl: "Build/WebBuilds.data.unityweb",
+        frameworkUrl: "Build/Build.framework.js.unityweb",
+        codeUrl: "Build/Build.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Big O Racing",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
 </html>
