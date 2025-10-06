@@ -1,5 +1,15 @@
+@font-face{
+    font-family: "Arial Rounded MT Bold";
+    src: url("scrabble-cats-banter/ARLRDBD.TTF");
+}
+@font-face {
+    font-family: "Arial Black";
+    src: url("scrabble-cats-banter/ariblk.ttf");
+}
+
 body {
 	background-color: #ffffff;
+	line-height: 1.5;
 }
 .header {
 	width: 100%;
@@ -11,7 +21,7 @@ body {
 	color: black;
 }
 .header .title {
-	font-size: 28pt;
+	font-size: 32pt;
 	letter-spacing: 8px;
 }
 .header .subtitle {
@@ -23,19 +33,52 @@ a {
 }
 .content {
 	text-align: center;
-	font-size: 16pt;
+	margin: 0 50px 0 50px;
 }
-.content .thing {
-	width: 500pt;
-	margin: auto;
-	margin-top: 20pt;
-	margin-bottom: 20pt;
-	padding: 5pt;
+.game-box {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	width: 450px;
+	height: 90px;
+	padding: 10px 30px 10px 30px;
+	margin: 10px;
+	background-size: cover;
+	border-radius: 10px;
+	background-position: center;
 }
-.content .thing .title {
+.game-box .text-wrapper {
+	margin-top: 45px;
+	transform: translateY(-50%);
+}
+.game-box h1 {
 	font-size: 20pt;
-	margin-bottom: 5pt;
+	font-weight: normal;
+	/*font-variant: small-caps;*/
+	margin: 0;
 }
-.content .thing .caption {
-	font-size: 14pt;
+.game-box p {
+	font-size: 13pt;
+	margin: 0;
+}
+
+
+.great-game {
+	background-color: #7CC159;
+	border: 3px solid #4C7537;
+}
+
+.scrabble-cats {
+	background-color: #FFC77D;
+	border: 3px solid #FFA346;
+}
+
+.scrabble-cats-banter {
+	background-color: #3DCC55;
+	border: 3px solid #267F35;
+}
+
+.big-o-racing {
+	background-color: #A0A0A0;
+	border: 3px solid #404040;
 }
