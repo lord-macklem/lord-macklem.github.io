@@ -6,6 +6,10 @@
     font-family: "Arial Black";
     src: url("scrabble-cats-banter/ariblk.ttf");
 }
+@font-face {
+	font-family: "Bahaus 93 Regular";
+	src: url("big-o-racing/BAUHS93.TTF");
+}
 
 body {
 	background-color: #ffffff;
@@ -43,8 +47,8 @@ a {
 	height: 90px;
 	padding: 10px 30px 10px 30px;
 	margin: 10px;
-	background-size: cover;
 	border-radius: 10px;
+	background-size: cover;
 	background-position: center;
 }
 .game-box .text-wrapper {
@@ -63,22 +67,97 @@ a {
 }
 
 
+
 .great-game {
-	background-color: #7CC159;
+	background-image: linear-gradient(to bottom, #7CC15980, #7CC159A0), url("tgg-banner.png");
 	border: 3px solid #4C7537;
 }
+.great-game .text-wrapper {
+	font-family: 'Times New Roman', Times, serif;
+	text-shadow: 1px 1px 3px black;
+	color: white;
+}
+.great-game .text-wrapper h1 {
+	font-variant: small-caps;
+	font-size: 24pt;
+}
+
 
 .scrabble-cats {
 	background-color: #FFC77D;
+	/*background-image: linear-gradient(#FFC77DE0, #FFC77DE0), url(sc-banner-2.png);*/
 	border: 3px solid #FFA346;
 }
+.scrabble-cats .text-wrapper {
+	font-family: "Arial Black";
+	/*text-shadow: 2px 2px #FFA346;*/
+}
+.scrabble-cats .text-wrapper h1 {
+	font-variant: small-caps;
+	letter-spacing: 2px;
+}
+.scrabble-cats .text-wrapper p {
+	font-size: 10pt;
+}
+
+
 
 .scrabble-cats-banter {
 	background-color: #3DCC55;
+	background-image: url("scb-checkers-small.png"), radial-gradient(circle, #3DCC55, #267F35);
+	background-size: auto, cover;
+	background-position-x: 0px, center;
 	border: 3px solid #267F35;
+}
+.scrabble-cats-banter .text-wrapper {
+	text-shadow: 1px 1px #275317, 2px 2px #275317;
+	font-family: "Arial Rounded MT Bold";
+	color: white;
+}
+.scrabble-cats-banter h1 {
+	font-size: 20pt;
+}
+.scrabble-cats-banter p {
+	font-size:  12pt;
 }
 
 .big-o-racing {
-	background-color: #A0A0A0;
-	border: 3px solid #404040;
+	background-image: linear-gradient(#888D,#888D), url("bor-banner.png");
+	border: 3px solid #444;
+}
+.big-o-racing .text-wrapper h1 {
+	font-family: "Arial Black";
+	font-size: 26pt;
+	font-style: italic;
+}
+.big-o-racing .text-wrapper .wheel {
+	position: relative;
+	height: 34px;
+	vertical-align: top;
+	top: 10px;
+	right: 2px;
+}
+.big-o-racing .text-wrapper .shadow {
+	position: relative;
+	text-shadow: 
+			-1px -1px black, 
+			-1px 1px black, 0px 2px black, 1px 3px black,
+			1px -1px black, 2px 0px black, 3px 1px black, 
+			3px 3px black;
+}
+.big-o-racing .text-wrapper .shadow .wheel {
+	opacity: 0;
+}
+.big-o-racing .text-wrapper .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:  100%;
+	background-image: linear-gradient(#444, #444, #FFF, #444, #444);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.big-o-racing .text-wrapper p {
+	margin-top: 5px;
+	font-family: "Bahaus 93 Regular";
 }
