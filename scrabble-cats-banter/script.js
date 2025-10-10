@@ -329,9 +329,15 @@ function displayGameSummary() {
     } else if (score < 400) { // 300 - 399
         catTier = 2;
         congratulationsText.innerHTML = "Well done!"
-    } else { // 400+
+    } else if (score < 500) { // 400-500
         catTier = 2;
         congratulationsText.innerHTML = "That's a-meow-zing!"
+    } else if (score < 600) { // 500-600
+        catTier = 2;
+        congratulationsText.innerHTML = "That's purr-fect!"
+    } else { // 600+
+        catTier = 2;
+        congratulationsText.innerHTML = "WOW! Somebody's locked in";
     }
     gameSummaryHappyCat.style.display = (catTier == 2)? "block" : "none";
     gameSummaryThumbsUpCat.style.display = (catTier == 1)? "block" : "none";
