@@ -49,7 +49,7 @@
    "S1211111": {
        "image": "Yeti",
        "description": "Svoðbjärd Björnvinsson fights you to death and you die!",
-       "ending": "The Yeti Named Svoðbjärd Björnvinsson Ending"
+       "ending": "The Yeti Ending"
    },
    "S1211112": {
        "image": "Yeti",
@@ -191,7 +191,7 @@
    "S1211212": {
        "image": "Trump",
        "description": "You look around, but there are no phones; Trump slithers up behind you and eats your soul.",
-       "ending": "The Death by Trump Ending"
+       "ending": "The 'Death by Trump' Ending"
    },
    "S121122": {
        "image": "SecretBase",
@@ -625,7 +625,7 @@
    "S2221221": {
        "image": "CastleTower",
        "description": "The portal takes you to a castle tower. You can see a window and a rug.",
-       "option1": "Climb oot the windeh",
+       "option1": "Climb out the window",
        "option2": "Check under the rug"
    },
    "S22212211": {
@@ -907,7 +907,7 @@
    "S222122122121": {
        "image": "CavernDoor",
        "description": "You waste all of your energy trying to break down the door and die of hunger.",
-       "ending": "The Ignored Apple From Earlier Ending"
+       "ending": "The Cavern Ending"
    },
    "S222122122122": {
        "image": "Dragon",
@@ -947,7 +947,7 @@
    "S22212212212211211": {
        "image": "LizardSkeleton",
        "description": "You beat the lizard skeleton, but since it was your only ticket out of the tomb you starve and die.",
-       "ending": "The Skeleton Ending"
+       "ending": "The Lizard Skeleton Ending"
    },
    "S22212212212211212": {
        "image": "Path",
@@ -1019,7 +1019,7 @@
    "S222122122122112122221221": {
        "image": "CastleTower",
        "description": "The portal takes you to a castle tower. You can see a window and a rug.",
-       "option1": "Climb oot the windeh",
+       "option1": "Climb out the window",
        "option2": "Check under the rug"
    },
    "S2221221221221121222212211": {
@@ -1176,7 +1176,7 @@
    "S2221221221222": {
        "image": "Dragon",
        "description": "The dragon breathes fire and roasts you alive.",
-       "ending": "St. George's Ending"
+       "ending": "The Dragon Ending"
    },
    "S2221221222": {
        "image": "AppleBite",

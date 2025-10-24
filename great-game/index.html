@@ -6,85 +6,42 @@
 	<link rel="icon" type="image/x-icon" href="icon.png">
 </head>
 <body>
-	<div class="header">
-		<div class="title">The Great Game</div>
-	</div>
-	<div class="content">
+	<header>
+		<h1>The Great Game</h1>
+		<h2><span id="endingsfound">0</span>/<span id="totalendings">0</span> endings found</h2>
+	</header>
+	<main>
 		<div class="option" id="option">
-			<img src="images/Path.png"></img>
-			<div class="description">Loading...</div>
-			<div class="buttons">
-				<button type="button" onclick="selectOption('1')" class="left">Option 1</button>
-				<button type="button" onclick="selectOption('2')" class="right">Option 2</button>
+			<div class="image-container" id="imagecontainer"><img src="images/Nothing.png"></div>
+			<p class="description" id="description"></p>
+			<div class="buttons" id="buttons" style="display:none;">
+				<button type="button" onclick="selectOption('1')" class="left" id="button1">Option 1</button>
+				<button type="button" onclick="selectOption('2')" class="right" id="button2">Option 2</button>
 			</div>
-			<div class="threebuttons">
+			<div class="threebuttons" id="threebuttons" style="display:none;">
 				<button type="button" onclick="selectOption('1')" class="left">Drink the orange potion</button>
 				<button type="button" onclick="selectOption('2')" class="middle">Drink the purple potion</button>
 				<button type="button" onclick="selectOption('3')" class="right">Drink the red potion</button>
 			</div>
-			<div class="endgame">
-				<div>Ending:</div>
-				<div class="endingname">The Goblin Ending!</div>
+			<div class="ending" id="ending" style="display:none;">
+				<div class="ending-name-wrapper">
+					<div>Ending:</div>
+					<div class="ending-name" id="endingname">The Goblin Ending!</div>
+					<div class="endingdiscoverydate" id="endingdiscoverydate"></div>
+				</div>
 				<button type="button" onclick="restart()" class="restart-button">Restart</button>
 			</div>
 		</div>
-	</div>
-	<script>
-		const option = document.getElementById("option");
-		const image = option.children[0];
-		const description = option.children[1];
-		const buttons = option.children[2]
-		const button1 = buttons.children[0];
-		const button2 = buttons.children[1];
-		const threebuttons = option.children[3];
-		const endgame = option.children[4];
-		const endingname = endgame.children[1];
-		
-		let gameState = "S";
-		let options = {};
-		
-		getOptions();
-		async function getOptions() {
-			let x = await fetch("options.json");
-			let y = await x.json();
-			options = y;
-			selectOption("");
-		}
-		function selectOption(num) {
-			if (gameState == "S222112222") {
-				//Fake fork
-				gameState = gameState+"0";				
-			} else {
-				gameState = gameState+num;
-			}
-			description.innerHTML = options[gameState]["description"];
-			image.style.display = "none";
-			image.src = "images/"+options[gameState]["image"]+".png";
-			image.style.display = "inline";
-			if (options[gameState]["option1"] == undefined) {
-				//Ending
-				buttons.style.display = "none";
-				threebuttons.style.display = "none";
-				endgame.style.display = "block";
-				endingname.innerHTML = options[gameState]["ending"];
-			} else if (options[gameState]["option3"] != undefined) { 
-				//Three potions
-				buttons.style.display = "none";
-				threebuttons.style.display = "block";
-				endgame.style.display = "none";
-			} else {
-				//Two options
-				buttons.style.display = "block";
-				threebuttons.style.display = "none";
-				endgame.style.display = "none";
-				button1.innerHTML = options[gameState]["option1"];
-				button2.innerHTML = options[gameState]["option2"];
-			}
-		}
-		function restart() {
-			gameState = "S";
-			selectOption("");
-		}
-	</script>
+		<div class="endings" id="endings">
+			<h1>List of Endings</h1>
+			<table class="ending-table"><tbody id="endingtable">
+			</tbody></table>
+		</div>
+	</main>
+	<footer>
+		<p><span style="font-variant: small-caps;">The Great Game</span> Copyright © 2025 Peter J. Meiklem</p>
+		<p>All images used herein belong to their respective owners</p>
+	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
