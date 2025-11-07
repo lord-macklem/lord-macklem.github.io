@@ -1,6 +1,10 @@
 // The Great Game Script
 // Copyright (C) 2025 Peter J. Meiklem
 
+//Audio
+const angevin = new Audio("Angevin.mp3");
+angevin.play()
+
 //DOM
 const option = document.getElementById("option");
 const imageContainer = document.getElementById("imagecontainer");
@@ -111,20 +115,19 @@ function selectOption(num) {
 	fadeOut();
 }
 
+var animationPhase;
+var descriptionRevealTimeout;
+
 //Fade out old option
 function fadeOut() {
-	button1.disabled = true;
-	button2.disabled = true;
-	button31.disabled = true;
-	button32.disabled = true;
-	button33.disabled = true;
+	disableButtons();
 	decreaseOpacityInterval = window.setInterval(decreaseOpacity, 10);
 	opacity = 100;
 }
-
 var decreaseOpacityInterval;
 var opacity; 
 function decreaseOpacity() {
+	animationPhase = 1; //Has to be here to avoid instant skipping
 	opacity -= 5;
 	option.style.opacity = opacity / 100;
 	if (opacity == 0) {
@@ -135,45 +138,44 @@ function decreaseOpacity() {
 
 //Fade in new option
 function fadeIn() {
-	//Reset option display
-	imageContainer.removeChild(imageContainer.firstChild);
-	description.innerHTML = "";
-	buttons.style.display = "none";
-	threebuttons.style.display = "none";
-	ending.style.display = "none";
-	option.style.opacity = 1;
-	
-	//Add new image
-	const newImage = document.createElement("img");
-	newImage.src = "images/"+options[gameState]["image"]+".png";
-	imageContainer.appendChild(newImage);
+	animationPhase = 2;
+
+	resetOptionDisplay();
+	updateImage();
 
 	//Reveal description after image fades in
-	window.setTimeout(revealDescription, 1000);
+	descriptionRevealTimeout = window.setTimeout(revealDescription, 1000);
+	descriptionText = options[gameState]["description"];
+	descriptionLength = descriptionText.length;
+	currentDescriptionLength = 0;
 }
 
+
+//Reveal description letter by letter
 function revealDescription() {
+	animationPhase = 3;
 	window.clearInterval(descriptionLetterInterval);
-	descriptionText = options[gameState]["description"];
-	descriptionLength = 0;
 	description.innerHTML = "";
-	descriptionLetterInterval = window.setInterval(addDescriptionLetter, 40);
+	descriptionLetterInterval = window.setInterval(addDescriptionLetter, 30);
 }
 
 var descriptionText;
 var descriptionLength;
+var currentDescriptionLength;
 var descriptionLetterInterval;
 
 function addDescriptionLetter() {
-	descriptionLength ++;
-	description.innerHTML = descriptionText.substring(0, descriptionLength);
-	if (descriptionLength == descriptionText.length) {
+	currentDescriptionLength ++;
+	description.innerHTML = descriptionText.substring(0, currentDescriptionLength);
+	if (currentDescriptionLength == descriptionLength) {
 		window.clearInterval(descriptionLetterInterval);
 		revealNextOptions();
 	}
 }
 
 function revealNextOptions() {
+	animationPhase = 4;
+	description.innerHTML = options[gameState]["description"];
 	if (options[gameState]["option1"] == undefined) {
 		//Ending
 		buttons.style.display = "none";
@@ -215,6 +217,53 @@ function revealNextOptions() {
 		button1.disabled = false;
 		button2.disabled = false;
 	}
+}
+
+//Skip animations
+
+function skipAnimations() {
+	if (animationPhase == 1) {
+		window.clearInterval(decreaseOpacityInterval);
+		resetOptionDisplay();
+		updateImage();
+	}
+	if (animationPhase == 2) {
+		window.clearTimeout(descriptionRevealTimeout);
+		description.innerHTML = descriptionText;
+	}
+	if (animationPhase == 3) {
+		window.clearInterval(descriptionLetterInterval);
+		description.innerHTML = descriptionText;
+	}
+	if (animationPhase < 4) {
+		revealNextOptions();
+	}
+}
+
+
+//Utility functions
+
+function disableButtons() {
+	button1.disabled = true;
+	button2.disabled = true;
+	button31.disabled = true;
+	button32.disabled = true;
+	button33.disabled = true;
+}
+
+function resetOptionDisplay() {
+	description.innerHTML = "";
+	buttons.style.display = "none";
+	threebuttons.style.display = "none";
+	ending.style.display = "none";
+	option.style.opacity = 1;
+}
+
+function updateImage() {
+	imageContainer.removeChild(imageContainer.firstChild);
+	const newImage = document.createElement("img");
+	newImage.src = "images/"+options[gameState]["image"]+".png";
+	imageContainer.appendChild(newImage);
 }
 
 function restart() {
