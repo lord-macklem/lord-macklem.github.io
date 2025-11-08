@@ -284,7 +284,7 @@
        "image": "Shrek",
        "description": "You find Shrek.",
        "option1": "Fight Shrek",
-       "option2": "Get out of his swamp"
+       "option2": "Talk to Shrek"
    },
    "S1221": {
        "image": "Shrek",
@@ -292,9 +292,240 @@
        "ending": "The Shrek Ending"
    },
    "S1222": {
-       "image": "Lava",
-       "description": "You run away but you trip up and fall into a pit of lava.",
-       "ending": "The Pit of Lava Ending"
+       "image": "ShrekAngry",
+       "description": "Shrek tells you to get out of his swamp.",
+       "option1": "Leave swamp",
+       "option2": "Claim squatter's rights"
+   },
+   "S12221": {
+       "image": "Swamp",
+       "description": "You begin to make your way out of the swamp.",
+       "option1": "Turn left",
+       "option2": "Turn right"
+   },
+   "S122211": {
+       "image": "Donkey",
+       "description": "You find Donkey.",
+       "option1": "Fight Donkey",
+       "option2": "Ask Donkey for help"
+   },
+   "S1222111": {
+       "image": "Donkey",
+       "description": "Donkey fights you to death and you die!",
+       "ending": "The Donkey Ending"
+   },
+   "S1222112": {
+       "image": "ShrekDragon",
+       "description": "Donkey's girlfriend eats you.",
+       "ending": "The Dragon from Shrek Ending"
+   },
+   "S122212": {
+       "image": "Duloc",
+       "description": "You find Duloc.",
+       "option1": "Explore town",
+       "option2": "Climb tower"
+   },
+   "S1222121": {
+       "image": "DulocStreets",
+       "description": "The streets are devoid of people and you die of starvation.",
+       "ending": "The Duloc Ending"
+   },
+   "S1222122": {
+       "image": "Farquaad",
+       "description": "You find Lord Farquaad.",
+       "option1": "Fight Farquaad",
+       "option2": "Ask Farquaad for land"
+   },
+   "S12221221": {
+       "image": "Farquaad",
+       "description": "Lord Farquaad sets his guards on you and you die!",
+       "ending": "The Farquaad Ending"
+   },
+   "S12221222": {
+       "image": "Farquaad",
+       "description": "Farquaad asks you to prove you are worthy before awarding you land.",
+       "option1": "Go on quest",
+       "option2": "Defeat local ogre"
+   },
+   "S122212221": {
+       "image": "Knight",
+       "description": "Farquaad provides you with armour and a horse, and sends you away from Duloc.",
+       "option1": "Search for Holy Grail",
+       "option2": "Apply for jousting tournament"
+   },
+   "S1222122211": {
+       "image": "Knight",
+       "description": "You go out in search of the Holy Grail, but do not know where to start.",
+       "option1": "Ask God",
+       "option2": "Make an educated guess"
+   },
+   "S12221222111": {
+       "image": "God",
+       "description": "God refuses to tell you the location of the Grail.",
+       "option1": "Fight God",
+       "option2": "Say \"pretty please\""
+   },
+   "S122212221111": {
+       "image": "God",
+       "description": "God strikes you with lightning and you die!",
+       "ending": "The Lightning Ending"
+   },
+   "S122212221112": {
+       "image": "God",
+       "description": "God tells you to head north to find the Grail.",
+       "option1": "Follow advice and head north",
+       "option2": "Ignore God and head south"
+   },
+   "S1222122211121": {
+       "image": "CastleIsland",
+       "description": "You find a large lake. At its centre is a castle, on an island.",
+       "option1": "Besiege castle",
+       "option2": "Sneak in"
+   },
+   "S12221222111211": {
+       "image": "CastleIsland",
+       "description": "You begin assembling a trebuchet, but an archer in the castle notices you and shoots you with his bow.",
+       "ending": "The Siege Ending"
+   },
+   "S12221222111212": {
+       "image": "Dungeon",
+       "description": "You sneak into the castle's dungeon, but find the path ahead obscured by darkness.",
+       "option1": "Turn left",
+       "option2": "Turn right"
+   },
+   "S122212221112121": {
+       "image": "Oubliette",
+       "description": "You fall into the dungeon's oubliette, where you eventually starve.",
+       "ending": "The Dungeon Ending"
+   },
+   "S122212221112122": {
+       "image": "Nothing",
+       "description": "You stumble into a blank void, because this part of the game hasn't been written yet.",
+       "ending": "The Void Ending"
+   },
+   "S1222122211122": {
+       "image": "Coast",
+       "description": "You find the sea.",
+       "option1": "Set sail",
+       "option2": "Dive underwater"
+   },
+   "S12221222111221": {
+       "image": "Ocean",
+       "description": "You sail the ocean blue.",
+       "option1": "Sail to tropics",
+       "option2": "Sail to Bermuda triangle"
+   },
+   "S122212221112211": {
+       "image": "DesertIsland",
+       "description": "You find a desert island.",
+       "option1": "Eat coconut",
+       "option2": "Write \"HELP\" in sand"
+   },
+   "S1222122211122111": {
+       "image": "TreasureMap",
+       "description": "You break open a coconut but find a treasure map hidden inside.",
+       "option1": "Follow treasure map",
+       "option2": "Ignore map and eat a different coconut"
+   },
+   "S12221222111221111": {
+       "image": "BuriedTreasure",
+       "description": "You find a treasure chest, but it does not contain the Grail.",
+       "ending": "The Buried Treasure Ending"
+   },
+   "S12221222111221112": {
+       "image": "Coconut",
+       "description": "You eat another coconut, and find it so delicious you forget about your quest.",
+       "ending": "The Coconut Ending"
+   },
+   "S1222122211122112": {
+       "image": "DesertIsland",
+       "description": "Your efforts are fruitless and you remain stranded on the island.",
+       "ending": "The Desert Island Ending"
+   },
+   "S122212221112212": {
+       "image": "Whirlpool",
+       "description": "Your ship is swallowed by a whirlpool.",
+       "ending": "The Whirlpool Ending"
+   },
+   "S12221222111222": {
+       "image": "Shipwreck",
+       "description": "You find an ancient shipwreck underwater.",
+       "option1": "Search shipwreck for Grail",
+       "option2": "Fight nearby pufferfish"
+   },
+   "S122212221112221": {
+       "image": "Shipwreck",
+       "description": "You search the shipwreck but cannot find the Holy Grail.",
+       "ending": "The Shipwreck Ending"
+   },
+   "S122212221112222": {
+       "image": "Pufferfish",
+       "description": "The pufferfish explodes into a cloud of poison and you die!",
+       "ending": "The Pufferfish Ending"
+   },
+   "S12221222112": {
+       "image": "MountainPath",
+       "description": "You find some mysterious mountains.",
+       "option1": "Climb mountains",
+       "option2": "Explore valley"
+   },
+   "S122212221121": {
+       "image": "MountainPath",
+       "description": "You find some snowy slopes up the mountains.",
+       "option1": "Search snow",
+       "option2": "Attempt skiing"
+   },
+   "S1222122211211": {
+       "image": "EvilSnowman",
+       "description": "You begin to dig your way through the snow, but the excess snow congeals itself into an Abominable Snowman who kills you.",
+       "ending": "The Abominable Snowman Ending"
+   },
+   "S1222122211212": {
+       "image": "SkierSnow",
+       "description": "You attempt to ski down the hill, but fall over and get stuck in the snow.",
+       "ending": "The Ski Ending"
+   },
+   "S122212221122": {
+       "image": "Nothing",
+       "description": "You stumble into a blank void, because this part of the game hasn't been written yet.",
+       "ending": "The Void Ending"
+   },
+   "S1222122212": {
+       "image": "Jousting",
+       "description": "You become a successful jouster, and eventually forget about Farquaad's quest.",
+       "ending": "The Jousting Ending"
+   },
+   "S122212222": {
+       "image": "Shrek",
+       "description": "Shrek fights you to death and you die!",
+       "ending": "The Ogre Ending"
+   },
+   "S12222": {
+       "image": "EvictionNotice",
+       "description": "Shrek serves you with an eviction notice.",
+       "option1": "Comply with eviction",
+       "option2": "Contest eviction"
+   },
+   "S122221": {
+       "image": "EvictionNotice",
+       "description": "You are evicted from Shrek's house and die in the swamp.",
+       "ending": "The Eviction Ending"
+   },
+   "S122222": {
+       "image": "Courtroom",
+       "description": "Shrek takes you to court for failure to comply with the eviction notice.",
+       "option1": "Argue case",
+       "option2": "Bribe judge"
+   },
+   "S1222221": {
+       "image": "Judge",
+       "description": "You try to argue for squatter's rights, but the judge rules against you.",
+       "ending": "The Squatter's Ending"
+   },
+   "S1222222": {
+       "image": "ShrekHouse",
+       "description": "The judge rules in your favour and awards you Shrek's swamp.",
+       "ending": "The Swamp Ending"
    },
    "S2": {
        "image": "Trolls",
