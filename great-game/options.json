@@ -366,7 +366,7 @@
        "option2": "Say \"pretty please\""
    },
    "S122212221111": {
-       "image": "God",
+       "image": "Lightning",
        "description": "God strikes you with lightning and you die!",
        "ending": "The Lightning Ending"
    },
@@ -470,7 +470,7 @@
        "option2": "Explore valley"
    },
    "S122212221121": {
-       "image": "MountainPath",
+       "image": "SnowyMountain",
        "description": "You find some snowy slopes up the mountains.",
        "option1": "Search snow",
        "option2": "Attempt skiing"
