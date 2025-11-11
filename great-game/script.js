@@ -144,7 +144,7 @@ function fadeIn() {
 	updateImage();
 
 	//Reveal description after image fades in
-	descriptionRevealTimeout = window.setTimeout(revealDescription, 1000);
+	descriptionRevealTimeout = window.setTimeout(revealDescription, 500);
 	descriptionText = options[gameState]["description"];
 	descriptionLength = descriptionText.length;
 	currentDescriptionLength = 0;
