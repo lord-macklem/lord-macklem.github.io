@@ -65,7 +65,7 @@ function loadGrailKingLocation() {
 	if (gkl == null) {
 		grailKingLocation = 0;
 	} else {
-		grailKingLocation = gkl;
+		grailKingLocation = parseInt(gkl);
 	}
 }
 
