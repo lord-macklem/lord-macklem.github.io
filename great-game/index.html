@@ -5,10 +5,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="icon.png">
 </head>
-<body>
-	<audio id="angevin" autoplay loop>
-		<source src="Angevin.mp3" type="audio/mpeg">
-	</audio>
+<body onclick="startGame()">
 	<header>
 		<h1>The Great Game</h1>
 		<h2><span id="endingsfound">0</span>/<span id="totalendings">0</span> endings found</h2>
@@ -16,7 +13,7 @@
 	<main>
 		<div class="option" id="option" onclick="skipAnimations()">
 			<div class="image-container" id="imagecontainer"><img src="images/Nothing.png"></div>
-			<p class="description" id="description"></p>
+			<p class="description" id="description">Click to start</p>
 			<div class="buttons" id="buttons" style="display:none;">
 				<button type="button" onclick="selectOption('1')" class="left" id="button1">Option 1</button>
 				<button type="button" onclick="selectOption('2')" class="right" id="button2">Option 2</button>

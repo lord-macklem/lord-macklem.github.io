@@ -1,10 +1,6 @@
 // The Great Game Script
 // Copyright (C) 2025 Peter J. Meiklem
 
-//Audio
-const angevin = new Audio("Angevin.mp3");
-angevin.play()
-
 //DOM
 const option = document.getElementById("option");
 const imageContainer = document.getElementById("imagecontainer");
@@ -23,16 +19,28 @@ const endingsFoundDisplay = document.getElementById("endingsfound");
 const totalEndingsDisplay = document.getElementById("totalendings");
 const endingTable = document.getElementById("endingtable");
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-var endingsFound;
-var totalEndings;
-
 var gameState = "S";
 var options = {};
 var endings = {};
+var angevin;
+var gameStarted = false;
+var endingsFound;
+var totalEndings;
+var grailKingLocation;
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-async function getOptions() {
+
+function startGame() {
+	if (!gameStarted) {
+		gameStarted = true;
+		loadOptions();
+		loadGrailKingLocation();
+		loadAudio();
+	}
+}
+
+//Load options.json
+async function loadOptions() {
 	let x = await fetch("options.json");
 	let y = await x.json();
 	options = y;
@@ -40,7 +48,26 @@ async function getOptions() {
 	countEndings();
 	fadeIn();
 }
-getOptions();
+
+//Load audio
+function loadAudio() {
+	angevin = new Audio();
+	angevin.src = "Angevin.mp3";
+	angevin.loop = true;
+	angevin.addEventListener('canplaythrough', playAngevin);
+}
+function playAngevin() {
+	angevin.play();
+}
+
+function loadGrailKingLocation() {
+	var gkl = localStorage.getItem("grailKingLocation");
+	if (gkl == null) {
+		grailKingLocation = 0;
+	} else {
+		grailKingLocation = gkl;
+	}
+}
 
 function countEndings() {
 	//Count unique endings
@@ -104,13 +131,41 @@ function countEndings() {
 }
 
 function selectOption(num) {
-	//Identify new game state
-	if (gameState == "S222112222") {
-		//Fake fork
-		gameState = gameState+"0";				
-	} else {
-		gameState = gameState+num;
+	gameState = gameState+num;
+
+	//Grail King's crypt, which varies based on Grail King location
+	if (gameState == "S122212221112122") { 
+		gameState = gameState+"G"+grailKingLocation;
 	}
+	//Grail King locations
+	if ((grailKingLocation == 1 && gameState == "S1222121") || //Duloc
+		(grailKingLocation == 2 && gameState == "S2111") || //Hogwarts
+		(grailKingLocation == 3 && gameState == "S22212112") || //Underworld
+		(grailKingLocation == 4 && gameState == "S2221221111") || //Tomb of Sir Gerald
+		(grailKingLocation == 5 && gameState == "S22212212212211")){  //Dragon's cave
+		gameState = gameState+"G";
+	}
+	//Increment location when Grail King interacted with
+	if (gameState == "S122212221112122G02" || //First interaction in crypt
+		gameState == "S1222121G1" || //Duloc
+		gameState == "S2111G1" || //Hogwarts
+		gameState == "S22212112G1" || //Underworld
+		gameState == "S2221221111G1" || //Tomb of Sir Gerald
+		gameState == "S22212212212211G1"){ //Dragon's cave
+		grailKingLocation += 1;
+		localStorage.setItem("grailKingLocation", grailKingLocation);
+	}
+	//If grail is acquired, reset Grail King
+	if (gameState == "S122212221112122G61" || gameState == "S122212221112122G62") {
+		grailKingLocation = 0;
+		localStorage.setItem("grailKingLocation", grailKingLocation);
+	}
+
+	//Some states are redirects
+	if (options[gameState].redirect != undefined) {
+		gameState = options[gameState].redirect;
+	}
+
 	//Fade old option out, new option in
 	fadeOut();
 }

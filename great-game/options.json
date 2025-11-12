@@ -92,7 +92,7 @@
    },
    "S1211112221": {
        "image": "Fame",
-       "description": "You do so, and lose your fame",
+       "description": "You do so, and lose your fame.",
        "ending": "The Fame Ending"
    },
    "S1211112222": {
@@ -325,6 +325,20 @@
        "option1": "Explore town",
        "option2": "Climb tower"
    },
+   "S1222121G": {
+       "image": "GrailKing",
+       "description": "As you enter Duloc, you find the Grail King.",
+       "option1": "Talk to Grail King",
+       "option2": "Ignore Grail King"
+   },
+   "S1222121G1": {
+       "image": "GrailKing",
+       "description": "The Grail King tells you to seek the Grail in the Castle of Hogwarts, and mysteriously dissolves.",
+       "ending": "The Grail King Ending"
+   },
+   "S1222121G2": {
+       "redirect": "S1222121"
+   },
    "S1222121": {
        "image": "DulocStreets",
        "description": "The streets are devoid of people and you die of starvation.",
@@ -398,10 +412,62 @@
        "description": "You fall into the dungeon's oubliette, where you eventually starve.",
        "ending": "The Dungeon Ending"
    },
-   "S122212221112122": {
-       "image": "Nothing",
-       "description": "You stumble into a blank void, because this part of the game hasn't been written yet.",
-       "ending": "The Void Ending"
+   "S122212221112122G0": {
+       "image": "GrailKing",
+       "description": "You find a mysterious crypt, in which you encounter the Grail King.",
+       "option1": "Fight Grail King",
+       "option2": "Ask Grail King for help"
+   },
+   "S122212221112122G01": {
+       "image": "GrailKing",
+       "description": "You defeat the elderly Grail King with your sword, but in doing so you squander your chance to find the Grail.",
+       "ending": "The Regicide Ending"
+   },
+   "S122212221112122G02": {
+       "image": "GrailKing",
+       "description": "The Grail King tells you to seek the Grail in the Kingdom of Duloc, and mysteriously dissolves.",
+       "ending": "The Grail King Ending"
+   },
+   "S122212221112122G1": {
+       "image": "Crypt",
+       "description": "You find a mysterious crypt, with a note from the Grail King reminding you to seek the Grail in Duloc.",
+       "ending": "The Grail King's Note Ending"
+   },
+   "S122212221112122G2": {
+       "image": "Crypt",
+       "description": "You find a mysterious crypt, with a note from the Grail King reminding you to seek the Grail in Hogwarts.",
+       "ending": "The Grail King's Note Ending"
+   },
+   "S122212221112122G3": {
+       "image": "Crypt",
+       "description": "You find a mysterious crypt, with a note from the Grail King reminding you to seek the Grail in the underworld.",
+       "ending": "The Grail King's Note Ending"
+   },
+   "S122212221112122G4": {
+       "image": "Crypt",
+       "description": "You find a mysterious crypt, with a note from the Grail King reminding you to seek the Grail in the tomb of Sir Gerald.",
+       "ending": "The Grail King's Note Ending"
+   },
+   "S122212221112122G5": {
+       "image": "Crypt",
+       "description": "You find a mysterious crypt, with a note from the Grail King reminding you to seek the Grail in the Dragon's cave.",
+       "ending": "The Grail King's Note Ending"
+   },
+   "S122212221112122G6": {
+       "image": "CryptGrail",
+       "description": "You find a mysterious crypt, and atop the altar sits the Holy Grail!",
+       "option1": "Take Holy Grail",
+       "option2": "Give Grail to Farquaad"
+   },
+   "S122212221112122G61": {
+       "image": "Grail",
+       "description": "The Grail imbues you with supernatural powers, and you assume the title of Grail King.",
+       "ending": "The Holy Grail Ending!"
+   },
+   "S122212221112122G62": {
+       "image": "Farquaad",
+       "description": "Farquaad takes the Grail for himself, and rewards you with an inconvenient plot of land.",
+       "ending": "The Scam Ending"
    },
    "S1222122211122": {
        "image": "Coast",
@@ -486,13 +552,46 @@
        "ending": "The Ski Ending"
    },
    "S122212221122": {
-       "image": "Nothing",
-       "description": "You stumble into a blank void, because this part of the game hasn't been written yet.",
-       "ending": "The Void Ending"
+       "image": "KnightsOfNi",
+       "description": "You are ambushed by a gang of knights.",
+       "option1": "Fight knights",
+       "option2": "Ask knights for help"
+   },
+   "S1222122211221": {
+       "image": "KnightsOfNiLeader",
+       "description": "The knights say \"Ni!\" at you until you die.",
+       "ending": "The Knights Who Say \"Ni!\" Ending"
+   },
+   "S1222122211222": {
+       "image": "KnightsOfNi",
+       "description": "The knights demand you provide them with a shrubbery before allowing you to pass.",
+       "option1": "Procure Shrubbery",
+       "option2": "Refuse demands"
+   },
+   "S12221222112221": {
+       "image": "Shrubbery",
+       "description": "The knights are impressed with the shrubbery, but demand another shrubbery.",
+       "option1": "Find another shrubbery",
+       "option2": "Escape knights by pretending to leave in search of additional shrubberies"
+   },
+   "S122212221122211": {
+       "image": "Shrubbery",
+       "description": "You end up providing the knights with shrubberies until the end of time.",
+       "ending": "The Shrubbery Ending"
+   },
+   "S122212221122212": {
+       "image": "Forest",
+       "description": "You escape the knights, but get lost in the forest and eventually die.",
+       "ending": "The Forest Ending"
+   },
+   "S12221222112222": {
+       "image": "KnightsOfNiLeader",
+       "description": "The knights say \"Ni!\" at you until you die.",
+       "ending": "The Knights Who Say \"Ni!\" Ending"
    },
    "S1222122212": {
        "image": "Jousting",
-       "description": "You become a successful jouster, and eventually forget about Farquaad's quest.",
+       "description": "You are accepted into the jousting tournament but get knocked off your horse and die.",
        "ending": "The Jousting Ending"
    },
    "S122212222": {
@@ -544,6 +643,20 @@
        "description": "You find Hogwarts castle.",
        "option1": "Enter by main entrance",
        "option2": "Sneak in"
+   },
+   "S2111G": {
+       "image": "GrailKing",
+       "description": "Inside the castle you find the Grail King.",
+       "option1": "Talk to Grail King",
+       "option2": "Ignore Grail King"
+   },
+   "S2111G1": {
+       "image": "GrailKing",
+       "description": "The Grail King tells you to seek the Grail in the underworld, and mysteriously dissolves.",
+       "ending": "The Grail King Ending"
+   },
+   "S2111G2": {
+       "redirect": "S2111"
    },
    "S2111": {
        "image": "Potter",
@@ -673,7 +786,7 @@
    },
    "S22211": {
        "image": "Trolls",
-       "description": "The trolls chase after you with knives and forks",
+       "description": "The trolls chase after you with knives and forks.",
        "option1": "Run away",
        "option2": "Do the default Fortnite dance"
    },
@@ -720,6 +833,12 @@
        "description": "You have run out of vegetables, and have to go out searching for more.",
        "option1": "Turn left at the next fork in the road",
        "option2": "Turn right at the next fork in the road"
+   },
+   "S2221122221": {
+       "redirect": "S2221122220"
+   },
+   "S2221122222": {
+       "redirect": "S2221122220"
    },
    "S2221122220": {
        "image": "Pit",
@@ -779,7 +898,7 @@
    },
    "S222121112": {
        "image": "MegaGalab",
-       "description": "Reading more books turns you into a MEGA-GALAB",
+       "description": "Reading more books turns you into a MEGA-GALAB.",
        "option1": "Devour forest",
        "option2": "Eat more books"
    },
@@ -792,6 +911,20 @@
        "image": "Universe",
        "description": "You expand exponentially until you transcend space and time.",
        "ending": "The Transcendence Ending"
+   },
+   "S22212112G": {
+       "image": "GrailKing",
+       "description": "As you descend the hole to the underworld, you find the Grail King.",
+       "option1": "Talk to Grail King",
+       "option2": "Ignore Grail King"
+   },
+   "S22212112G1": {
+       "image": "GrailKing",
+       "description": "The Grail King tells you to seek the Grail in the tomb of Sir Gerald, and mysteriously dissolves.",
+       "ending": "The Grail King Ending"
+   },
+   "S22212112G2": {
+       "redirect": "S22212112"
    },
    "S22212112": {
        "image": "Underworld",
@@ -811,7 +944,7 @@
    },
    "S2221212": {
        "image": "Clouds",
-       "description": "You find your way into the clouds above",
+       "description": "You find your way into the clouds above.",
        "option1": "Eat clouds",
        "option2": "Explore further"
    },
@@ -823,7 +956,7 @@
    },
    "S222121211": {
        "image": "ApplesAndBerries",
-       "description": "You find some apples and some suspicious red berries",
+       "description": "You find some apples and some suspicious red berries.",
        "option1": "Eat apples",
        "option2": "Eat berries"
    },
@@ -870,6 +1003,20 @@
        "description": "You find a hidden tomb, containing a sarcophagus.",
        "option1": "Open sarcophagus",
        "option2": "Continue down cave"
+   },
+   "S2221221111G": {
+       "image": "GrailKing",
+       "description": "You find the Grail King hiding in the sarcophagus.",
+       "option1": "Talk to Grail King",
+       "option2": "Ignore Grail King"
+   },
+   "S2221221111G1": {
+       "image": "GrailKing",
+       "description": "The Grail King tells you to seek the Grail in the Dragon's cave, and mysteriously dissolves.",
+       "ending": "The Grail King Ending"
+   },
+   "S2221221111G2": {
+       "redirect": "S2221221111"
    },
    "S2221221111": {
        "image": "SkeletonAmulet",
@@ -924,7 +1071,7 @@
    },
    "S222122111111122": {
        "image": "LeprechaunSong",
-       "description": "The leprechaun starts singing an annoying song about his house which never ends",
+       "description": "The leprechaun starts singing an annoying song about his house which never ends.",
        "ending": "The Leprechaun Song Ending"
    },
    "S2221221111112": {
@@ -1152,6 +1299,20 @@
        "option1": "Continue down the cave",
        "option2": "Eat dragon"
    },
+   "S22212212212211G": {
+       "image": "GrailKing",
+       "description": "You catch sight of the Grail King hiding at the back of the cave.",
+       "option1": "Talk to Grail King",
+       "option2": "Ignore Grail King"
+   },
+   "S22212212212211G1": {
+       "image": "GrailKing",
+       "description": "The Grail King congratulates you on your perseverance, and tells you to seek the Grail in his crypt. With that, he sponteneously combusts.",
+       "ending": "The Grail King Ending"
+   },
+   "S22212212212211G2": {
+       "redirect": "S22212212212211"
+   },
    "S22212212212211": {
        "image": "PortalLizardStatues",
        "description": "You find yourself surrounded by golden lizard statues. In front of you is a portal.",
@@ -1204,7 +1365,7 @@
    },
    "S2221221221221121222": {
        "image": "ElderTroll",
-       "description": "You try to run away but bump into the GRAND HIGH LORD LEGENDARY ELDER TROLL",
+       "description": "You try to run away but bump into the GRAND HIGH LORD LEGENDARY ELDER TROLL.",
        "option1": "Fight the GRAND HIGH LORD LEGENDARY ELDER TROLL",
        "option2": "Quickly escape"
    },
@@ -1243,7 +1404,7 @@
    },
    "S22212212212211212222122": {
        "image": "Portal2",
-       "description": "You encounter a mysterious portal down the tunnel",
+       "description": "You encounter a mysterious portal down the tunnel.",
        "option1": "Enter the portal",
        "option2": "Eat suspicious nearby grubs"
    },
