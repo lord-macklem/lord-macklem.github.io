@@ -1,6 +1,11 @@
 body {
 	background-color: #000000;
 	color: #ffffff;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	text-size-adjust: none;
+	margin: 0;
 }
 header {
 	width: 100%;
@@ -30,12 +35,23 @@ header h2 {
 	animation: none;
 	animation-duration: 1s;
 }
+@media screen and (max-width: 500px) {
+	.option {
+		width: 100%;
+	}
+}
 .option .image-container {
-	height: 300px;
-	margin-bottom: 10px;
+	width: 300px;
+	aspect-ratio: 1;
+	margin: 0 auto 10px auto;
+}
+@media screen and (max-width: 500px) {
+	.option .image-container {
+		width: 60%;
+	}
 }
 .option .image-container img {
-	width: 300px;
+	width: 100%;
 	animation: fadeIn;
 	animation-duration: 2s;
 }
@@ -45,6 +61,11 @@ header h2 {
 }
 
 
+
+.buttons {
+	animation: fadeIn;
+	animation-duration: 2s;
+}
 button {
 	width: 200px;
 	font-family: "Times New Roman";
@@ -52,11 +73,6 @@ button {
 	color: #ffffff;
 	vertical-align: middle;
 	padding: 5px;
-}
-
-.buttons {
-	animation: fadeIn;
-	animation-duration: 2s;
 }
 .buttons .left {
 	margin-right: 40px;
@@ -66,6 +82,18 @@ button {
 	margin-left: 40px;
 	background-color: #A58EFF;
 }
+@media screen and (max-width: 500px) {
+	button {
+		width: 40%;
+	}
+	.buttons .left {
+		margin-right: 8%;
+	}
+	.buttons .right {
+		margin-left: 8%;
+	}
+}
+
 
 .threebuttons {
 	display: none;
@@ -86,6 +114,16 @@ button {
 .threebuttons .right {
 	background-color: #A00000;
 }
+@media screen and (max-width: 500px) {
+	.threebuttons button {
+		width: 30%;
+	}
+	.threebuttons .middle {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+}
+
 .restart-button {
 	background-color: #7CC159;
 }
@@ -105,11 +143,15 @@ button {
 	color: #DDD;
 }
 
-
 .endings {
-	width: 600px;
+	width: 625px;
 	margin: auto;
 	text-align: left;
+}
+@media screen and (max-width: 625px) {
+	.endings {
+		width: 100%;
+	}
 }
 .endings h1 {
 	margin: 0;
