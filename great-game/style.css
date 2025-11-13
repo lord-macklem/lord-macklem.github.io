@@ -25,6 +25,14 @@ header h2 {
 	font-size: 14pt;
 	font-weight: normal;
 }
+@media screen and (max-width: 625px) {
+	header h1 {
+		font-size: 28pt;
+	}
+	header h2 {
+		font-size: 11pt;
+	}
+}
 
 
 .option {
@@ -35,20 +43,10 @@ header h2 {
 	animation: none;
 	animation-duration: 1s;
 }
-@media screen and (max-width: 500px) {
-	.option {
-		width: 100%;
-	}
-}
 .option .image-container {
 	width: 300px;
 	aspect-ratio: 1;
 	margin: 0 auto 10px auto;
-}
-@media screen and (max-width: 500px) {
-	.option .image-container {
-		width: 60%;
-	}
 }
 .option .image-container img {
 	width: 100%;
@@ -58,6 +56,17 @@ header h2 {
 .option .description {
 	font-size: 16pt;
 	margin-bottom: 30px;
+}
+@media screen and (max-width: 625px) {
+	.option {
+		width: 80%;
+	}
+	.option .image-container {
+		width: 60%;
+	}
+	.option .description {
+		font-size: 12pt;
+	}
 }
 
 
@@ -82,9 +91,10 @@ button {
 	margin-left: 40px;
 	background-color: #A58EFF;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 625px) {
 	button {
 		width: 40%;
+		font-size: 11pt;
 	}
 	.buttons .left {
 		margin-right: 8%;
@@ -144,14 +154,9 @@ button {
 }
 
 .endings {
-	width: 625px;
+	width: 600px;
 	margin: auto;
 	text-align: left;
-}
-@media screen and (max-width: 625px) {
-	.endings {
-		width: 100%;
-	}
 }
 .endings h1 {
 	margin: 0;
@@ -202,6 +207,29 @@ button {
 .endings .description {
 	margin: 5px 0 0 0;
 	font-size: 14pt;
+}
+@media screen and (max-width: 625px) {
+	.endings {
+		width: 96%;
+	}
+	.endings h1 {
+		font-size: 20pt;
+	}
+	.endings .icon {
+		width: 60px;
+	}
+	.endings .icon img {
+		width: 45px;
+	}
+	.endings .name {
+		font-size: 14pt;
+	}
+	.endings .date {
+		font-size: 8pt;
+	}
+	.endings .description {
+		font-size: 10pt;
+	}
 }
 
 
