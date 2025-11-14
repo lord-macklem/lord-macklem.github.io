@@ -14,22 +14,26 @@
 body {
 	background-color: #ffffff;
 	line-height: 1.5;
+	margin: 0;
 }
-.header {
-	width: 100%;
+header {
 	margin: 20pt 0 20pt 0;
 	text-align: center;
 	line-height: 1.2;
-	font-size: 28pt;
 	font-variant: small-caps;
 	color: black;
+	min-width: 536px;
 }
-.header .title {
+header h1 {
 	font-size: 32pt;
+	font-weight: normal;
 	letter-spacing: 8px;
+	margin: 0;
 }
-.header .subtitle {
+header h2 {
 	font-size: 20pt;
+	font-weight: normal;
+	margin: 0;
 }
 a {
 	color: black;
@@ -37,7 +41,6 @@ a {
 }
 .content {
 	text-align: center;
-	margin: 0 50px 0 50px;
 }
 .game-box {
 	display: inline-block;
