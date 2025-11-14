@@ -12,7 +12,7 @@ function moveBackground() {
     }
     bgCheckers.style.backgroundPositionX = bgx+"px";
 }
-//setInterval(moveBackground, 15);
+setInterval(moveBackground, 15);
 
 function openMenu() {
     menu.style.display = "block";
