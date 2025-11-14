@@ -10,7 +10,6 @@ body {
 header {
 	width: 100%;
 	margin: 20pt 0 20pt 0;
-	font-size: 28pt;
 	text-align: center;
 }
 header h1 {
@@ -25,12 +24,12 @@ header h2 {
 	font-size: 14pt;
 	font-weight: normal;
 }
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 500px) {
 	header h1 {
-		font-size: 28pt;
+		font-size: 24pt;
 	}
 	header h2 {
-		font-size: 11pt;
+		font-size: 12pt;
 	}
 }
 
@@ -46,7 +45,7 @@ header h2 {
 .option .image-container {
 	width: 300px;
 	aspect-ratio: 1;
-	margin: 0 auto 10px auto;
+	margin: auto;
 }
 .option .image-container img {
 	width: 100%;
@@ -55,7 +54,7 @@ header h2 {
 }
 .option .description {
 	font-size: 16pt;
-	margin-bottom: 30px;
+	margin: 20px 0 30px 0;
 }
 @media screen and (max-width: 625px) {
 	.option {
@@ -64,6 +63,8 @@ header h2 {
 	.option .image-container {
 		width: 60%;
 	}
+}
+@media screen and (max-width: 500px) {
 	.option .description {
 		font-size: 12pt;
 	}
@@ -94,13 +95,17 @@ button {
 @media screen and (max-width: 625px) {
 	button {
 		width: 40%;
-		font-size: 11pt;
 	}
 	.buttons .left {
 		margin-right: 8%;
 	}
 	.buttons .right {
 		margin-left: 8%;
+	}
+}
+@media screen and (max-width: 500px) {
+	button {
+		font-size: 10pt;
 	}
 }
 
@@ -138,19 +143,29 @@ button {
 	background-color: #7CC159;
 }
 
-.option .ending {
+.ending {
 	animation: fadeIn;
 	animation-duration: 2s;
 }
-.option .ending .ending-name-wrapper {
+.ending-name-wrapper {
 	margin-bottom: 20px;
+	font-size: 12pt;
 }
-.option .ending-name {
+.ending-name {
 	font-variant: small-caps;
 	font-size: 20pt;
+	margin: 4px 0 4px 0;
 }
-.option .endingdiscoverydate {
+.endingdiscoverydate {
 	color: #DDD;
+}
+@media screen and (max-width: 500px) {
+	.ending-name-wrapper {
+		font-size: 10pt;
+	}
+	.ending-name {
+		font-size: 14pt;
+	}
 }
 
 .endings {
@@ -212,6 +227,8 @@ button {
 	.endings {
 		width: 96%;
 	}
+}
+@media screen and (max-width: 500px) {
 	.endings h1 {
 		font-size: 20pt;
 	}
@@ -246,6 +263,14 @@ footer h1 {
 	font-variant: small-caps;
 	font-size: 16pt;
 	margin: 0 0 8px 0;
+}
+@media screen and (max-width: 500px) {
+	footer p {
+		font-size: 8pt;
+	}
+	footer h1 {
+		font-size: 12pt;
+	}
 }
 
 
