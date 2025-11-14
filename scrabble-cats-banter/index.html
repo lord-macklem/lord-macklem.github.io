@@ -4,12 +4,13 @@
 	<title>Scrabble Cats Banter</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="bg-green"></div>
 	<div class="bg-checkers" id="bgcheckers">
 		<div class="container">
-			<div class="menu" id="menu" style="display:block">
+			<div class="menu" id="menu" style="display:none">
 				<header>
 					<p>From the creators of <a href="../scrabble-cats">Scrabble Cats</a></p>
 				</header>
@@ -27,7 +28,7 @@
 			</div>
 			<div class="how-it-works" id="how-it-works" style="display:none">
 				<main>
-					<div class="img-center"><img src="logo.png" style="width:350px"></div>
+					<div class="img-center"><img src="logo.png" class="logo"></div>
 					<h1>Scrabble Cats Banter</h1>
 					<p class="subtitle"><i>The even cooler sequel to <a href="../scrabble-cats/">Scrabble Cats</a></i></p>
 					<h2>GAMEPLAY</h2>
@@ -88,58 +89,42 @@
 					<h2>BATH HACK 2025</h2>
 					<p><a href="https://devpost.com/software/scrabble-cats-banter">This project</a> was originally designed for <a href="https://bh25.devpost.com/">BathHack 2025</a> and submitted for <i>BEST DESIGN</i> (due to our amazing hand-drawn art), <i>BEST USE OF AI</i> (for our innovative use of Word2Vec), <i>TECH FOR GOOD</i> (for teaching language and spelling skills), <i>BEST PROOF OF CONCEPT</i>, and <i>MOST TECHNICALLY IMPRESSIVE</i> (because obviously).</p>
 					<p>Unfortunately we failed to win any of these tracks, nevertheless we sincerely hope you enjoy playing <i>SCRABBLE CATS BANTER</i>!</p>
-					<div class="img-center"><img src="team.png" style="width: 300px"></div>
+					<div class="img-center"><img src="team.png" class="team"></div>
 					<p style="text-align: right"><i>- Peter Meiklem, Elizabeth Rigby, David Tomlinson & Mailaau Mumthaz Hussain<br/>Creators of Scrabble Cats Banter</i></p>
 					<button onclick="openGame()">Play Game</button>
 					<button onclick="openMenu()">Return to Menu</button>
 				</main>
 			</div>
-			<div class="game", id="game" style="display: none;">
+			<div class="game", id="game" style="display: block;">
 				<main class="game-intro" id="game-intro" style="display:none;">
-					<h2>Game begins in:</h2>
+					<p>Game begins in:</p>
 					<p class="intro-countdown" id="intro-countdown-display">5</p>
 				</main>
 				<main class="game-round" id="game-round" style="display:none;">
-					<div class="rule">
-						<p class="heading">Rule <span id="round-number-display">1</span>:</p>
-						<p class="rule-display"><span id="rule-1-display">STARTS WITH "CA", </span><span id="rule-2-display">ENDS WITH "T"</span></p>
-					</div>
-					<div class="guess">
-						<input type="text" class="guess-input" id="guess-input" oninput="checkGuess()">
-					</div>
-					<div class="countdown">
-						<p><span id="guess-countdown-display">15</span> seconds left</p>
-					</div>
+					<p>Rule <span id="round-number-display">1</span>:</p>	
+					<p class="rule"><span id="rule-1-display">STARTS WITH "CA",</span> <span id="rule-2-display">ENDS WITH "T"</span></p>
+					<input type="text" class="guess" id="guess-input" oninput="checkGuess()">
+					<p class="countdown"><span id="guess-countdown-display">15</span> seconds left</p>
 				</main>
 				<main class="game-round-summary" id="game-round-summary" style="display:none;">
-					<div id="rs-happy-cat" style="display:none"><img src="happy_cat.png"></div>
-					<div id="rs-sad-cat" style="display:none"><img src="sad_cat.png"></div>
-					<div id="rs-thumbs-up-cat" style="display:block"><img src="thumbs_up_cat.png"></div>
+					<img id="rs-happy-cat" style="display:none" src="happy_cat.png">
+					<img id="rs-sad-cat" style="display:none" src="sad_cat.png">
+					<img id="rs-thumbs-up-cat" style="display:inline" src="thumbs_up_cat.png">
 					<div class="round-score" id="round-score-div">
 						<h1>SCORE: <span id="round-score-display">79</span></h1>
 						<p id="round-score-breakdown-display">Valid word: +10, Cat similarity: +69</p>
 					</div>
-					<div class="encouragement">
-						<p id="encouragement-text">Not bad! Keep going, paws-itively awesome!</p>
-					</div>
-					<div class="next-round-countdown">
-						<p><span id="next-round-or-results-text">Next round</span> in <span id="next-round-countdown-display">5</span></p>
-					</div>
+					<p class="encouragement" id="encouragement-text">Not bad! Keep going, paws-itively awesome!</p>
+					<p class="next-round-countdown"><span id="next-round-or-results-text">Next round</span> in <span id="next-round-countdown-display">5</span></p>
 				</main>
-				<main class="game-summary" id="game-summary" style="display:none;">
-					<div id="gs-happy-cat" style="display:none"><img src="happy_cat.png"></div>
-					<div id="gs-sad-cat" style="display:none"><img src="sad_cat.png"></div>
-					<div id="gs-thumbs-up-cat" style="display:block"><img src="thumbs_up_cat.png"></div>
-					<div class="score">
-						<p>You scored:</p>
-						<h1><span id="score-display">300</span></h1>
-					</div>
-					<div class="congratulations">
-						<p id="congratulations-text">That's a new highscore!!!</p>
-					</div>
-					<div class="highscore" id="highscore-div">
-						<p>Your <span id="highscore-previous-display" style="display:none">previous </span>highscore, <span id="highscore-display">350</span>, was set on <span id="highscore-date-display">Friday 3 October 2025</span>.</p>
-					</div>
+				<main class="game-summary" id="game-summary" style="display:block;">
+					<img id="gs-happy-cat" style="display:inline" src="happy_cat.png">
+					<img id="gs-sad-cat" style="display:none" src="sad_cat.png">
+					<img id="gs-thumbs-up-cat" style="display:none" src="thumbs_up_cat.png">
+					<p>You scored:</p>
+					<h1><span id="score-display">300</span></h1>
+					<p class="congratulations" id="congratulations-text">That's a new highscore!!!</p>
+					<p class="highscore" id="highscore-div">Your <span id="highscore-previous-display" style="display:none">previous </span>highscore, <span id="highscore-display">350</span>, was set on <span id="highscore-date-display">Friday 3 October 2025</span>.</p>
 					<button onclick="openGame()">Play Again</button>
 					<button onclick="openMenu()">Return to Menu</button>
 				</main>

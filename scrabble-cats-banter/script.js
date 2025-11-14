@@ -12,7 +12,7 @@ function moveBackground() {
     }
     bgCheckers.style.backgroundPositionX = bgx+"px";
 }
-setInterval(moveBackground, 15);
+//setInterval(moveBackground, 15);
 
 function openMenu() {
     menu.style.display = "block";
@@ -155,7 +155,7 @@ function beginNextRound() {
     rule1Letters = rules["rule1Letters"][ruleID];
     rule2Letters = rules["rule2Letters"][ruleID];
     roundNumberDisplay.innerHTML = roundID;
-    rule1Display.innerHTML = ruleNames[rule1Type]+" \""+rule1Letters.toUpperCase()+"\", ";
+    rule1Display.innerHTML = ruleNames[rule1Type]+" \""+rule1Letters.toUpperCase()+"\",";
     rule2Display.innerHTML = ruleNames[rule2Type]+" \""+rule2Letters.toUpperCase()+"\"";
     rule1Display.style.opacity = 1.0;
     rule2Display.style.opacity = 1.0;
@@ -252,19 +252,19 @@ function displayRoundSummary() {
         encouragementText.innerHTML = "Don't give up! You can do it, little kitty!";
     } else {
         roundScoreBreakdownDisplay.innerHTML = "Valid word: +10, Cat similarity: +"+catSimilarity;
-        if (catSimilarity >= 40) {
-            roundScoreDiv.style.color = "#84E291";
-            catTier = 2;
-            encouragementText.innerHTML = "Purrfection! You're the cat's meow!";
-        } else {
-            roundScoreDiv.style.color = "#FFFF4C";
+        if (catSimilarity < 40) {
             catTier = 1;
+            roundScoreDiv.style.color = "#FFFF4C";
             encouragementText.innerHTML = "Not bad! Keep going, paws-itively awesome!";
+        } else {
+            catTier = 2;
+            roundScoreDiv.style.color = "#84E291";
+            encouragementText.innerHTML = "Purrfection! You're the cat's meow!";
         }
     }
-    roundSummaryHappyCat.style.display = (catTier == 2)? "block" : "none";
-    roundSummaryThumbsUpCat.style.display = (catTier == 1)? "block" : "none";
-    roundSummarySadCat.style.display = (catTier == 0)? "block" : "none";
+    roundSummaryHappyCat.style.display = (catTier == 2)? "inline" : "none";
+    roundSummaryThumbsUpCat.style.display = (catTier == 1)? "inline" : "none";
+    roundSummarySadCat.style.display = (catTier == 0)? "inline" : "none";
     if (roundID < 10) {
         nextRoundOrResultsText.innerHTML = "Next round ("+(roundID+1)+"/10)";
     } else {
@@ -339,8 +339,8 @@ function displayGameSummary() {
         catTier = 2;
         congratulationsText.innerHTML = "WOW! Somebody's locked in";
     }
-    gameSummaryHappyCat.style.display = (catTier == 2)? "block" : "none";
-    gameSummaryThumbsUpCat.style.display = (catTier == 1)? "block" : "none";
-    gameSummarySadCat.style.display = (catTier == 0)? "block" : "none";
+    gameSummaryHappyCat.style.display = (catTier == 2)? "inline" : "none";
+    gameSummaryThumbsUpCat.style.display = (catTier == 1)? "inline" : "none";
+    gameSummarySadCat.style.display = (catTier == 0)? "inline" : "none";
     summaryWindow.style.display = "block";
 }
