@@ -48,6 +48,7 @@ a {
 	border-radius: 10px;
 	background-size: cover;
 	background-position: center;
+	font-size: 18px;
 }
 .game-box .text-wrapper {
 	position: absolute;
@@ -62,12 +63,13 @@ a {
 	margin: 0;
 }
 .game-box p {
-	font-size: 18px;
+	font-size: inherit;
 	margin: 0;
 }
 @media screen and (max-width: 520px) {
 	.game-box {
-		width: calc(100% - 20px);
+		display: block;
+		width: auto;
 		height: auto;
 		aspect-ratio: 5;
 	}
@@ -76,29 +78,29 @@ a {
 	header h1 {font-size: 38px;}
 	header {font-size: 24px;}
 	.game-box h1 {font-size: 24px;}
-	.game-box p {font-size: 16px;}
+	.game-box {font-size: 16px;}
 }
 @media screen and (max-width: 450px) {
 	header h1 {font-size: 34px;}
 	header {font-size: 20px;}
 	.game-box h1 {font-size: 20px;}
-	.game-box p {font-size: 14px;}
+	.game-box {font-size: 14px;}
 }
 @media screen and (max-width: 400px) {
 	header h1 {font-size: 28px;}
 	header {font-size: 18px;}
 	.game-box h1 {font-size: 18px;}
-	.game-box p {font-size: 12px;}
+	.game-box {font-size: 12px;}
 }
 
 
 .great-game {
 	background-image: linear-gradient(to bottom, #7CC15980, #7CC159A0), url("tgg-banner.png");
-	border: 3px solid #4C7537;
+	border: 0.15em solid #4C7537;
 }
 .great-game .text-wrapper {
 	font-family: 'Times New Roman', Times, serif;
-	text-shadow: 1px 1px 3px black;
+	text-shadow: 0.05em 0.05em 0.15em black;
 	color: white;
 }
 .great-game h1 {
@@ -119,28 +121,28 @@ a {
 .scrabble-cats {
 	background-color: #FFC77D;
 	/*background-image: linear-gradient(#FFC77DE0, #FFC77DE0), url(sc-banner-2.png);*/
-	border: 3px solid #FFA346;
+	border: 0.15em solid #FFA346;
 }
 .scrabble-cats .text-wrapper {
 	font-family: "Arial Black";
 	/*text-shadow: 2px 2px #FFA346;*/
 }
-.scrabble-cats .text-wrapper h1 {
+.scrabble-cats h1 {
 	font-variant: small-caps;
-	letter-spacing: 2px;
+	letter-spacing: 0.08em;
 }
-.scrabble-cats .text-wrapper p {
+.scrabble-cats p {
 	font-size: 14px;
 }
 
 @media screen and (max-width: 520px) {
-	.scrabble-cats .text-wrapper p {font-size: 13px;}
+	.scrabble-cats p {font-size: 13px;}
 }
 @media screen and (max-width: 450px) {
-	.scrabble-cats .text-wrapper p {font-size: 11px;}
+	.scrabble-cats p {font-size: 11px;}
 }
 @media screen and (max-width: 400px) {
-	.scrabble-cats .text-wrapper p {font-size: 9px;}
+	.scrabble-cats p {font-size: 9px;}
 }
 
 
@@ -149,10 +151,10 @@ a {
 	background-image: url("scb-checkers-small.png"), radial-gradient(circle, #3DCC55, #267F35);
 	background-size: auto, cover;
 	background-position-x: 0px, center;
-	border: 3px solid #267F35;
+	border: 0.15em solid #267F35;
 }
 .scrabble-cats-banter .text-wrapper {
-	text-shadow: 0.05em 0.05em #275317, 2px 2px #275317;
+	text-shadow: 0.05em 0.05em #275317, 0.1em 0.1em #275317;
 	font-family: "Arial Rounded MT Bold";
 	color: white;
 }
@@ -171,7 +173,7 @@ a {
 
 .big-o-racing {
 	background-image: linear-gradient(#888D,#888D), url("bor-banner.png");
-	border: 3px solid #444;
+	border: 0.15em solid #444;
 }
 .big-o-racing .text-wrapper {
 	width: 100%;
@@ -191,10 +193,10 @@ a {
 .big-o-racing .shadow {
 	position: relative;
 	text-shadow: 
-			-1px -1px black, 
-			-1px 1px black, 0px 2px black, 1px 3px black,
-			1px -1px black, 2px 0px black, 3px 1px black, 
-			3px 3px black;
+			-0.03em -0.03em black, 
+			-0.03em 0.03em black, 0em 0.06em black, 0.03em 0.09em black,
+			0.03em -0.03em black, 0.06em 0em black, 0.09em 0.03em black, 
+			0.09em 0.09em black;
 }
 .big-o-racing .shadow .wheel {
 	opacity: 0;
