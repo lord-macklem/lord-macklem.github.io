@@ -17,22 +17,17 @@ body {
 	margin: 0;
 }
 header {
-	margin: 20pt 0 20pt 0;
+	margin: 1em 0;
+	font-size: 26px;
 	text-align: center;
 	line-height: 1.2;
 	font-variant: small-caps;
 	color: black;
-	min-width: 536px;
 }
 header h1 {
-	font-size: 32pt;
+	font-size: 42px;
 	font-weight: normal;
-	letter-spacing: 8px;
-	margin: 0;
-}
-header h2 {
-	font-size: 20pt;
-	font-weight: normal;
+	letter-spacing: 0.2em;
 	margin: 0;
 }
 a {
@@ -46,29 +41,55 @@ a {
 	display: inline-block;
 	position: relative;
 	vertical-align: middle;
-	width: 450px;
-	height: 90px;
-	padding: 10px 30px 10px 30px;
+	width: 500px;
+	height: 100px;
+	padding: 0;
 	margin: 10px;
 	border-radius: 10px;
 	background-size: cover;
 	background-position: center;
 }
 .game-box .text-wrapper {
-	margin-top: 45px;
-	transform: translateY(-50%);
+	position: absolute;
+	width: calc(100% - 60px);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .game-box h1 {
-	font-size: 20pt;
+	font-size: 26px;
 	font-weight: normal;
-	/*font-variant: small-caps;*/
 	margin: 0;
 }
 .game-box p {
-	font-size: 13pt;
+	font-size: 18px;
 	margin: 0;
 }
-
+@media screen and (max-width: 520px) {
+	.game-box {
+		width: calc(100% - 20px);
+		height: auto;
+		aspect-ratio: 5;
+	}
+}
+@media screen and (max-width: 520px) {
+	header h1 {font-size: 38px;}
+	header {font-size: 24px;}
+	.game-box h1 {font-size: 24px;}
+	.game-box p {font-size: 16px;}
+}
+@media screen and (max-width: 450px) {
+	header h1 {font-size: 34px;}
+	header {font-size: 20px;}
+	.game-box h1 {font-size: 20px;}
+	.game-box p {font-size: 14px;}
+}
+@media screen and (max-width: 400px) {
+	header h1 {font-size: 28px;}
+	header {font-size: 18px;}
+	.game-box h1 {font-size: 18px;}
+	.game-box p {font-size: 12px;}
+}
 
 
 .great-game {
@@ -80,9 +101,18 @@ a {
 	text-shadow: 1px 1px 3px black;
 	color: white;
 }
-.great-game .text-wrapper h1 {
+.great-game h1 {
 	font-variant: small-caps;
-	font-size: 24pt;
+	font-size: 32px;
+}
+@media screen and (max-width: 520px) {
+	.great-game h1 {font-size: 28px;}
+}
+@media screen and (max-width: 450px) {
+	.great-game h1 {font-size: 24px;}
+}
+@media screen and (max-width: 400px) {
+	.great-game h1 {font-size: 22px;}
 }
 
 
@@ -100,9 +130,18 @@ a {
 	letter-spacing: 2px;
 }
 .scrabble-cats .text-wrapper p {
-	font-size: 10pt;
+	font-size: 14px;
 }
 
+@media screen and (max-width: 520px) {
+	.scrabble-cats .text-wrapper p {font-size: 13px;}
+}
+@media screen and (max-width: 450px) {
+	.scrabble-cats .text-wrapper p {font-size: 11px;}
+}
+@media screen and (max-width: 400px) {
+	.scrabble-cats .text-wrapper p {font-size: 9px;}
+}
 
 
 .scrabble-cats-banter {
@@ -113,34 +152,43 @@ a {
 	border: 3px solid #267F35;
 }
 .scrabble-cats-banter .text-wrapper {
-	text-shadow: 1px 1px #275317, 2px 2px #275317;
+	text-shadow: 0.05em 0.05em #275317, 2px 2px #275317;
 	font-family: "Arial Rounded MT Bold";
 	color: white;
 }
-.scrabble-cats-banter h1 {
-	font-size: 20pt;
-}
 .scrabble-cats-banter p {
-	font-size:  12pt;
+	font-size:  16px;
+}
+@media screen and (max-width: 520px) {
+	.scrabble-cats-banter p {font-size: 14px;}
+}
+@media screen and (max-width: 450px) {
+	.scrabble-cats-banter p {font-size: 12px;}
+}
+@media screen and (max-width: 400px) {
+	.scrabble-cats-banter p {font-size: 10px;}
 }
 
 .big-o-racing {
 	background-image: linear-gradient(#888D,#888D), url("bor-banner.png");
 	border: 3px solid #444;
 }
-.big-o-racing .text-wrapper h1 {
+.big-o-racing .text-wrapper {
+	width: 100%;
+}
+.big-o-racing h1 {
 	font-family: "Arial Black";
-	font-size: 26pt;
+	font-size: 34px;
 	font-style: italic;
 }
-.big-o-racing .text-wrapper .wheel {
+.big-o-racing .wheel {
 	position: relative;
-	height: 34px;
+	height: 1em;
 	vertical-align: top;
-	top: 10px;
-	right: 2px;
+	top: 0.3em;
+	right: 0.05em;
 }
-.big-o-racing .text-wrapper .shadow {
+.big-o-racing .shadow {
 	position: relative;
 	text-shadow: 
 			-1px -1px black, 
@@ -148,10 +196,10 @@ a {
 			1px -1px black, 2px 0px black, 3px 1px black, 
 			3px 3px black;
 }
-.big-o-racing .text-wrapper .shadow .wheel {
+.big-o-racing .shadow .wheel {
 	opacity: 0;
 }
-.big-o-racing .text-wrapper .overlay {
+.big-o-racing .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -160,7 +208,16 @@ a {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.big-o-racing .text-wrapper p {
-	margin-top: 5px;
+.big-o-racing p {
+	margin-top: 0.2em;
 	font-family: "Bahaus 93 Regular";
+}
+@media screen and (max-width: 520px) {
+	.big-o-racing h1 {font-size: 30px;}
+}
+@media screen and (max-width: 450px) {
+	.big-o-racing h1 {font-size: 24px;}
+}
+@media screen and (max-width: 400px) {
+	.big-o-racing h1 {font-size: 22px;}
 }
