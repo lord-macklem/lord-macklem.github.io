@@ -1,0 +1,158 @@
+@font-face{
+    font-family: "Chomsky";
+    src: url("Chomsky.otf");
+}
+@font-face {
+    font-family: "IT Cathedra";
+    src: url("IT\ Cathdra\ Demo.otf");
+}
+@font-face {
+	font-family: "Piston Black";
+	src: url("PistonBlack-Regular.ttf");
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	background: linear-gradient( to right, #600000, #860000, #860000, #600000);
+	color: #ffd500;
+	line-height: 1.5;
+	margin: 0;
+}
+
+header {
+	background-color: #600000;
+	padding: 20px 0;
+	text-align: center;
+	border-bottom: 2px solid #ffd500;
+}
+header h1 {
+	font-family: "Piston Black";
+	font-size: 60px;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+header h2 {
+	font-family: "IT Cathedra";
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+}
+
+footer {
+	background-color: #600000;
+	margin-top: 50px;
+	padding: 20px 0;
+	text-align: center;
+	border-top: 2px solid #ffd500;
+}
+footer p {
+	margin: 0.2em 0;
+}
+
+.navbar {
+	background-color: #700000;
+	padding: 10px 0;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 2px solid #ffd500;
+}
+.navbar a {
+	margin: 0 20px;
+}
+.content {
+	padding: 0 50px;
+	text-align: center;
+}
+.content h1 {
+	margin: 1.2em 0 0.2em 0;
+	font-size: 48px;
+	font-weight: normal;
+	font-family: "IT Cathedra";
+}
+.content h2 {
+	margin: 0.5em 0 0.2em 0;
+	font-size: 28px;
+	font-weight: normal;
+	font-family: "IT Cathedra";
+}
+.content h3 {
+	margin: 0.5em 0 0.2em 0;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: "IT Cathedra";
+}
+.content p {
+	font-size: 20px;
+	margin: 0 0 1em 0;
+}
+
+.countries {
+	margin: 20px 0;
+}
+.country {
+	display: inline-block;
+	position: relative;
+	background-color: #700000;
+	border: 3px ridge #ffd500;
+	border-radius: 10px;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+	line-height: 1;
+	margin: 0 10px 20px 10px;
+}
+.country .wrapper {
+	position: absolute;
+	width: 180px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.country img {
+	max-width: 100px;
+	max-height: 100px;
+}
+.country h1 {
+	font-weight: normal;
+	font-size: 26px;
+	margin: 0;
+}
+.country h2 {
+	font-weight: normal;
+	font-size: 22px;
+	margin: 0;
+}
+.country h3 {
+	font-weight: normal;
+	font-size: 18px;
+	margin: 0;
+}
+
+.content .maps {
+	line-height: 0;
+}
+.content .map {
+	display:inline-block;
+	border: 5px ridge #ffd500;
+	line-height: 0;
+}
+.content .small-map {
+	width: calc(33% - 20px);
+	margin: 0 5px;
+}
+.content .big-map {
+	width: calc(99% - 20px);
+	margin: 10px 0 0 0;
+}
+.content .map img {
+	width: 100%;
+	margin: 0;
+}
