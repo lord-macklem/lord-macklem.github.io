@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Double Entry Accounts</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+    <input type="file" id="file-upload" accept=".csv"/ style="display:none" onchange="importFile()">
+    <a id="file-download" href="" download="DoubleEntryAccounts.csv" style="display:none"></a>
+    <div class="container">
+        <div class="left-shadow"></div>
+        <div class="right-shadow"></div>
+        <header class="main-header" id="title" onclick="titleClicked(this)" onblur="titleBlur(this)" onkeypress="titleKeyPress(this, event)">
+            Accounts
+        </header>
+        <ul class="navbar">
+            <li><button onclick="resetLedger()">Reset</button></li>
+            <li><button onclick="importAccounts()">Import</button></li>
+            <li><button>Options</button></li>
+            <li><button onclick="exportAccounts()">Export</button></li>
+            <li><button onclick="exportNextPeriod()">Next Period</button></li>
+        </ul> 
+        <div class="sidebar">
+            <h1 onclick="viewGeneralJournal()">General Journal</h1>
+            <h1 onclick="sidebarToggle(this)">General Ledger<span class="triangle">▼<div></div></h1>
+            <div>
+                <h2 onclick="sidebarToggle(this)">Fixed Assets<span class="triangle">▼<div></div></h2>
+                <div>
+                    <ul id="sbl-fixed-assets">
+                    </ul>
+                    <div class="add-account" id="aa-fixed-asset" onclick="addAccountClicked(this)" onblur="addAccountAbort(this)" onkeypress="addAccountKeyPress(this, event)">Add account...</div>
+                </div>
+                <h2 onclick="sidebarToggle(this)">Current Assets<span class="triangle">▼<div></div></h2>
+                <div>
+                    <ul id="sbl-current-assets"></ul>
+                    <div class="add-account" id="aa-current-asset" onclick="addAccountClicked(this)" onblur="addAccountAbort(this)" onkeypress="addAccountKeyPress(this, event)">Add account...</div>
+                </div>
+                <h2 onclick="sidebarToggle(this)">Long-Term Liabilities<span class="triangle">▼<div></div></h2>
+                <div>
+                    <ul id="sbl-long-term-liabilities"></ul>
+                    <div class="add-account" id="aa-long-term-liability" onclick="addAccountClicked(this)" onblur="addAccountAbort(this)" onkeypress="addAccountKeyPress(this, event)">Add account...</div>
+                </div>
+                <h2 onclick="sidebarToggle(this)">Current Liabilities<span class="triangle">▼<div></h2>
+                <div>
+                    <ul id="sbl-current-liabilities"></ul>
+                    <div class="add-account" id="aa-current-liability" onclick="addAccountClicked(this)" onblur="addAccountAbort(this)" onkeypress="addAccountKeyPress(this, event)">Add account...</div>
+                </div>
+                <h2 onclick="sidebarToggle(this)">Equity<span class="triangle">▼<div></div></h2>
+                <div>
+                    <ul id="sbl-equity"></ul>
+                    <div class="add-account" id="aa-equity" onclick="addAccountClicked(this)" onblur="addAccountAbort(this)" onkeypress="addAccountKeyPress(this, event)">Add account...</div>
+                </div>
+                <h2 onclick="sidebarToggle(this)">Revenues<span class="triangle">▼<div></div></h2>
+                <div>
+                    <ul id="sbl-revenues"></ul>
+                    <div class="add-account" id="aa-revenue" onclick="addAccountClicked(this)" onblur="addAccountAbort(this)" onkeypress="addAccountKeyPress(this, event)">Add account...</div>
+                </div>
+                <h2 onclick="sidebarToggle(this)">Expenses<span class="triangle">▼<div></div></h2>
+                <div>
+                    <ul id="sbl-expenses"></ul>
+                    <div class="add-account" id="aa-expense" onclick="addAccountClicked(this)" onblur="addAccountAbort(this)" onkeypress="addAccountKeyPress(this, event)">Add account...</div>
+                </div>
+            </div>
+            <h1 onclick="sidebarToggle(this)">Statements<span class="triangle">▼<div></div></h1>
+            <div>
+                <ul id="sbl-statements">
+                    <li id="sbsb-trial-balance" onclick="viewTrialBalance()">Trial Balance</li>
+                    <li id="sbsb-income-statement" onclick="viewIncomeStatement()">Income Statement</li>
+                    <li id="sbsb-balance-sheet" onclick="viewBalanceSheet()">Balance Sheet</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-wrapper" id="content-wrapper">
+            <div class="content" id="content">
+                <div id="general-journal">
+                    <table class="general-journal">
+                        <colgroup>
+                            <col class="row"/>
+                            <col class="date"/>
+                            <col class="account"/>
+                            <col class="note"/>
+                            <col class="debit"/>
+                            <col class="credit"/>
+                        </colgroup>
+                        <thead>
+                            <tr><th></th><th colspan=5 class="title">General Journal</th></tr>
+                            <tr><th></th><th>Date</th><th>Account</th><th>Note</th><th>£ Dr.</th><th>£ Cr.</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr id="gj-row-zero"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr id="gj-new-row">
+                                <td></td>
+                                <td id="gj-nr-date" contenteditable="true" onkeypress="newRowKeyPress(this, event)"></td>
+                                <td id="gj-nr-account" contenteditable="true" onkeypress="newRowKeyPress(this, event)"></td>
+                                <td id="gj-nr-note" contenteditable="true" onkeypress="newRowKeyPress(this, event)"></td>
+                                <td id="gj-nr-debit" contenteditable="true" onkeypress="newRowKeyPress(this, event)"></td>
+                                <td id="gj-nr-credit"></td></tr>
+                        </tbody>
+                    </table>
+                    <p id="gj-comment"></p>
+                </div>
+                <div id="trial-balance" style="display:none">
+                    <table class="trial-balance">
+                        <colgroup>
+                            <col class="margin">
+                            <col class="account">
+                            <col class="debit">
+                            <col class="credit">
+                        </colgroup>
+                        <thead>
+                            <tr><th></th><th colspan=3 class="title">Trial Balance</th></tr>
+                            <tr><th></th><th>Account</th><th>£ Dr.</th><th>£ Cr.</th></tr>
+                        </thead>
+                        <tbody id="tb-table">
+                            <tr id="tb-row-zero"><td></td><td></td><td></td><td></td></tr>
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr class="total"><td></td><td class="subheading">Total Debits and Credits</td><td id="tb-total-debit"></td><td id="tb-total-credit"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="income-statement" style="display:none">
+                    <table class="income-statement">
+                        <colgroup>
+                            <col class="margin">
+                            <col class="details">
+                            <col class="col-1">
+                            <col class="col-2">
+                        </colgroup>
+                        <thead>
+                            <tr><th></th><th colspan=3 class="title">Statement of Profit or Loss</th></tr>
+                            <tr><th></th><th>Details</th><th>£</th><th>£</th></tr>
+                        </thead>
+                        <tbody id="is-rev">
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr><td></td><td class="subheading">Revenues</td><td></td><td></td></tr>
+                            <tr class="subtotal"><td></td><td class="subheading">Total Revenue</td><td></td><td id="is-rev-total"></td></tr>
+                        </tbody>
+                        <tbody id="is-exp">
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr><td></td><td class="subheading">Expenses</td><td></td><td></td></tr>
+                            <tr class="subtotal"><td></td><td class="subheading">Total Expenditure</td><td></td><td id="is-exp-total"></td></tr>
+                        </tbody>
+                        <tbody>
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr class="total"><td></td><td class="subheading" id="is-total-label">Net Profit</td><td></td><td id="is-total"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="balance-sheet" style="display:none">
+                    <table class="balance-sheet">
+                        <colgroup>
+                            <col class="margin">
+                            <col class="details">
+                            <col class="col-1">
+                            <col class="col-2">
+                        </colgroup>
+                        <thead>
+                            <tr><th></th><th colspan=3 class="title">Statement of Financial Position</th></tr>
+                            <tr><th></th><th>Details</th><th>£</th><th>£</th></tr>
+                        </thead>
+                        <tbody id="bs-fa">
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr><td></td><td class="subheading">Fixed Assets</td><td></td><td></td></tr>
+                            <tr class="subtotal"><td></td><td></td><td></td><td id="bs-fa-total"></td></tr>
+                        </tbody>
+                        <tbody id="bs-ca">
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr><td></td><td class="subheading">Current Assets</td><td></td><td></td></tr>
+                            <tr class="subtotal"><td></td><td></td><td></td><td id="bs-ca-total"></td></tr>
+                        </tbody>
+                        <tbody>
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr class="total"><td></td><td class="subheading">Total Assets</td><td></td><td id="bs-a-total"></td></tr>
+                        </tbody>
+                        <tbody id="bs-ltl">
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr><td></td><td class="subheading">Long-Term Liabilities</td><td></td><td></td></tr>
+                            <tr class="subtotal"><td></td><td></td><td></td><td id="bs-ltl-total"></td></tr>
+                        </tbody>
+                        <tbody id="bs-cl">
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr><td></td><td class="subheading">Current Liabilities</td><td></td><td></td></tr>
+                            <tr class="subtotal"><td></td><td></td><td></td><td id="bs-cl-total"></td></tr>
+                        </tbody>
+                        <tbody id="bs-eq">
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr><td></td><td class="subheading">Equity</td><td></td><td></td></tr>
+                            <tr><td></td><td id="bs-profit-label">Net Profit</td><td id="bs-profit"></td><td></td></tr>
+                            <tr class="subtotal"><td></td><td></td><td></td><td id="bs-eq-total"></td></tr>
+                        </tbody>
+                        <tbody>
+                            <tr><td></td><td></td><td></td><td></td></tr>
+                            <tr class="total"><td></td><td class="subheading">Total Liabilities and Equity</td><td></td><td id="bs-lae-total"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="padding"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
