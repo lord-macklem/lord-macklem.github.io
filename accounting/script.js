@@ -1398,6 +1398,7 @@ function parseCSV(csv) {
                     console.log("ERROR: Unexpected line format!");
                 }
             } else {
+                transaction.type = 0;
                 transaction.debitAccountName = rowString[1];
                 transaction.creditAccountName = rowString[2];
                 transaction.note = rowString[3];
@@ -1507,11 +1508,16 @@ function writeCommaSeparatedAccountList(accounts) {
 
 function writeCommaSeparatedTransaction(transaction) {
     var text = "";
-    text += transaction.date + ",";
-    text += transaction.debitAccountName + ",";
-    text += transaction.creditAccountName + ",";
-    text += transaction.note + ",";
-    text += transaction.debits;
+    if (transaction.type == 0) {
+        text += transaction.date + ",";
+        text += transaction.debitAccountName + ",";
+        text += transaction.creditAccountName + ",";
+        text += transaction.note + ",";
+        text += transaction.debits;
+    } else {
+        text += transaction.date + ",";
+        text += "Accounts Balanced";
+    }
     return text;
 }
 
