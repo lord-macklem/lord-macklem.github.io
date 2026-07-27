@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Arial Black";
+    src: url("ariblk.ttf");
+}
+@font-face {
+    font-family: "Arial Bold";
+    src: url("arialbd.ttf");
+}
+@font-face{
+    font-family: "Chomsky";
+    src: url("Chomsky.otf");
+}
+
+header {
+    font-size: 32pt;
+    text-align: center;
+    font-family: "Chomsky";
+}
+
+.nobles-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px;
+    text-align: center;
+}
+
+.noble {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 10px 20px;
+    min-width: 120px;
+    font-family: "Arial Bold";
+}
+.noble img {
+    width: 75px;
+}
+.noble h1 {
+    font-size: 20px;
+    font-variant: small-caps;
+    margin: 0;
+}
+.noble .total {
+    font-family: "Arial Black";
+    font-size: 40px;
+    margin: 0;
+}
+.noble .notes {
+    font-size: 16px;
+    margin: 0;
+}
+
+.checklist {
+    font-family: "Arial Bold";
+    width: 250px;
+    margin: auto;
+}
+.checklist h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
