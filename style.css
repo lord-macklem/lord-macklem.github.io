@@ -2,6 +2,10 @@
     font-family: "Arial Rounded MT Bold";
     src: url("scrabble-cats-banter/ARLRDBD.TTF");
 }
+@font-face{
+	font-family: "Arial Narrow";
+	src: url("ARIALN.TTF");
+}
 @font-face {
     font-family: "Arial Black";
     src: url("scrabble-cats-banter/ariblk.ttf");
@@ -10,6 +14,18 @@
 	font-family: "Bahaus 93 Regular";
 	src: url("big-o-racing/BAUHS93.TTF");
 }
+@font-face {
+	font-family: "IT Cathedra Demo";
+	src: url("congress-of-vienna/IT\ Cathdra\ Demo.otf");
+}
+@font-face {
+	font-family: "Chomsky";
+	src: url("accounting/Chomsky.otf");
+}
+@font-face {
+	font-family: "Piston Black";
+	src: url("congress-of-vienna/PistonBlack-Regular.ttf");
+}
 
 body {
 	background-color: #ffffff;
@@ -17,28 +33,66 @@ body {
 	margin: 0;
 }
 header {
-	background-color: #ffffff;
-	color: black;
-	padding: 30px 0;
-	font-size: 26px;
+	background-color: #205090;
+	color: white;
 	text-align: center;
 	line-height: 1.2;
 	font-variant: small-caps;
 	
 }
 header h1 {
+	background-color: #205090;
+	padding: 25px 0;
 	font-size: 42px;
-	font-weight: normal;
+	font-weight: bold;
 	letter-spacing: 0.2em;
 	margin: 0;
+}
+header .navbar {
+	background-color: #5080B0;
+	border-bottom: 2px solid #205090;
+	padding: 5px 0;
+	font-size: 22px;
+	letter-spacing: 0.1em;
+}
+header .navbar a {
+	margin: 0 20px;
 }
 a {
 	color: inherit;
 	text-decoration: none;
 }
+a:hover {
+	text-decoration: underline;
+}
+
+
 .content {
+	background-color: #ffffff;
+	padding: 10px 0 30px 0;
+	margin: auto;
 	text-align: center;
 }
+
+@media screen and (min-width: 1200px){
+	.content {max-width: 1200px;}
+}
+
+footer {
+	background-color: #205090;
+	padding: 10px 0;
+	border-top: 5px solid #5080B0;
+	text-align: center;
+	color: white;
+}
+footer p {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+
+
+
 .game-box {
 	display: inline-block;
 	position: relative;
@@ -68,6 +122,7 @@ a {
 	font-size: inherit;
 	margin: 0;
 }
+
 @media screen and (max-width: 520px) {
 	.game-box {
 		display: block;
@@ -224,4 +279,110 @@ a {
 }
 @media screen and (max-width: 400px) {
 	.big-o-racing h1 {font-size: 22px;}
+}
+
+
+
+
+
+.accounting {
+	background-image: linear-gradient(to bottom, #8884, #8881, #8884), url("accounting-banner.png");
+	border: 0.15em solid grey;
+}
+.accounting .text-wrapper {
+	color: black;
+}
+.accounting h1 {
+	font-family: "Chomsky";
+	font-size: 38px;
+}
+.accounting p {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
+}
+@media screen and (max-width: 520px) {
+	.accounting h1 {font-size: 32px;}
+	.accounting p {font-size: 13px;}
+}
+@media screen and (max-width: 450px) {
+	.accounting h1 {font-size: 28px;}
+	.accounting p {font-size: 11px;}
+}
+@media screen and (max-width: 400px) {
+	.accounting h1 {font-size: 22px;}
+	.accounting p {font-size: 10px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+.kingmaker {
+	background-image: linear-gradient(to bottom, #111D, #222A, #111D), url("kingmaker-banner.png");
+	border: 0.15em solid black;
+}
+.kingmaker h1 {
+	font-family: "IT Cathedra Demo";
+	font-size: 38px;
+	color: white;
+	text-shadow: 
+			-0.03em -0.03em black, 
+			-0.03em 0.03em black,
+			0.03em -0.03em black,
+			0.03em 0.03em black;
+}
+.kingmaker p {
+	font-family: "Arial Black";
+	font-size: 15px;
+	color: white;
+	text-shadow: 0.05em 0.05em black;
+}
+@media screen and (max-width: 520px) {
+	.kingmaker h1 {font-size: 32px;}
+	.kingmaker p {font-size: 13px;}
+}
+@media screen and (max-width: 450px) {
+	.kingmaker h1 {font-size: 28px;}
+	.kingmaker p {font-size: 11px;}
+}
+@media screen and (max-width: 400px) {
+	.kingmaker h1 {font-size: 22px;}
+	.kingmaker p {font-size: 10px;}
+}
+
+
+.congress-of-vienna {
+	background-image: linear-gradient(to right, #700000, #901010, #901010, #700000);
+	border: 0.15em solid #ffd500;
+}
+.congress-of-vienna h1 {
+	font-family: "Piston Black";
+	font-size: 32px;
+	color: #ffd500;
+	text-shadow: 0.05em 0.05em 0.05em black;
+}
+.congress-of-vienna p {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffd500;
+	text-shadow: 0.05em 0.05em 0.05em black;
+}
+@media screen and (max-width: 520px) {
+	.congress-of-vienna h1 {font-size: 28px;}
+	.congress-of-vienna p {font-size: 14px;}
+}
+@media screen and (max-width: 450px) {
+	.congress-of-vienna h1 {font-size: 26px;}
+	.congress-of-vienna p {font-size: 13px;}
+}
+@media screen and (max-width: 400px) {
+	.congress-of-vienna h1 {font-size: 22px;}
+	.congress-of-vienna p {font-size: 11px;}
 }
