@@ -9,15 +9,45 @@
 </head>
 <body>
     <header>
-        Kingmaker Strength Calculator
+        kingmaker strength calculator
     </header>
-    <div class="nobles-list" id="nobles-list">
-    </div>
-    <div class="checklist">
-        <h1>Nobles Checklist</h1>
-        <div id="nobles-checklist">
+    <main>
+        <div class="section">
+            <h2>Nobles</h2>
+            <div id="nobles-list" class="nobles-list"></div>
         </div>
-    </div>
+        <div class="section">
+            <div class="stats">
+                <span class="stat">Total Strength: <span id="total-strength" class="val">0</span><span id="bonus-wrapper" style="display:none"> (+<span id="bonus-strength" class="val">0</span>)</span></span>
+                <span class="stat">Commons: <span id="commons" class="val">0</span></span>
+                <span class="stat">Lords: <span id="lords" class="val">0</span></span>
+            </div>
+        </div>
+        <div class="section" style="display:none">
+            <h2>Stack Strength</h2>
+            <div id="stack"></div>
+        </div>
+        <div class="section">
+            <h2>Cards</h2>
+            <div>
+                <select id="noble-select" class="noble-selector">
+                    <option style="display:none">Add a New Noble</option>
+                </select>
+                <select id="faction-town-select" class="faction-town-selector" style="display:none">
+                    <option style="display:none">Add Controlled Town</option>
+                </select>
+            </div>
+            <div id="card-stacks" class="card-stacks"></div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>This tool is an unofficial gameplay aid for Kingmaker (1974) by Avalon Hill</p>
+        <p>Copyright © 2026 Peter J. Meiklem</p>
+    </footer>
 
+    <script src="cards.js"></script>
+    <script src="interfaceManager.js"></script>
     <script src="script.js"></script>
+    
 </body>

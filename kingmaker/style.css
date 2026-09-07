@@ -6,22 +6,88 @@
     font-family: "Arial Bold";
     src: url("arialbd.ttf");
 }
+@font-face {
+    font-family: "Arial Narrow";
+    src: url("ARIALN.TTF");
+}
+@font-face {
+    font-family: "Arial";
+    src: url("arial.ttf");
+}
 @font-face{
-    font-family: "Chomsky";
-    src: url("Chomsky.otf");
+    font-family: "IT Cathedra";
+    src: url("IT\ Cathdra\ Demo.otf");
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    text-align: center;
 }
 
 header {
-    font-size: 32pt;
-    text-align: center;
-    font-family: "Chomsky";
+    background-color: black;
+    color: white;
+    padding: 8px 0;
+    border-bottom: 3px solid white;
+    text-shadow: 0.02em 0.02em yellow;
+    font-size: 48px;
+    font-family: "IT Cathedra";
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px 0;
+    border-top: 3px solid white;
+    font-family: "Arial Bold";
+    font-size: 14px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+
+main {
+    background-color: #FDFFBA;
+    padding: 10px 0;
+}
+
+
+h2 {
+    /*background-color: #CCA600;*/
+    font-family: "Arial Bold";
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.section {
+    /*background-color: #E5BB00;*/
+    padding: 10px 20px;
+}
+
+.nobles-list {
+    min-height: 150px;
+}
+
+.stats {
+    font-size: 20px;
+    font-family: "Arial";
+}
+
+.stat {
+    margin: 0 20px;
+}
+.stat .val {
+    font-family: "Arial Black";
 }
 
 .nobles-list {
     list-style-type: none;
-    padding: 0;
-    margin: 50px;
-    text-align: center;
+    min-height: 170px;
 }
 
 .noble {
@@ -45,15 +111,22 @@ header {
     font-size: 40px;
     margin: 0;
 }
-.noble .notes {
+.noble .bonus {
     font-size: 16px;
     margin: 0;
+}
+.noble .bonus .value {
+    font-family: "Arial Black";
+}
+.noble .bonus .location {
+    font-family: "Arial Narrow";
 }
 
 .checklist {
     font-family: "Arial Bold";
     width: 250px;
     margin: auto;
+    text-align: center;
 }
 .checklist h1 {
     text-align: center;
@@ -61,3 +134,106 @@ header {
     margin-bottom: 10px;
     font-size: 20px;
 }
+
+
+
+select {
+    display: inline-block;
+    background: none;
+    border: none;
+    padding: 2px 0;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Arial Bold";
+}
+select:focus {
+    outline: none;
+}
+select option {
+    font-family: "Arial Bold";
+    font-size: 14px;
+}
+.noble-selector {
+    background-color: #ddd;
+    border: 2px solid #bbb;
+    padding: 4px 16px;
+}
+.faction-town-selector {
+    background-color: #49C658;
+    border: 2px solid #379642;
+    padding: 4px 16px;
+}
+.crown-card-selector {
+    font-size: 12px;
+    font-family: "Arial Bold";
+}
+
+
+.card-stacks {
+    min-height: 50px;
+}
+
+.card-stack {
+    display: inline-block;
+    min-width: 250px;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.card {
+    display: block;
+    position: relative;
+    padding: 4px 16px;
+    border: 2px solid;
+    font-size: 14px;
+    font-family: "Arial Bold";
+}
+.card-x {
+    position: absolute;
+    right: 4px;
+    cursor: pointer;
+}
+.town-card {
+    background-color: #49C658;
+    border-color: #379642;
+}
+.town-card .card-x {
+    color: #379642;
+}
+.noble-card {
+    background-color: #ddd;
+    border-color: #bbb;
+}
+.noble-card .card-x {
+    color: #bbb;
+}
+.title-card {
+    background-color: #FCE864;
+    border-color: #CCA600;
+}
+.title-card .card-x {
+    color: #CCA600;
+}
+.office-card {
+    background-color: #FFB27F;
+    border-color: #CC8D66;
+}
+.office-card .card-x {
+    color: #CC8D66;
+}
+.mercenary-card {
+    background-color: black;
+    border-color: #4C4C4C;
+    color: white;
+}
+.mercenary-card .card-x {
+    color: #4C4C4C;
+}
+.bishop-card {
+    background-color: #ddd;
+    border-color: #bbb;
+}
+.bishop-card .card-x {
+    color: #bbb;
+}
+
